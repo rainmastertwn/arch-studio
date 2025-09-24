@@ -1,5 +1,12 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import BannerSection from '~/components/index/bannerSection.vue'
+import MenuLinkSection from '~/components/index/menuLinkSection.vue'
+</script>
 
 <template>
-  <div class="h-[1500px] w-full bg-gray-200"></div>
+  <BannerSection />
+
+  <MenuLinkSection />
+
+  <div class="h-[1000px] w-full bg-gray-200"></div>
 </template>
