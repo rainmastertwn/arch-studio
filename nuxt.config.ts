@@ -8,6 +8,9 @@ export default defineNuxtConfig({
     // baseURL: '/',
     buildAssetsDir: '/static/'
   },
+  experimental: {
+    payloadExtraction: false
+  },
   devtools: { enabled: true },
   runtimeConfig: {
     public: {
