@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 
-@theme {
+@theme static {
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
@@ -9,8 +9,11 @@
 
   --color-black: #555;
   --color-white-set: #f7f7f7;
-  --color-gray: #b5b5b5;
+  --color-gray-set: #b5b5b5;
   --color-gray-bababa: #bababa;
+  --color-gray-9ea6b9: #9ea6b9;
+
+  --transition-set: cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
 /* 

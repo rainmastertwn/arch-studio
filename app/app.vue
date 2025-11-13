@@ -17,7 +17,7 @@ useHead({
     {
       name: 'viewport',
       content:
-        'width=device-width, height=device-height, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover'
+        'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, viewport-fit=cover'
     },
     {
       name: 'description',
@@ -37,7 +37,7 @@ useHead({
     },
     {
       property: 'og:url',
-      content: 'https://rainsave.com.tw/'
+      content: 'https://arch-studio.com.tw/'
     },
     {
       property: 'og:type',

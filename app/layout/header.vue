@@ -13,7 +13,7 @@ const toggleMenu = (): void => {
     <div class="container flex items-center justify-between py-4 lg:py-6">
       <div class="flex items-center">
         <NuxtLink href="/">
-          <img class="w-[200px] lg:w-full" src="~/assets/images/archstudio-logo-color.png" />
+          <img class="w-[200px] lg:w-full" src="~/assets/images/archstudio-logo-color.webp" />
         </NuxtLink>
       </div>
       <HeaderMenu :mobileMenuStatus="mobileMenuStatus" @toggleBurger="toggleMenu" />

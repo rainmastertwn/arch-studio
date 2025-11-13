@@ -7,7 +7,7 @@ const currentYear = ref(new Date().getFullYear())
     <div class="container mb-8 lg:mb-14">
       <div class="container grid grid-cols-1 lg:grid-cols-5 gap-4">
         <div class="cols-span-1 lg:col-span-2 order-4 lg:order-1">
-          <img class="mb-10" src="~/assets/images/archstudio-logo-white.png" alt="" srcset="" />
+          <img class="mb-10" src="~/assets/images/archstudio-logo-white.webp" alt="" srcset="" />
           <p class="text-sm leading-10">
             相關排水問題及照片歡迎來信詢問， <br />
             您的問題可能會成為網頁裡的一則內容喔！<br />
@@ -52,7 +52,7 @@ const currentYear = ref(new Date().getFullYear())
       <!-- copyright -->
       <div class="flex flex-col lg:flex-row items-center justify-between">
         <div class="flex items-center mb-4 lg:mb-0">
-          <img class="mr-4" src="~/assets/images/donate-icon.png" alt="" srcset="" />
+          <img class="mr-4" src="~/assets/images/donate-icon.webp" alt="" srcset="" />
           <p class="text-sm text-gray-bababa">
             您的支持是我們進步的力量，請協助我們，讓我們擁有足夠資源呈現出更好的內容
           </p>
@@ -69,7 +69,7 @@ const currentYear = ref(new Date().getFullYear())
 
 <style lang="scss" scoped>
 $header-margin: 32px;
-$footer-img-path: '~/assets/images/footer.png';
+$footer-img-path: '~/assets/images/footer.webp';
 
 footer {
   background-position: center center;

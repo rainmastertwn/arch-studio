@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { ElIcon } from 'element-plus'
 import { menuItems } from './menu'
 
 const props = defineProps({
@@ -19,7 +18,7 @@ const toggleBurger = (): void => {
   <div class="menu-wrap" :class="{ 'menu-opened': mobileMenuStatus }">
     <nav class="menu hidden items-center lg:flex">
       <NuxtLink
-        class="text-base lg:text-lg xl:text-xl cursor-pointer"
+        class="text-base lg:text-lg cursor-pointer text-underline-effect"
         v-for="item in menuItems"
         :key="item.label"
         :to="item.to"
@@ -30,7 +29,7 @@ const toggleBurger = (): void => {
       <div class="cursor-pointer">
         <img
           class="w-full max-w-[24px] h-full max-h-[24px] mt-[-4px]"
-          src="~/assets/images/search-icon.png"
+          src="~/assets/images/search-icon.webp"
           alt=""
           srcset=""
         />
@@ -58,10 +57,6 @@ $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
     display: flex;
     transition: all 0.3s;
     line-height: 1;
-
-    &:hover {
-      color: var(--color-default-blue);
-    }
 
     &:not(:last-child) {
       margin-right: $header-margin;

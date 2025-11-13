@@ -1,10 +1,10 @@
 <script lang="ts" setup>
 import MenuLinkButton from '~/components/common/menuLinkButton.vue'
-import WaterPondingIcon from '~/assets/images/common/waterponding-icon.png'
-import WaterStorageIcon from '~/assets/images/common/waterstorage-icon.png'
-import WaterIssueIcon from '~/assets/images/common/waterissue-icon.png'
-import WaterInfiltrationIcon from '~/assets/images/common/waterinfiltration-icon.png'
-import LIDIcon from '~/assets/images/common/lid-icon.png'
+import WaterPondingIcon from '~/assets/images/common/waterponding-icon.webp'
+import WaterStorageIcon from '~/assets/images/common/waterstorage-icon.webp'
+import WaterIssueIcon from '~/assets/images/common/waterissue-icon.webp'
+import WaterInfiltrationIcon from '~/assets/images/common/waterinfiltration-icon.webp'
+import LIDIcon from '~/assets/images/common/lid-icon.webp'
 </script>
 
 <template>

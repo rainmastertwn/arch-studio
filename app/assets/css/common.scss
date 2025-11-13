@@ -1,0 +1,27 @@
+.text-underline-effect {
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    width: 60%;
+    height: 2.5px;
+    background-color: var(--color-gray-9ea6b9);
+    opacity: 0;
+    transition: all 0.3s var(--transition-set);
+    content: '';
+    transform: translateX(-50%);
+    transform-origin: right;
+  }
+
+  &:hover {
+    &::after {
+      bottom: -8px;
+      width: 100%;
+      opacity: 1;
+    }
+    color: var(--color-gray-9ea6b9);
+  }
+}
