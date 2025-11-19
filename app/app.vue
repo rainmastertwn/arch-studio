@@ -103,7 +103,7 @@ body {
   margin: 0;
   font-size: 16px;
   font-family: 'Noto Sans TC', sans-serif;
-  color: #555;
+  color: var(--color-black);
   background-color: var(--color-white-set);
   letter-spacing: 0.05rem;
 }

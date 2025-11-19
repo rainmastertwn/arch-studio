@@ -12,6 +12,10 @@ const emit = defineEmits<{
 const toggleBurger = (): void => {
   emit('toggleBurger')
 }
+
+const searchClick = (): void => {
+  console.log('search click')
+}
 </script>
 
 <template>
@@ -26,9 +30,9 @@ const toggleBurger = (): void => {
         {{ item.label }}
       </NuxtLink>
       <!-- search icon -->
-      <div class="cursor-pointer">
+      <div class="cursor-pointer hover:scale-125 transition-all duration-300" @click="searchClick">
         <img
-          class="w-full max-w-[24px] h-full max-h-[24px] mt-[-4px]"
+          class="w-full max-w-6 h-full max-h-6 -mt-1"
           src="~/assets/images/search-icon.webp"
           alt=""
           srcset=""

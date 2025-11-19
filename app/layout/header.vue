@@ -9,8 +9,8 @@ const toggleMenu = (): void => {
 </script>
 
 <template>
-  <header class="bg-white-set sticky top-0 z-[1000]">
-    <div class="container flex items-center justify-between py-4 lg:py-6">
+  <header class="bg-white-set sticky top-0 z-1000">
+    <div class="container flex items-center justify-between py-2.5">
       <div class="flex items-center">
         <NuxtLink href="/">
           <img class="w-[200px] lg:w-full" src="~/assets/images/archstudio-logo-color.webp" />

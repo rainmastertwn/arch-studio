@@ -25,3 +25,59 @@
     color: var(--color-gray-9ea6b9);
   }
 }
+
+.card-box {
+  cursor: pointer;
+
+  .card-img img {
+    transition: transform 0.3s ease;
+  }
+
+  .card-content h4,
+  .card-content h3 {
+    transition: color 0.3s ease;
+  }
+
+  &:hover {
+    .card-img img {
+      transform: scale(1.1);
+    }
+
+    .card-content h3,
+    .card-content h4 {
+      color: var(--color-gray-9ea6b9);
+    }
+  }
+}
+
+ul.dot-list {
+  padding: 0;
+  list-style: none;
+
+  li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 8px;
+    line-height: 200%;
+    letter-spacing: 10%;
+
+    &::before {
+      position: absolute;
+      top: 16px;
+      left: 0;
+      width: 3px;
+      height: 3px;
+      background-color: var(--color-black);
+      border-radius: 50%;
+      content: '';
+    }
+
+    > a {
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: var(--color-gray-9ea6b9);
+      }
+    }
+  }
+}
