@@ -71,18 +71,20 @@ useHead({
       rel: 'stylesheet',
       href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap'
     }
+  ],
+  script: [
+    // {
+    //   src: 'https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js'
+    // }
+    // {
+    //   src: 'https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js',
+    //   integrity:
+    //     'sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==',
+    //   crossorigin: 'anonymous',
+    //   referrerpolicy: 'no-referrer',
+    //   defer: true
+    // }
   ]
-  // lottie js
-  // script: [
-  //   {
-  //     src: 'https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js',
-  //     integrity:
-  //       'sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==',
-  //     crossorigin: 'anonymous',
-  //     referrerpolicy: 'no-referrer',
-  //     defer: true
-  //   }
-  // ]
 })
 </script>
 

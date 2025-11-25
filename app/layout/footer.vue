@@ -15,7 +15,7 @@ const currentYear = ref(new Date().getFullYear())
           </p>
         </div>
         <div class="col-span-1 flex flex-col order-1 lg:order-2 mb-2 lg:mb-0">
-          <h4 class="text-xl font-bold mb-4 tracking-[8px]">雨水共存</h4>
+          <h4 class="text-xl font-bold mb-4 tracking-[8px] text-white-set">雨水共存</h4>
           <NuxtLink class="text-sm font-light text-gray-bababa mb-4" href="#">雨水排水</NuxtLink>
           <NuxtLink class="text-sm font-light text-gray-bababa mb-4" href="#">雨水儲存</NuxtLink>
           <NuxtLink class="text-sm font-light text-gray-bababa mb-4" href="#">雨水滲透</NuxtLink>
@@ -25,7 +25,7 @@ const currentYear = ref(new Date().getFullYear())
           <NuxtLink class="text-sm font-light text-gray-bababa" href="#">各種積水問題</NuxtLink>
         </div>
         <div class="col-span-1 flex flex-col order-2 lg:order-3 mb-2 lg:mb-0">
-          <h4 class="text-xl font-bold mb-4 tracking-[8px]">實驗室</h4>
+          <h4 class="text-xl font-bold mb-4 tracking-[8px] text-white-set">實驗室</h4>
           <NuxtLink class="text-sm font-light text-gray-bababa mb-4" href="#">SGS 實驗室</NuxtLink>
           <NuxtLink class="text-sm font-light text-gray-bababa mb-4" href="#">UL 實驗室</NuxtLink>
           <NuxtLink class="text-sm font-light text-gray-bababa mb-4" href="#"
@@ -36,7 +36,7 @@ const currentYear = ref(new Date().getFullYear())
           >
         </div>
         <div class="col-span-1 flex flex-col order-3 lg:order-4 mb-2 lg:mb-0">
-          <h4 class="text-xl font-bold mb-4 tracking-[8px]">長期贊助商</h4>
+          <h4 class="text-xl font-bold mb-4 tracking-[8px] text-white-set">長期贊助商</h4>
           <NuxtLink class="text-sm font-light text-gray-bababa mb-4" href="#"
             >意動創新有限公司</NuxtLink
           >
