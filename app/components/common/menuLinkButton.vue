@@ -12,7 +12,7 @@ const props = defineProps<{
 <template>
   <div>
     <NuxtLink
-      class="menu-link flex flex-col justify-center bg-white-set rounded-3xl py-4 lg:py-6 m-2 lg:m-4"
+      class="menu-link flex flex-col justify-center bg-white-set rounded-3xl py-4 lg:py-6"
       :class="{ hover: props.hover, active: props.active }"
       :to="props.link"
     >

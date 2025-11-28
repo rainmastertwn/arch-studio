@@ -11,6 +11,7 @@ import LIDIcon from '~/assets/images/common/lid-icon.webp'
   <section class="container mb-10 lg:mb-15">
     <div class="grid grid-cols-2 lg:grid-cols-5">
       <MenuLinkButton
+        class="m-2 lg:m-4"
         data-aos="fade-up"
         data-aos-delay="100"
         data-aos-duration="450"
@@ -21,6 +22,7 @@ import LIDIcon from '~/assets/images/common/lid-icon.webp'
         link="#"
       />
       <MenuLinkButton
+        class="m-2 lg:m-4"
         data-aos="fade-up"
         data-aos-delay="150"
         data-aos-duration="450"
@@ -31,6 +33,7 @@ import LIDIcon from '~/assets/images/common/lid-icon.webp'
         link="#"
       />
       <MenuLinkButton
+        class="m-2 lg:m-4"
         data-aos="fade-up"
         data-aos-delay="200"
         data-aos-duration="450"
@@ -41,6 +44,7 @@ import LIDIcon from '~/assets/images/common/lid-icon.webp'
         link="#"
       />
       <MenuLinkButton
+        class="m-2 lg:m-4"
         data-aos="fade-up"
         data-aos-delay="250"
         data-aos-duration="450"
@@ -51,6 +55,7 @@ import LIDIcon from '~/assets/images/common/lid-icon.webp'
         link="#"
       />
       <MenuLinkButton
+        class="m-2 lg:m-4"
         data-aos="fade-up"
         data-aos-delay="300"
         data-aos-duration="450"
