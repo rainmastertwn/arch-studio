@@ -66,7 +66,11 @@ onUnmounted(() => {
         <h4 class="text-white-set text-center mb-6" data-aos="fade-up" data-aos-delay="300">
           從雨水的管理者，到與雨水共生
         </h4>
-        <p class="text-base text-white-set text-center" data-aos="fade-up" data-aos-delay="400">
+        <p
+          class="text-base text-white-set text-center leading-8"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           我們提供專業且多元的解決方案並致力於提供最全面的技術工法，<br />讓您在解決問題的同時也為環境盡一份心力。
         </p>
       </div>

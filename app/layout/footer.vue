@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { menuItems } from './menu'
 const currentYear = ref(new Date().getFullYear())
 </script>
 
@@ -16,13 +17,15 @@ const currentYear = ref(new Date().getFullYear())
         </div>
         <div class="col-span-1 flex flex-col order-1 lg:order-2 mb-2 lg:mb-0">
           <h4 class="text-xl font-bold mb-4 tracking-[8px] text-white-set">雨水共存</h4>
-          <NuxtLink class="text-sm font-light text-gray-bababa mb-4" href="#">雨水排水</NuxtLink>
-          <NuxtLink class="text-sm font-light text-gray-bababa mb-4" href="#">雨水儲存</NuxtLink>
-          <NuxtLink class="text-sm font-light text-gray-bababa mb-4" href="#">雨水滲透</NuxtLink>
-          <NuxtLink class="text-sm font-light text-gray-bababa mb-4" href="#"
-            >LID低衝擊開發</NuxtLink
+          <NuxtLink
+            class="text-sm font-light text-gray-bababa"
+            :class="{ 'mb-4': index < menuItems.length - 1 }"
+            v-for="(item, index) in menuItems"
+            :key="item.label"
+            :to="item.to"
           >
-          <NuxtLink class="text-sm font-light text-gray-bababa" href="#">各種積水問題</NuxtLink>
+            {{ item.label }}
+          </NuxtLink>
         </div>
         <div class="col-span-1 flex flex-col order-2 lg:order-3 mb-2 lg:mb-0">
           <h4 class="text-xl font-bold mb-4 tracking-[8px] text-white-set">實驗室</h4>

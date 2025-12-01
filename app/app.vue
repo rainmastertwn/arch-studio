@@ -74,9 +74,6 @@ useHead({
   ],
   script: [
     // {
-    //   src: 'https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js'
-    // }
-    // {
     //   src: 'https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js',
     //   integrity:
     //     'sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==',
@@ -107,7 +104,7 @@ body {
   font-family: 'Noto Sans TC', sans-serif;
   color: var(--color-black);
   background-color: var(--color-white-set);
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.1rem;
 }
 
 // set mobile/pad can not swipe to left / right

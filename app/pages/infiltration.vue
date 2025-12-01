@@ -7,10 +7,10 @@ import AdSection from '~/components/common/adSection.vue'
 <template>
   <section class="container">
     <TitleSection
-      title="雨水排水"
-      buttonImgSrc="waterDrainage"
-      buttonName="雨水排水"
-      description="雨水排水是城市防洪的第一道防線，它將落在地表的雨水，透過管線系統迅速引導至河川或大海。傳統的排水強調「快速排除」，但也容易超出負擔，因此現代的排水系統會更著重於如何結合其他技術，讓雨水能更妥善地被利用。"
+      title="雨水滲透"
+      buttonImgSrc="waterInfiltration"
+      buttonName="雨水滲透"
+      description="雨水滲透是模仿自然界中雨水滲入地下的過程。透過設計透水鋪面、滲透井或滲透溝等設施，讓雨水能緩慢地滲入土壤，直接補充地下水。這種方式不僅能有效緩解地表逕流，減少城市內澇的風險，還能補充地下水位，改善城市熱島效應，讓城市像是會「呼吸」一樣。"
     />
 
     <div class="cross-line my-10 lg:my-24"></div>
@@ -89,7 +89,7 @@ import AdSection from '~/components/common/adSection.vue'
       </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-9 mb-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-9 mb-20">
       <CardArticle
         title="綠地排水：可快速收集地表逕流水並快速導入地下轉為滲透水的雙重排水方式"
         layout="vertical"
@@ -132,44 +132,6 @@ import AdSection from '~/components/common/adSection.vue'
         content="介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文"
         url="#"
       />
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[7fr_3fr] gap-9 mb-10 lg:mb-20">
-      <div>
-        <h4 class="mb-6">你可能感興趣</h4>
-        <ul class="dot-list grid grid-cols-2 lg:grid-cols-3 gap-3">
-          <li>
-            <NuxtLink href="#">儲集框架的加分要點總整理</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink href="#">滲透排水管管徑與滲透係數及米數的加分關係</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink href="#">滲透陰井大小及個數與計分的相應關係</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink href="#">儲集框架的加分要點總整理</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink href="#">滲透排水管管徑與滲透係數及米數的加分關係</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink href="#">滲透陰井大小及個數與計分的相應關係</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink href="#">儲集框架的加分要點總整理</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink href="#">滲透排水管管徑與滲透係數及米數的加分關係</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink href="#">滲透陰井大小及個數與計分的相應關係</NuxtLink>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <AdSection maxWidth="350px" imgSrc="https://placehold.co/336x280?text=AD" />
-      </div>
     </div>
   </section>
 </template>

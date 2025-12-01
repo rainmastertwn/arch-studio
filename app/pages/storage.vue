@@ -7,10 +7,10 @@ import AdSection from '~/components/common/adSection.vue'
 <template>
   <section class="container">
     <TitleSection
-      title="雨水排水"
-      buttonImgSrc="waterDrainage"
-      buttonName="雨水排水"
-      description="雨水排水是城市防洪的第一道防線，它將落在地表的雨水，透過管線系統迅速引導至河川或大海。傳統的排水強調「快速排除」，但也容易超出負擔，因此現代的排水系統會更著重於如何結合其他技術，讓雨水能更妥善地被利用。"
+      title="雨水儲存"
+      buttonImgSrc="waterStorage"
+      buttonName="雨水儲存"
+      description="雨水儲存是將雨水攔截並收集起來的技術。這些被儲存的雨水可以透過簡單的過濾處理後，用於多種非飲用水用途，像是澆灌植物、沖馬桶、清洗車輛，或是作為景觀水池的補給水源。這樣不僅能有效減少自來水的使用量，還能在缺水時期作為備用水源，是實踐水資源循環利用的關鍵環節。"
     />
 
     <div class="cross-line my-10 lg:my-24"></div>
@@ -87,51 +87,6 @@ import AdSection from '~/components/common/adSection.vue'
 
         <AdSection maxWidth="300px" imgSrc="https://placehold.co/300x1050?text=AD" />
       </div>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-9 mb-10">
-      <CardArticle
-        title="綠地排水：可快速收集地表逕流水並快速導入地下轉為滲透水的雙重排水方式"
-        layout="vertical"
-        imgSrc="https://picsum.photos/525/350"
-        content="介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文"
-        url="#"
-      />
-      <CardArticle
-        title="綠地排水：可快速收集地表逕流水並快速導入地下轉為滲透水的雙重排水方式"
-        layout="vertical"
-        imgSrc="https://picsum.photos/525/350"
-        content="介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文"
-        url="#"
-      />
-      <CardArticle
-        title="綠地排水：可快速收集地表逕流水並快速導入地下轉為滲透水的雙重排水方式"
-        layout="vertical"
-        imgSrc="https://picsum.photos/525/350"
-        content="介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文"
-        url="#"
-      />
-      <CardArticle
-        title="綠地排水：可快速收集地表逕流水並快速導入地下轉為滲透水的雙重排水方式"
-        layout="vertical"
-        imgSrc="https://picsum.photos/525/350"
-        content="介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文"
-        url="#"
-      />
-      <CardArticle
-        title="綠地排水：可快速收集地表逕流水並快速導入地下轉為滲透水的雙重排水方式"
-        layout="vertical"
-        imgSrc="https://picsum.photos/525/350"
-        content="介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文"
-        url="#"
-      />
-      <CardArticle
-        title="綠地排水：可快速收集地表逕流水並快速導入地下轉為滲透水的雙重排水方式"
-        layout="vertical"
-        imgSrc="https://picsum.photos/525/350"
-        content="介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文"
-        url="#"
-      />
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[7fr_3fr] gap-9 mb-10 lg:mb-20">

@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 // define props image src as string , button name as string, link as string
 const props = defineProps<{
-  hover?: boolean
   active?: boolean
   imgSrc: string
   buttonName: string
@@ -13,7 +12,7 @@ const props = defineProps<{
   <div>
     <NuxtLink
       class="menu-link flex flex-col justify-center bg-white-set rounded-3xl py-4 lg:py-6"
-      :class="{ hover: props.hover, active: props.active }"
+      :class="{ active: props.active }"
       :to="props.link"
     >
       <img class="w-full max-w-[100px] lg:max-w-40 mx-auto mb-1 lg:mb-2" :src="props.imgSrc" />
@@ -44,7 +43,9 @@ const props = defineProps<{
 
   &:hover {
     border-color: transparent;
-    box-shadow: 0 4px 15px rgb(0, 0, 0, 0.1);
+
+    // box-shadow: 0 4px 15px rgb(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow-set);
 
     img {
       transform: translateY(20px) scale(1.25);

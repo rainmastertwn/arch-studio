@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import MenuLinkButton from '~/components/common/menuLinkButton.vue'
-import WaterPondingIcon from '~/assets/images/common/waterponding-icon.webp'
+import WaterDrainageIcon from '~/assets/images/common/waterdrainage-icon.webp'
 import WaterStorageIcon from '~/assets/images/common/waterstorage-icon.webp'
-import WaterIssueIcon from '~/assets/images/common/waterissue-icon.webp'
+import WaterPondingIssueIcon from '~/assets/images/common/waterpondingissue-icon.webp'
 import WaterInfiltrationIcon from '~/assets/images/common/waterinfiltration-icon.webp'
 import LIDIcon from '~/assets/images/common/lid-icon.webp'
 </script>
@@ -17,9 +17,9 @@ import LIDIcon from '~/assets/images/common/lid-icon.webp'
         data-aos-duration="450"
         data-aos-easing="ease"
         :hover="true"
-        :imgSrc="WaterPondingIcon"
-        buttonName="雨水積水"
-        link="#"
+        :imgSrc="WaterDrainageIcon"
+        buttonName="雨水排水"
+        link="drainage"
       />
       <MenuLinkButton
         class="m-2 lg:m-4"
@@ -30,7 +30,7 @@ import LIDIcon from '~/assets/images/common/lid-icon.webp'
         :hover="true"
         :imgSrc="WaterStorageIcon"
         buttonName="雨水儲存"
-        link="#"
+        link="storage"
       />
       <MenuLinkButton
         class="m-2 lg:m-4"
@@ -61,7 +61,7 @@ import LIDIcon from '~/assets/images/common/lid-icon.webp'
         data-aos-duration="450"
         data-aos-easing="ease"
         :hover="true"
-        :imgSrc="WaterIssueIcon"
+        :imgSrc="WaterPondingIssueIcon"
         buttonName="各種積水問題"
         link="#"
       />
