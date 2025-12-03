@@ -4,6 +4,7 @@ import cardHorizontal from './cardHorizontal.vue'
 
 const props = withDefaults(
   defineProps<{
+    type?: 'main'
     layout?: 'vertical' | 'horizontal'
     imgSrc?: string
     title?: string

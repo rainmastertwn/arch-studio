@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-const { imgSrc, title, content, url } = defineProps<{
+const { type, imgSrc, title, content, url } = defineProps<{
+  type?: 'main'
   imgSrc?: string
   title?: string
   content?: string
@@ -9,7 +10,10 @@ const { imgSrc, title, content, url } = defineProps<{
 
 <template>
   <NuxtLink class="card-box" :to="url">
-    <div class="card-img overflow-hidden rounded-lg mb-6 lg:mb-8">
+    <div
+      class="card-img overflow-hidden r mb-6 lg:mb-8"
+      :class="type === 'main' ? 'rounded-3xl' : 'rounded-lg'"
+    >
       <img class="w-full" :src="imgSrc" />
     </div>
     <div class="card-content">

@@ -11,7 +11,7 @@ import CardArticle from '~/components/common/cardArticle/index.vue'
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 lg:gap-9 mb-6">
           <!-- left content -->
           <div>
-            <h3 class="mb-4 lg:mb-6">基地保水Q5、Q6、Q7</h3>
+            <h3 class="mb-4 lg:mb-6 font-bold">基地保水Q5、Q6、Q7</h3>
             <ul class="dot-list mb-6">
               <li>
                 <NuxtLink href="#">儲集框架的加分要點總整理</NuxtLink>
@@ -81,84 +81,84 @@ import CardArticle from '~/components/common/cardArticle/index.vue'
       </div>
       <!-- right list place -->
       <div class="col-span-1 md:col-span-3 lg:col-span-2">
-        <h4 class="mb-4 lg:mb-6">雨水再利用</h4>
+        <h4 class="mb-4 lg:mb-6 font-bold">雨水再利用</h4>
         <ul class="dot-list">
           <li>
             <NuxtLink href="#">
               地下儲水： <br />
-              儲集框架的加分要點總整理
+              <span class="max-text-one-lines">儲集框架的加分要點總整理</span>
             </NuxtLink>
           </li>
           <li>
             <NuxtLink href="#">
               地上型水撲滿： <br />
-              收集屋面雨水的流程供您參考
+              <span class="max-text-one-lines">收集屋面雨水的流程供您參考</span>
             </NuxtLink>
           </li>
         </ul>
 
         <div class="cross-line my-6 lg:my-10 hidden lg:block"></div>
 
-        <h4 class="mb-4 lg:mb-6">景觀排水</h4>
+        <h4 class="mb-4 lg:mb-6 font-bold">景觀排水</h4>
         <ul class="dot-list mb-6 lg:mb-0">
           <li>
             <NuxtLink href="#">
               雜草太多： <br />
-              優雅大方、極具質感的先進抑草蓆
+              <span class="max-text-one-lines">優雅大方、極具質感的先進抑草蓆</span>
             </NuxtLink>
           </li>
           <li>
             <NuxtLink href="#">
               表面分隔材： <br />
-              新款式的草皮分隔板幫助您分隔表面
+              <span class="max-text-one-lines">新款式的草皮分隔板幫助您分隔表面</span>
             </NuxtLink>
           </li>
           <li>
             <NuxtLink href="#">
               ≤30cm淺型花台排水： <br />
-              小型花卉、草本植物的淺型花台排水
+              <span class="max-text-one-lines">小型花卉、草本植物的淺型花台排水</span>
             </NuxtLink>
           </li>
           <li>
             <NuxtLink href="#">
               ≥30cm中型及深型花台： <br />
-              灌木、喬木等木本植物的植栽槽排水
+              <span class="max-text-one-lines">灌木、喬木等木本植物的植栽槽排水</span>
             </NuxtLink>
           </li>
           <li>
             <NuxtLink href="#">
               薄層綠屋頂：<br />
-              淺層綠屋頂的排水設計要點
+              <span class="max-text-one-lines">淺層綠屋頂的排水設計要點</span>
             </NuxtLink>
           </li>
           <li>
             <NuxtLink href="#">
               架高地板：<br />
-              兼具隔熱、排水的美觀新選擇
+              <span class="max-text-one-lines">兼具隔熱、排水的美觀新選擇</span>
             </NuxtLink>
           </li>
         </ul>
 
         <div class="cross-line my-6 lg:my-10 hidden lg:block"></div>
 
-        <h4 class="mb-4 lg:mb-6">城市建築排水</h4>
+        <h4 class="mb-4 lg:mb-6 font-bold">城市建築排水</h4>
         <ul class="dot-list">
           <li>
             <NuxtLink href="#">
               建築周圍： <br />
-              建築周圍的排水與防潮濕觀念彙整
+              <span class="max-text-one-lines">建築周圍的排水與防潮濕觀念彙整</span>
             </NuxtLink>
           </li>
           <li>
             <NuxtLink href="#">
               車道異音： <br />
-              擾人的車道異音解決方案
+              <span class="max-text-one-lines">擾人的車道異音解決方案</span>
             </NuxtLink>
           </li>
           <li>
             <NuxtLink href="#">
               屋頂： <br />
-              從點狀排水進階為線型排水
+              <span class="max-text-one-lines">從點狀排水進階為線型排水</span>
             </NuxtLink>
           </li>
         </ul>

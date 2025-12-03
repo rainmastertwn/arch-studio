@@ -44,15 +44,15 @@ onUnmounted(() => {
         />
         <img
           class="water fourth rellax"
-          data-rellax-speed="-3"
+          data-rellax-speed="-2"
           data-rellax-percentage="0.3"
           alt="water effect water "
           :src="waterEffectWater"
         />
         <img
           class="water fifth rellax"
-          data-rellax-speed="-5"
-          data-rellax-percentage="0.5"
+          data-rellax-speed="-1"
+          data-rellax-percentage="0.1"
           alt="water effect water "
           :src="waterEffectWater"
         />

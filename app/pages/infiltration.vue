@@ -15,12 +15,13 @@ import AdSection from '~/components/common/adSection.vue'
 
     <div class="cross-line my-10 lg:my-24"></div>
 
-    <h3 class="side-effect tracking-widest mb-10">最新上架</h3>
+    <h3 class="side-effect tracking-widest mb-10 font-bold">最新上架</h3>
 
-    <div class="grid grid-cols-1 lg:grid-cols-10 gap-4 md:gap-6 lg:gap-9 mb-10">
+    <div class="grid grid-cols-1 lg:grid-cols-9 gap-4 md:gap-6 lg:gap-9 mb-10">
       <div class="col-span-6">
         <CardArticle
           class="mb-6"
+          type="main"
           title="綠地排水：可快速收集地表逕流水並快速導入地下轉為滲透水的雙重排水方式"
           layout="vertical"
           imgSrc="https://picsum.photos/525/350"
@@ -60,27 +61,35 @@ import AdSection from '~/components/common/adSection.vue'
 
         <AdSection imgSrc="https://placehold.co/728x90?text=AD" />
       </div>
-      <div class="col-span-4">
+      <div class="col-span-3">
         <div class="side-effect mb-10">
-          <h4 class="tracking-widest mb-6">常見問題</h4>
+          <h4 class="tracking-widest mb-6 font-bold">常見問題</h4>
           <ul class="dot-list">
             <li>
-              <NuxtLink href="#">儲集框架的加分要點總整理</NuxtLink>
+              <NuxtLink class="max-text-one-lines" href="#">儲集框架的加分要點總整理</NuxtLink>
             </li>
             <li>
-              <NuxtLink href="#">滲透排水管管徑與滲透係數及米數的加分關係</NuxtLink>
+              <NuxtLink class="max-text-one-lines" href="#"
+                >滲透排水管管徑與滲透係數及米數的加分關係</NuxtLink
+              >
             </li>
             <li>
-              <NuxtLink href="#">滲透陰井大小及個數與計分的相應關係</NuxtLink>
+              <NuxtLink class="max-text-one-lines" href="#"
+                >滲透陰井大小及個數與計分的相應關係</NuxtLink
+              >
             </li>
             <li>
-              <NuxtLink href="#">儲集框架的加分要點總整理</NuxtLink>
+              <NuxtLink class="max-text-one-lines" href="#">儲集框架的加分要點總整理</NuxtLink>
             </li>
             <li>
-              <NuxtLink href="#">滲透排水管管徑與滲透係數及米數的加分關係</NuxtLink>
+              <NuxtLink class="max-text-one-lines" href="#"
+                >滲透排水管管徑與滲透係數及米數的加分關係</NuxtLink
+              >
             </li>
             <li>
-              <NuxtLink href="#">滲透陰井大小及個數與計分的相應關係</NuxtLink>
+              <NuxtLink class="max-text-one-lines" href="#"
+                >滲透陰井大小及個數與計分的相應關係</NuxtLink
+              >
             </li>
           </ul>
         </div>

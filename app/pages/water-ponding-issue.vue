@@ -15,8 +15,9 @@ import AdSection from '~/components/common/adSection.vue'
 
     <div class="cross-line my-10 lg:my-24"></div>
 
+    <!-- 大家都在問 -->
     <div class="my-10 lg:my-24">
-      <h3 class="side-effect mb-6 lg:mb-10">大家都在問</h3>
+      <h3 class="side-effect mb-6 lg:mb-10 font-bold">大家都在問</h3>
 
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-9 mb-6">
         <CardArticle
@@ -42,5 +43,8 @@ import AdSection from '~/components/common/adSection.vue'
         />
       </div>
     </div>
+
+    <!-- 篩選 -->
+    <div class="my-10 lg:my-24">test 123</div>
   </section>
 </template>

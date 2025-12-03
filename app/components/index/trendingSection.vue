@@ -10,7 +10,7 @@ import CardArticle from '~/components/common/cardArticle/index.vue'
       <div class="col-span-1 md:col-span-5 lg:col-span-8">
         <!-- top content -->
         <div class="mb-10">
-          <h3 class="side-effect mb-6 lg:mb-10">大家都在看</h3>
+          <h3 class="side-effect mb-6 lg:mb-10 font-bold">大家都在看</h3>
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-9 mb-6">
             <CardArticle
               title="塑膠製儲集框架與RC儲水池差別之處"
@@ -39,7 +39,7 @@ import CardArticle from '~/components/common/cardArticle/index.vue'
         <div class="cross-line my-6 lg:my-10"></div>
         <!-- filter content -->
         <div class="mb-10">
-          <h3 class="side-effect mb-6 lg:mb-10">篩選</h3>
+          <h3 class="side-effect mb-6 lg:mb-10 font-bold">篩選</h3>
 
           <div class="filter-box mb-6 lg:mb-10">
             <button class="filter-item active mr-4 mb-4 lg:mb-0">排水管</button>
@@ -87,48 +87,48 @@ import CardArticle from '~/components/common/cardArticle/index.vue'
       </div>
       <!-- right list place -->
       <div class="col-span-1 md:col-span-3 lg:col-span-2">
-        <h4 class="mb-4 lg:mb-6">公共空間排水</h4>
+        <h4 class="mb-4 lg:mb-6 font-bold">公共空間排水</h4>
         <ul class="dot-list">
           <li>
             <NuxtLink href="#">
               地下儲水： <br />
-              儲集框架的加分要點總整理
+              <span class="max-text-one-lines">儲集框架的加分要點總整理</span>
             </NuxtLink>
           </li>
           <li>
             <NuxtLink href="#">
               地上型水撲滿： <br />
-              收集屋面雨水的流程供您參考
+              <span class="max-text-one-lines">收集屋面雨水的流程供您參考</span>
             </NuxtLink>
           </li>
           <li>
             <NuxtLink href="#">
               地上型水撲滿： <br />
-              收集屋面雨水的流程供您參考
+              <span class="max-text-one-lines">收集屋面雨水的流程供您參考</span>
             </NuxtLink>
           </li>
           <li>
             <NuxtLink href="#">
               地上型水撲滿： <br />
-              收集屋面雨水的流程供您參考
+              <span class="max-text-one-lines">收集屋面雨水的流程供您參考</span>
             </NuxtLink>
           </li>
           <li>
             <NuxtLink href="#">
               地上型水撲滿： <br />
-              收集屋面雨水的流程供您參考
+              <span class="max-text-one-lines">收集屋面雨水的流程供您參考</span>
             </NuxtLink>
           </li>
           <li>
             <NuxtLink href="#">
               地上型水撲滿： <br />
-              收集屋面雨水的流程供您參考
+              <span class="max-text-one-lines">收集屋面雨水的流程供您參考</span>
             </NuxtLink>
           </li>
           <li>
             <NuxtLink href="#">
               地上型水撲滿： <br />
-              收集屋面雨水的流程供您參考
+              <span class="max-text-one-lines">收集屋面雨水的流程供您參考</span>
             </NuxtLink>
           </li>
         </ul>

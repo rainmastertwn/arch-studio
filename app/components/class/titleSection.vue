@@ -47,7 +47,7 @@ const computedButtonImgSrc = computed(() => {
     </div>
     <div class="col-span-1 lg:col-span-8 flex flex-col justify-end">
       <h2
-        class="mb-4"
+        class="mb-4 font-bold"
         data-aos="fade-up"
         data-aos-delay="200"
         data-aos-duration="450"
