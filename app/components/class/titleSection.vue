@@ -31,7 +31,7 @@ const computedButtonImgSrc = computed(() => {
 </script>
 
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-10 gap-6 lg:gap-8 my-10 lg:my-20">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-9 gap-6 lg:gap-8 my-10 lg:my-20">
     <div class="col-span-1 lg:col-span-2">
       <MenuLinkButton
         class="max-w-60 mx-auto lg:max-w-none mb-4 lg:mb-0"
@@ -45,7 +45,7 @@ const computedButtonImgSrc = computed(() => {
         link="#"
       />
     </div>
-    <div class="col-span-1 lg:col-span-8 flex flex-col justify-end">
+    <div class="col-span-1 lg:col-span-7 flex flex-col justify-end">
       <h2
         class="mb-4 font-bold"
         data-aos="fade-up"

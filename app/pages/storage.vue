@@ -5,7 +5,7 @@ import AdSection from '~/components/common/adSection.vue'
 </script>
 
 <template>
-  <section class="container">
+  <section class="container lg:max-w-7xl">
     <TitleSection
       title="雨水儲存"
       buttonImgSrc="waterStorage"

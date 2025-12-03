@@ -13,7 +13,7 @@ const props = withDefaults(
 </script>
 
 <template>
-  <div class="w-full m my-8">
+  <div class="w-full">
     <div class="overflow-hidden rounded-lg mx-auto" :style="{ maxWidth: props.maxWidth }">
       <img class="w-full" alt="占位圖" :src="props.imgSrc" />
     </div>

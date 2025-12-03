@@ -41,7 +41,7 @@ import CardArticle from '~/components/common/cardArticle/index.vue'
         <div class="mb-10">
           <h3 class="side-effect mb-6 lg:mb-10 font-bold">篩選</h3>
 
-          <div class="filter-box mb-6 lg:mb-10">
+          <div class="flex flex-wrap items-center mb-6 lg:mb-10">
             <button class="filter-item active mr-4 mb-4 lg:mb-0">排水管</button>
             <button class="filter-item mr-4 mb-4 lg:mb-0">截水溝</button>
             <button class="filter-item mr-4 mb-4 lg:mb-0">陰井</button>
