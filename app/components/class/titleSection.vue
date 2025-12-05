@@ -5,6 +5,7 @@ import WaterStorageIcon from '~/assets/images/common/waterstorage-icon.webp'
 import WaterInfiltrationIcon from '~/assets/images/common/waterinfiltration-icon.webp'
 import lidIcon from '~/assets/images/common/lid-icon.webp'
 import WaterPondingIssueIcon from '~/assets/images/common/waterpondingissue-icon.webp'
+import VideoIcon from '~/assets/images/common/video-icon.webp'
 const props = defineProps<{
   buttonImgSrc?: string
   title: string
@@ -24,6 +25,8 @@ const computedButtonImgSrc = computed(() => {
       return lidIcon
     case 'water-ponding-issue':
       return WaterPondingIssueIcon
+    case 'video':
+      return VideoIcon
     default:
       return ''
   }

@@ -28,7 +28,7 @@ const props = withDefaults(
         </div>
       </div>
       <div class="card-content flex flex-col">
-        <h4 class="mb-6 max-text-two-lines leading-8">
+        <h4 class="mb-6 max-text-two-lines leading-6">
           {{ props.title }}
         </h4>
 

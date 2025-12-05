@@ -268,61 +268,103 @@ import AdSection from '~/components/common/adSection.vue'
         <h4 class="mb-6 font-bold">你可能感興趣</h4>
         <ul class="dot-list grid grid-cols-2 lg:grid-cols-3 gap-3 mb-6 lg:mb-10">
           <li>
-            <NuxtLink href="#">儲集框架的加分要點總整理</NuxtLink>
+            <NuxtLink href="#">
+              建築周圍： <br />
+              <span class="max-text-one-lines">建築周圍的排水與防潮濕觀念彙整</span>
+            </NuxtLink>
           </li>
           <li>
-            <NuxtLink href="#">滲透排水管管徑與滲透係數及米數的加分關係</NuxtLink>
+            <NuxtLink href="#">
+              車道異音： <br />
+              <span class="max-text-one-lines">擾人的車道異音解決方案</span>
+            </NuxtLink>
           </li>
           <li>
-            <NuxtLink href="#">滲透陰井大小及個數與計分的相應關係</NuxtLink>
+            <NuxtLink href="#">
+              屋頂： <br />
+              <span class="max-text-one-lines">從點狀排水進階為線型排水</span>
+            </NuxtLink>
           </li>
           <li>
-            <NuxtLink href="#">儲集框架的加分要點總整理</NuxtLink>
+            <NuxtLink href="#">
+              建築周圍： <br />
+              <span class="max-text-one-lines">建築周圍的排水與防潮濕觀念彙整</span>
+            </NuxtLink>
           </li>
           <li>
-            <NuxtLink href="#">滲透排水管管徑與滲透係數及米數的加分關係</NuxtLink>
+            <NuxtLink href="#">
+              車道異音： <br />
+              <span class="max-text-one-lines">擾人的車道異音解決方案</span>
+            </NuxtLink>
           </li>
           <li>
-            <NuxtLink href="#">滲透陰井大小及個數與計分的相應關係</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink href="#">儲集框架的加分要點總整理</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink href="#">滲透排水管管徑與滲透係數及米數的加分關係</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink href="#">滲透陰井大小及個數與計分的相應關係</NuxtLink>
+            <NuxtLink href="#">
+              屋頂： <br />
+              <span class="max-text-one-lines">從點狀排水進階為線型排水</span>
+            </NuxtLink>
           </li>
         </ul>
         <h4 class="mb-6 font-bold">常見問題</h4>
         <ul class="dot-list grid grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
           <li>
-            <NuxtLink href="#">儲集框架的加分要點總整理</NuxtLink>
+            <NuxtLink href="#">
+              <span class="max-text-one-lines">儲集框架的加分要點總整理</span>
+            </NuxtLink>
           </li>
           <li>
-            <NuxtLink href="#">滲透排水管管徑與滲透係數及米數的加分關係</NuxtLink>
+            <NuxtLink href="#">
+              <span class="max-text-one-lines">滲透排水管管徑與滲透係數及米數的加分關係</span>
+            </NuxtLink>
           </li>
           <li>
-            <NuxtLink href="#">滲透陰井大小及個數與計分的相應關係</NuxtLink>
+            <NuxtLink href="#">
+              <span class="max-text-one-lines">儲集框架的加分要點總整理</span>
+            </NuxtLink>
           </li>
           <li>
-            <NuxtLink href="#">儲集框架的加分要點總整理</NuxtLink>
+            <NuxtLink href="#">
+              <span class="max-text-one-lines">滲透排水管管徑與滲透係數及米數的加分關係</span>
+            </NuxtLink>
           </li>
           <li>
-            <NuxtLink href="#">滲透排水管管徑與滲透係數及米數的加分關係</NuxtLink>
+            <NuxtLink href="#">
+              <span class="max-text-one-lines">儲集框架的加分要點總整理</span>
+            </NuxtLink>
           </li>
           <li>
-            <NuxtLink href="#">滲透陰井大小及個數與計分的相應關係</NuxtLink>
+            <NuxtLink href="#">
+              <span class="max-text-one-lines">滲透排水管管徑與滲透係數及米數的加分關係</span>
+            </NuxtLink>
           </li>
           <li>
-            <NuxtLink href="#">儲集框架的加分要點總整理</NuxtLink>
+            <NuxtLink href="#">
+              <span class="max-text-one-lines">儲集框架的加分要點總整理</span>
+            </NuxtLink>
           </li>
           <li>
-            <NuxtLink href="#">滲透排水管管徑與滲透係數及米數的加分關係</NuxtLink>
+            <NuxtLink href="#">
+              <span class="max-text-one-lines">滲透排水管管徑與滲透係數及米數的加分關係</span>
+            </NuxtLink>
           </li>
           <li>
-            <NuxtLink href="#">滲透陰井大小及個數與計分的相應關係</NuxtLink>
+            <NuxtLink href="#">
+              <span class="max-text-one-lines">儲集框架的加分要點總整理</span>
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink href="#">
+              <span class="max-text-one-lines">滲透排水管管徑與滲透係數及米數的加分關係</span>
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink href="#">
+              <span class="max-text-one-lines">儲集框架的加分要點總整理</span>
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink href="#">
+              <span class="max-text-one-lines">滲透排水管管徑與滲透係數及米數的加分關係</span>
+            </NuxtLink>
           </li>
         </ul>
       </div>

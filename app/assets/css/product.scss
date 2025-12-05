@@ -1,0 +1,11 @@
+.product {
+  &-more-tag {
+    display: block;
+    padding: 4px;
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid var(--color-gray-set);
+    border-radius: 25px;
+  }
+}
