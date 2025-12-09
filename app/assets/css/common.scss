@@ -184,3 +184,16 @@ ul.dot-list {
   height: 1px;
   background-color: var(--color-gray-bababa);
 }
+
+.link-btn {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid var(--color-gray-9ea6b9);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: var(--box-shadow-set);
+  }
+}
