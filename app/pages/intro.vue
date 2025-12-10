@@ -114,15 +114,15 @@ const closeImagePreview = () => {
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-9 mb-10 lg:mb-15">
       <div class="col-span-1 lg:col-span-7">
         <p class="tracking-widest">
-          內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內
-          內文內文內文內文內文內文內文內文內文內文內文文內文內文內文內文內文內文內文內文內文內文內文
-          內文內文內文內文內文內文內文內文內文內文內文文內文內文內文內文內文內文內文內文內文內文內文
-          內文內文內文內文內文內文內文內文內文內文內文文內文內文內文內文內文內文內文內文內文內文內文
-          內文內文內文內文內文內文內文內文內文內文內文文內文內文內文內文內文內文內文內文內文內文內文
+          ．花台的排水方法歸納於人工地盤的排水方式，此排水方式主要的目的是將土壤與混凝土隔絕開來進而保護建築結構。<br />
+          ．花台底部應鋪設蓄水排水板或雙面排水板創造出一個排水透氣層。<br />
+          ．花台壁緣部分應鋪設防根防潮板阻止植物根部酸蝕花台，也可避免長期潮濕導致牆面白華發霉產生壁癌。<br />
+          ．花台的表面可採用PP集水陰井或微型陰井並搭配鑄鋁蓋、攔葉器、落水頭，可解決表面積水問題也可防止排水系統堵塞。<br />
+          ．如為深層花台(深度>40cm)可於適當距離埋設HDPE透水通氣管使花台土壤潤而不濕。<br />
         </p>
       </div>
       <div class="col-span-1 lg:col-span-5">
-        <div class="flex items-center justify-center">
+        <div class="flex items-center justify-end">
           <AdSection class="max-w-[300px]" imgSrc="https://placehold.co/300x250?text=AD" />
         </div>
       </div>
