@@ -73,7 +73,7 @@ const suggestionTableData = ref([
 <template>
   <section class="container">
     <!-- 標題 -->
-    <div class="my-6 lg:my-24">
+    <div class="my-12 lg:my-24">
       <h2 class="tracking-widest font-bold mb-6">基地保水Q5：儲集框架的加分要點總整理</h2>
       <p class="text-sm leading-6">
         在基地保水評估中，儲集框架是提升整體系統效能的重要環節。良好的設計不僅有助於暫存雨水，還能兼顧維護性與結構安全性。Q5項目評分標準著重於儲集空間的設置方式、材質選擇與功能配置，設計得宜即可取得額外加分。掌握各項設計細節與規範要求，有助於在規劃階段提前強化保水表現。

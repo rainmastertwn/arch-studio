@@ -66,22 +66,30 @@ import AdSection from '~/components/common/adSection.vue'
           <h4 class="tracking-widest mb-6 font-bold">常見問題</h4>
           <ul class="dot-list">
             <li>
-              <NuxtLink href="#">儲集框架的加分要點總整理</NuxtLink>
+              <NuxtLink class="max-text-one-lines" href="#">儲集框架的加分要點總整理</NuxtLink>
             </li>
             <li>
-              <NuxtLink href="#">滲透排水管管徑與滲透係數及米數的加分關係</NuxtLink>
+              <NuxtLink class="max-text-one-lines" href="#"
+                >滲透排水管管徑與滲透係數及米數的加分關係</NuxtLink
+              >
             </li>
             <li>
-              <NuxtLink href="#">滲透陰井大小及個數與計分的相應關係</NuxtLink>
+              <NuxtLink class="max-text-one-lines" href="#"
+                >滲透陰井大小及個數與計分的相應關係</NuxtLink
+              >
             </li>
             <li>
-              <NuxtLink href="#">儲集框架的加分要點總整理</NuxtLink>
+              <NuxtLink class="max-text-one-lines" href="#">儲集框架的加分要點總整理</NuxtLink>
             </li>
             <li>
-              <NuxtLink href="#">滲透排水管管徑與滲透係數及米數的加分關係</NuxtLink>
+              <NuxtLink class="max-text-one-lines" href="#"
+                >滲透排水管管徑與滲透係數及米數的加分關係</NuxtLink
+              >
             </li>
             <li>
-              <NuxtLink href="#">滲透陰井大小及個數與計分的相應關係</NuxtLink>
+              <NuxtLink class="max-text-one-lines" href="#"
+                >滲透陰井大小及個數與計分的相應關係</NuxtLink
+              >
             </li>
           </ul>
         </div>

@@ -17,7 +17,7 @@ const { type, imgSrc, title, content, url } = defineProps<{
       <img class="w-full" :src="imgSrc" />
     </div>
     <div class="card-content">
-      <h3 class="mb-6 max-text-two-lines leading-8">{{ title }}</h3>
+      <h4 class="mb-6 max-text-two-lines leading-8">{{ title }}</h4>
       <p class="text-sm text-gray-888888 text-justify max-text-two-lines leading-6">
         {{ content }}
       </p>

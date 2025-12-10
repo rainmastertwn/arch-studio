@@ -24,7 +24,7 @@ const toggleMenu = (): void => {
     <div class="container">
       <ul class="mx-2 mt-[60px] flex flex-col">
         <li v-for="item in menuItems" :key="item.label">
-          <NuxtLink class="text-xl" :href="item.to">
+          <NuxtLink class="text-xl" :to="item.to">
             {{ item.label }}
           </NuxtLink>
         </li>
