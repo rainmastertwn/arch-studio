@@ -1,18 +1,19 @@
 <script lang="ts" setup>
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 import Header from './layout/header.vue'
 import Footer from './layout/footer.vue'
 
-onMounted(() => {
-  AOS.init({
-    once: true
-  })
-})
+const isWrapperHovering = ref<boolean>(false)
+const wrapperHover = (isHovering: boolean): void => {
+  isWrapperHovering.value = isHovering
+}
 
-// TODO
+provide('wrapperHover', readonly(isWrapperHovering))
+
 useHead({
   title: 'ARCH STUDIO',
+  htmlAttrs: {
+    lang: 'zh-Hant'
+  },
   meta: [
     {
       name: 'viewport',
@@ -29,11 +30,11 @@ useHead({
     },
     {
       name: 'thumbnail',
-      content: '/shareImage.avif'
+      content: '/shareImage.png'
     },
     {
       property: 'og:image',
-      content: '/shareImage.avif'
+      content: '/shareImage.png'
     },
     {
       property: 'og:url',
@@ -49,48 +50,61 @@ useHead({
     },
     {
       property: 'og:image',
-      content: '/shareImage.avif'
+      content: '/shareImage.png'
     },
     {
       property: 'og:description',
       content: 'ARCH STUDIO'
     }
   ],
-  // google fonts setting
-  link: [
-    {
-      rel: 'preconnect',
-      href: 'https://fonts.googleapis.com'
-    },
-    {
-      rel: 'preconnect',
-      href: 'https://fonts.gstatic.com',
-      crossorigin: 'anonymous'
-    },
-    {
-      rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap'
-    }
-  ],
   script: [
-    // {
-    //   src: 'https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js',
-    //   integrity:
-    //     'sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==',
-    //   crossorigin: 'anonymous',
-    //   referrerpolicy: 'no-referrer',
-    //   defer: true
-    // }
+    {
+      src: 'https://www.googletagmanager.com/gtag/js?id=AW-11422925387',
+      async: true
+    },
+    {
+      textContent: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-11422925387');
+      `,
+      type: 'text/javascript'
+    },
+    {
+      textContent: `
+        (function() {
+          const darkMode = localStorage.getItem('archStudio-dark-mode');
+          const isDark = darkMode !== null ? darkMode === 'true' : false;
+
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+          }
+        })();
+      `,
+      type: 'text/javascript',
+      tagPosition: 'head'
+    }
   ]
 })
 </script>
 
 <template>
-  <div>
-    <Header />
-    <NuxtPage />
-    <Footer />
-  </div>
+  <!-- wrapper circle hover function-->
+  <main class="p-2 lg:p-5">
+    <div
+      class="wrapper-circle container overflow-hidden rounded-[72px] p-0 lg:rounded-[92px] lg:p-5"
+      :class="{ hovered: isWrapperHovering }"
+      @mouseenter="wrapperHover(true)"
+      @mouseleave="wrapperHover(false)"
+    >
+      <div class="wrapper bg-white-set h-full w-full rounded-[72px] p-5">
+        <Header />
+        <NuxtPage />
+        <Footer />
+      </div>
+    </div>
+  </main>
 </template>
 
 <style lang="scss">
@@ -102,14 +116,37 @@ body {
   margin: 0;
   font-size: 16px;
   font-family: 'Noto Sans TC', sans-serif;
-  color: var(--color-black);
-  background-color: var(--color-white-set);
+  color: var(--color-blue-set);
+  background-color: #fff;
   letter-spacing: 0.1rem;
+}
+
+html.dark {
+  body {
+    color: var(--color-blue-set);
+    background-color: var(--color-white-set);
+  }
 }
 
 // set mobile/pad can not swipe to left / right
 body {
   overflow: hidden scroll;
   width: 100% !important; // fixed mobile dialog toggle bug
+}
+
+.wrapper-circle {
+  width: calc(100% - 40px);
+  min-height: calc(100vh - 40px);
+  border: 3px solid #fdfdfd;
+  transition: all 0.4s ease;
+
+  @media (width < 64rem) {
+    width: calc(100% - 16px);
+    border: 3px solid var(--color-green);
+  }
+
+  &.hovered {
+    border: 3px solid var(--color-green);
+  }
 }
 </style>

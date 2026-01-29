@@ -11,22 +11,25 @@
     "deploy": "nuxt generate && gh-pages --dotfiles -d .output/public -m 'Deploy to GitHub Pages'"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
     "@element-plus/nuxt": "^1.1.4",
     "@nuxt/image": "npm:@nuxt/image-nightly@^2.0.0-20250811-090357-fa391c5",
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/robots": "^5.6.7",
+    "@nuxtjs/sitemap": "^7.5.2",
     "@tailwindcss/vite": "^4.1.11",
-    "aos": "^2.3.4",
     "element-plus": "^2.10.6",
     "nuxt": "^4.0.2",
-    "rellax": "^1.12.1",
+    "nuxt-vitalizer": "^2.0.0",
     "sass": "^1.89.2",
     "swiper": "^11.2.10",
     "tailwindcss": "^4.1.11",
     "vue": "^3.5.18",
     "vue-router": "^4.5.1"
   },
-  "packageManager": "pnpm@10.14.0+sha512.ad27a79641b49c3e481a16a805baa71817a04bbe06a38d17e60e2eaee83f6a146c6a688125f5792e48dd5ba30e7da52a5cda4c3992b9ccf333f9ce223af84748",
   "devDependencies": {
     "@types/node": "^24.5.2",
+    "baseline-browser-mapping": "^2.9.18",
     "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
     "postcss-html": "^1.8.0",

@@ -1,26 +1,5 @@
 @import 'tailwindcss';
-
-@theme static {
-  --breakpoint-sm: 640px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 1024px;
-  --breakpoint-xl: 1280px;
-  --breakpoint-xxl: 1536px;
-
-  --color-black: #555;
-  --color-white-set: #f7f7f7;
-  --color-gray-set: #b5b5b5;
-  --color-gray-bababa: #bababa;
-  --color-gray-9ea6b9: #9ea6b9;
-  --color-gray-d9d9d9: #d9d9d9;
-  --color-gray-8994a6: #8994a6;
-  --color-gray-888888: #888888;
-  --color-gray-eaeaea: #eaeaea;
-
-  --transition-set: cubic-bezier(0.68, -0.6, 0.32, 1.6);
-  --box-shadow-set: rgb(50, 50, 93, 0.25) 0 13px 27px -5px, rgb(0, 0, 0, 0.3) 0 8px 16px -8px;
-}
-
+@custom-variant dark (&:where(.dark, .dark *));
 /* 
   sm	40rem (640px)	@media (width >= 40rem) { ... }
   md	48rem (768px)	@media (width >= 48rem) { ... }
@@ -33,34 +12,65 @@
   max-lg	@media (width < 64rem)
   max-xl	@media (width < 80rem)
   max-2xl	@media (width < 96rem) 
+
+  --radius-outside: 92px;
+  --radius-middle: 72px;
+  --radius-inside: 32px;
+  --radius-small: 16px;
 */
-@utility container {
-  margin-inline: auto;
-  padding-inline: 1rem;
+@theme static {
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-xxl: 1536px;
 
-  /* @media (width < 48rem) {
-    padding-inline: 1rem;
-  } */
+  --color-blue-set: #2c3847;
+  --color-blue-fixed: #2c3847;
+  --color-white-set: #f8f8f8;
+  --color-white-fixed: #f8f8f8;
+  --color-medium-gray: #dedede;
+  --color-green: #0fde8c;
+  --color-light-blue: #1ab0fc;
 }
-
-/* tailwind css set h1 h2 h3 h4 h5 h6 style */
 @layer base {
-  h1 {
+  :root {
+    --color-white-set: #f8f8f8;
+    --color-blue-set: #2c3847;
+    --color-medium-gray: #dedede;
+    --list-hover-set: rgb(0, 0, 0, 0.3);
+  }
+
+  .dark {
+    --color-white-set: #2c3847;
+    --color-blue-set: #f8f8f8;
+    --color-medium-gray: #2c3847;
+    --list-hover-set: rgb(255, 255, 255, 0.35);
+  }
+  /* h1 {
     @apply text-4xl font-bold text-black;
   }
   h2 {
     @apply text-3xl font-semibold text-black;
   }
+  */
   h3 {
-    @apply text-2xl font-medium text-black;
+    @apply text-2xl;
   }
   h4 {
-    @apply text-xl font-medium text-black;
+    @apply text-xl;
   }
   h5 {
-    @apply text-lg font-medium text-black;
+    @apply text-lg;
   }
+
   h6 {
-    @apply text-base font-medium text-black;
+    @apply text-base;
   }
+}
+
+@utility container {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 1rem;
 }

@@ -1,83 +1,174 @@
 <script lang="ts" setup>
-import { menuItems } from './menu'
+import DonateIcon from '@/assets/images/icons/donate.svg'
+const wrapperHover = inject<Ref<boolean>>('wrapperHover')
 const currentYear = ref(new Date().getFullYear())
 </script>
 
 <template>
-  <footer class="px-4 py-8 text-white lg:px-0 lg:pt-[50px] lg:pb-8 relative">
-    <div class="container mb-8 lg:mb-14">
-      <div class="container grid grid-cols-1 lg:grid-cols-5 gap-4">
-        <div class="cols-span-1 lg:col-span-2 order-4 lg:order-1">
-          <img class="mb-10" src="~/assets/images/archstudio-logo-white.webp" alt="" srcset="" />
-          <p class="text-sm leading-10">
-            相關排水問題及照片歡迎來信詢問， <br />
-            您的問題可能會成為網頁裡的一則內容喔！<br />
-            <a href="mailto:astu@archstudio.com.tw">astu@archstudio.com.tw</a>
-          </p>
-        </div>
-        <div class="col-span-1 flex flex-col order-1 lg:order-2 mb-2 lg:mb-0">
-          <h4 class="text-xl font-bold mb-4 tracking-[8px] text-white-set">雨水共存</h4>
-          <NuxtLink
-            class="text-sm font-light text-gray-bababa"
-            :class="{ 'mb-4': index < menuItems.length - 1 }"
-            v-for="(item, index) in menuItems"
-            :key="item.label"
-            :to="item.to"
-          >
-            {{ item.label }}
-          </NuxtLink>
-        </div>
-        <div class="col-span-1 flex flex-col order-2 lg:order-3 mb-2 lg:mb-0">
-          <h4 class="text-xl font-bold mb-4 tracking-[8px] text-white-set">實驗室</h4>
-          <NuxtLink class="text-sm font-light text-gray-bababa mb-4" href="#">SGS 實驗室</NuxtLink>
-          <NuxtLink class="text-sm font-light text-gray-bababa mb-4" href="#">UL 實驗室</NuxtLink>
-          <NuxtLink class="text-sm font-light text-gray-bababa mb-4" href="#"
-            >TGS 標準實驗</NuxtLink
-          >
-          <NuxtLink class="text-sm font-light text-gray-bababa mb-4" href="#"
-            >TAF 全國認證基金會</NuxtLink
-          >
-        </div>
-        <div class="col-span-1 flex flex-col order-3 lg:order-4 mb-2 lg:mb-0">
-          <h4 class="text-xl font-bold mb-4 tracking-[8px] text-white-set">長期贊助商</h4>
-          <NuxtLink class="text-sm font-light text-gray-bababa mb-4" href="#"
-            >意動創新有限公司</NuxtLink
-          >
-          <NuxtLink class="text-sm font-light text-gray-bababa mb-4" href="#"
-            >正在旺企業有限公司</NuxtLink
-          >
-        </div>
+  <footer
+    class="bg-blue-fixed text-white-fixed dark:border-white-fixed rounded-[52px] border-2 border-transparent p-5 lg:p-9"
+  >
+    <div class="mb-8 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-5">
+      <div class="border-white-fixed self-start rounded-[14px] border-2 p-4">
+        <h5 class="mb-3">相關查詢</h5>
+        <ul class="">
+          <li class="mb-1 font-light">
+            <NuxtLink class="link-hover-white" href="#">1968 路況網</NuxtLink>
+          </li>
+          <li class="mb-1 font-light">
+            <NuxtLink class="link-hover-white" href="#">國土測繪服務雲</NuxtLink>
+          </li>
+          <li class="mb-1 font-light">
+            <NuxtLink class="link-hover-white" href="#">交通部中央氣象局</NuxtLink>
+          </li>
+          <li class="mb-1 font-light">
+            <NuxtLink class="link-hover-white" href="#">台灣水庫即時水情</NuxtLink>
+          </li>
+          <li class="mb-1 font-light">
+            <NuxtLink class="link-hover-white" href="#">今日電力資訊</NuxtLink>
+          </li>
+          <li class="font-light">
+            <NuxtLink class="link-hover-white" href="#">公開資訊觀測站</NuxtLink>
+          </li>
+        </ul>
       </div>
-
-      <!-- cross line -->
-      <div class="h-[1px] bg-gray-bababa w-full my-6 lg:my-10"></div>
-
-      <!-- copyright -->
-      <div class="flex flex-col lg:flex-row items-center justify-between">
-        <div class="flex items-center mb-4 lg:mb-0">
-          <img class="mr-4" src="~/assets/images/donate-icon.webp" alt="" srcset="" />
-          <p class="text-sm text-gray-bababa">
-            您的支持是我們進步的力量，請協助我們，讓我們擁有足夠資源呈現出更好的內容
-          </p>
-        </div>
-        <div>
-          <span class="flex justify-center text-sm text-gray-bababa">
-            Copyright © {{ currentYear }} ARCH STUDIO. 保留一切權利。
-          </span>
-        </div>
+      <div class="border-white-fixed self-start rounded-[14px] border-2 p-4">
+        <h5 class="mb-3">出差專區</h5>
+        <ul class="">
+          <li class="mb-1 font-light">
+            <NuxtLink class="link-hover-white" href="#">agoda</NuxtLink>
+          </li>
+          <li class="mb-1 font-light">
+            <NuxtLink class="link-hover-white" href="#">booking.com</NuxtLink>
+          </li>
+          <li class="mb-1 font-light">
+            <NuxtLink class="link-hover-white" href="#">易遊網</NuxtLink>
+          </li>
+          <li class="mb-1 font-light">
+            <NuxtLink class="link-hover-white" href="#">立榮航空</NuxtLink>
+          </li>
+          <li class="mb-1 font-light">
+            <NuxtLink class="link-hover-white" href="#">台灣高鐵</NuxtLink>
+          </li>
+          <li class="font-light">
+            <NuxtLink class="link-hover-white" href="#">台灣鐵路</NuxtLink>
+          </li>
+        </ul>
       </div>
+      <div
+        class="ngo self-start rounded-[14px] border-4 border-transparent p-4"
+        :class="{ hovered: wrapperHover }"
+      >
+        <h5 class="mb-3">友善環境(NGO)</h5>
+        <ul class="">
+          <li class="mb-1 font-light">
+            <NuxtLink class="link-hover-white" href="#">世界自然基金會</NuxtLink>
+          </li>
+          <li class="mb-1 font-light">
+            <NuxtLink class="link-hover-white" href="#">國際自然保護聯盟</NuxtLink>
+          </li>
+          <li class="mb-1 font-light">
+            <NuxtLink class="link-hover-white" href="#">綠色十字會</NuxtLink>
+          </li>
+          <li class="mb-1 font-light">
+            <NuxtLink class="link-hover-white" href="#">ASOC南大洋聯盟</NuxtLink>
+          </li>
+          <li class="mb-1 font-light">
+            <NuxtLink class="link-hover-white" href="#">海洋保護基金會</NuxtLink>
+          </li>
+          <li class="mb-1 font-light">
+            <NuxtLink class="link-hover-white" href="#">海洋基金會</NuxtLink>
+          </li>
+          <li class="font-light">
+            <NuxtLink class="link-hover-white" href="#">海洋清潔行動組織</NuxtLink>
+          </li>
+
+          <p class="mt-8 flex items-center justify-end text-sm lg:mt-12">贊助</p>
+        </ul>
+      </div>
+      <div
+        class="mfr self-start rounded-[14px] border-4 border-transparent p-4"
+        :class="{ hovered: wrapperHover }"
+      >
+        <h5 class="mb-3">優質廠商</h5>
+        <ul class="">
+          <li class="mb-1 font-light">
+            <NuxtLink class="link-hover-white" href="#">
+              <span class="inline-block min-w-[55px] text-center">COINN</span>
+              意動創新
+            </NuxtLink>
+          </li>
+          <li class="mb-1 font-light">
+            <NuxtLink class="link-hover-white" href="#">
+              <span class="inline-block min-w-[55px] text-center">COINN</span>
+              雨水管理大師
+            </NuxtLink>
+          </li>
+          <li class="mb-1 font-light">
+            <NuxtLink>
+              <span class="mr-0.5 inline-block min-w-[55px] text-center">VG</span>
+              正在旺企業
+            </NuxtLink>
+          </li>
+          <li class="mb-1 font-light">
+            <NuxtLink class="link-hover-white" href="#">
+              <span class="mr-0.5 inline-block min-w-[55px] text-center">RL</span>
+              預鑄截水溝
+            </NuxtLink>
+          </li>
+          <li class="mb-1 font-light">
+            <NuxtLink class="link-hover-white" href="#">
+              <span class="mr-0.5 inline-block min-w-[55px] text-center">RL</span>
+              雨水積磚
+            </NuxtLink>
+          </li>
+
+          <p class="mt-8 flex items-center justify-end text-sm lg:mt-12">贊助</p>
+        </ul>
+      </div>
+      <div
+        class="sp border-white-fixed flex flex-col items-center justify-center rounded-[14px] border-8 p-4"
+      >
+        <span class="mb-1 text-sm">Arch studio ads</span>
+        <img class="mb-1" alt="donate icon" :src="DonateIcon" />
+        <p>我想了解廣告贊助</p>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center justify-center">
+      <div class="mb-2 flex flex-col items-center justify-center gap-4 lg:flex-row">
+        <NuxtLink class="link-hover-white text-sm" href="https://www.pcc.gov.tw/" target="_blank">
+          行政院公共工程委員會
+        </NuxtLink>
+        <NuxtLink class="link-hover-white text-sm" href="https://maps.nlsc.gov.tw/" target="_blank">
+          國土測繪圖資服務雲
+        </NuxtLink>
+        <NuxtLink class="link-hover-white text-sm" href="https://www.abri.gov.tw/" target="_blank">
+          內政部建築研究所
+        </NuxtLink>
+        <NuxtLink class="link-hover-white text-sm" href="https://www.tabc.org.tw/" target="_blank">
+          財團法人台灣建築中心
+        </NuxtLink>
+      </div>
+      <p class="text-sm">Copyright © {{ currentYear }} Vigor Bonanza Inc. 保留一切權利。</p>
     </div>
   </footer>
 </template>
 
 <style lang="scss" scoped>
-$header-margin: 32px;
-$footer-img-path: '~/assets/images/footer.webp';
-
 footer {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url($footer-img-path);
+  .ngo,
+  .mfr,
+  .sp {
+    transition: all 0.4s ease;
+  }
+
+  .ngo.hovered {
+    border-color: var(--color-light-blue);
+  }
+
+  .mfr.hovered {
+    border-color: var(--color-green);
+  }
 }
 </style>

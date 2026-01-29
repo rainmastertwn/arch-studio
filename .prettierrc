@@ -5,9 +5,8 @@
   "trailingComma": "none",
   "plugins": [
     "prettier-plugin-vue",
-    "prettier-plugin-tailwindcss",
-    "prettier-plugin-organize-attributes"
+    "prettier-plugin-organize-attributes",
+    "prettier-plugin-tailwindcss"
   ],
-  "attributeGroups": ["$CODE_GUIDE"],
-  "overrides": []
+  "attributeGroups": ["$CODE_GUIDE"]
 }
