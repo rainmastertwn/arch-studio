@@ -1,24 +1,23 @@
 <script lang="ts" setup>
 import { Sunny, Moon } from '@element-plus/icons-vue'
-import LogoWhite from '@/assets/images/logo/logo-white.webp'
-import LogoColor from '@/assets/images/logo/logo-color.webp'
-import LogoWhiteWithWhiteFont from '@/assets/images/logo/logo-white@white.webp'
-import LogoColorWithWhiteFont from '@/assets/images/logo/logo-color@white.webp'
-import LogoGradient from '@/assets/images/logo/logo-gradient.webp'
-import iconType1 from '@/assets/images/icons/icon-type-1.webp'
-import iconType2 from '@/assets/images/icons/icon-type-2.webp'
-import iconType3 from '@/assets/images/icons/icon-type-3.webp'
-import iconType4 from '@/assets/images/icons/icon-type-4.webp'
-import iconType5 from '@/assets/images/icons/icon-type-5.webp'
-import iconType6 from '@/assets/images/icons/icon-type-6.webp'
-import AdBlock from '@/components/common/adBlock.vue'
+import LogoWhite from '~/assets/images/logo/logo-white.webp'
+import LogoColor from '~/assets/images/logo/logo-color.webp'
+import LogoWhiteWithWhiteFont from '~/assets/images/logo/logo-white@white.webp'
+import LogoColorWithWhiteFont from '~/assets/images/logo/logo-color@white.webp'
+import LogoGradient from '~/assets/images/logo/logo-gradient.webp'
+import iconType1 from '~/assets/images/icons/icon-type-1.webp'
+import iconType2 from '~/assets/images/icons/icon-type-2.webp'
+import iconType3 from '~/assets/images/icons/icon-type-3.webp'
+import iconType4 from '~/assets/images/icons/icon-type-4.webp'
+import iconType5 from '~/assets/images/icons/icon-type-5.webp'
+import iconType6 from '~/assets/images/icons/icon-type-6.webp'
+import AdBlock from '~/components/common/adBlock.vue'
 import { useDarkMode } from '~/composables/useDarkMode'
 const { setDarkMode } = useDarkMode()
 
 const wrapperHover = inject<Ref<boolean>>('wrapperHover')
 
 const setDarkModeHandler = (isDark: boolean): void => {
-  console.log('isDark', isDark)
   setDarkMode(isDark)
 }
 
@@ -36,15 +35,6 @@ const logoHover = (isHovering: boolean): void => {
       @mouseenter="logoHover(true)"
       @mouseleave="logoHover(false)"
     >
-      <div
-        class="text-blue-set dark:hover:text-white-set absolute -top-6 left-0 flex cursor-pointer items-center justify-center rounded-full p-1 transition-colors duration-300 hover:bg-gray-200 lg:-top-8"
-      >
-        <el-icon :size="26">
-          <Sunny class="block dark:hidden" @click="setDarkModeHandler(true)" />
-          <Moon class="hidden dark:block" @click="setDarkModeHandler(false)" />
-        </el-icon>
-      </div>
-
       <img
         class="block dark:hidden"
         alt="ARCH STUDIO"
@@ -141,6 +131,29 @@ const logoHover = (isHovering: boolean): void => {
   </header>
 
   <AdBlock class="mb-5" size="1200x200" text="AD" />
+
+  <div class="my-5 flex flex-wrap items-center justify-center gap-5">
+    <div class="flex w-full items-center justify-center lg:w-auto">
+      <div
+        class="dark-mode-icon text-blue-set dark:hover:text-white-set mr-5 flex h-[34px] w-[34px] cursor-pointer items-center justify-center rounded-full p-1 transition-all duration-300 hover:bg-gray-200 lg:-top-8"
+        :class="{
+          show: wrapperHover
+        }"
+      >
+        <el-icon :size="26">
+          <Sunny class="block dark:hidden" @click="setDarkModeHandler(true)" />
+          <Moon class="hidden dark:block" @click="setDarkModeHandler(false)" />
+        </el-icon>
+      </div>
+      <h6 class="font-medium">大家都在看</h6>
+    </div>
+
+    <NuxtLink class="link-hover" href="#"> 犬走的排水 </NuxtLink>
+    <NuxtLink class="link-hover" href="#"> 公園草溝排水 </NuxtLink>
+    <NuxtLink class="link-hover" href="#"> 棒壘球場排水 </NuxtLink>
+    <NuxtLink class="link-hover" href="#"> 屋頂綠化排水 </NuxtLink>
+    <NuxtLink class="link-hover" href="#"> 裸露地雜草防治 </NuxtLink>
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -171,6 +184,14 @@ header {
         }
       }
     }
+  }
+}
+
+.dark-mode-icon {
+  opacity: 0;
+
+  &.show {
+    opacity: 1;
   }
 }
 </style>

@@ -95,10 +95,12 @@ useHead({
     <div
       class="wrapper-circle container overflow-hidden rounded-[72px] p-0 lg:rounded-[92px] lg:p-5"
       :class="{ hovered: isWrapperHovering }"
-      @mouseenter="wrapperHover(true)"
-      @mouseleave="wrapperHover(false)"
     >
-      <div class="wrapper bg-white-set h-full w-full rounded-[72px] p-5">
+      <div
+        class="wrapper bg-white-set h-full w-full rounded-[72px] p-5"
+        @mouseenter="wrapperHover(true)"
+        @mouseleave="wrapperHover(false)"
+      >
         <Header />
         <NuxtPage />
         <Footer />
@@ -117,7 +119,7 @@ body {
   font-size: 16px;
   font-family: 'Noto Sans TC', sans-serif;
   color: var(--color-blue-set);
-  background-color: #fff;
+  background-color: var(--color-white-set);
   letter-spacing: 0.1rem;
 }
 
@@ -137,7 +139,7 @@ body {
 .wrapper-circle {
   width: calc(100% - 40px);
   min-height: calc(100vh - 40px);
-  border: 3px solid #fdfdfd;
+  border: 3px solid transparent;
   transition: all 0.4s ease;
 
   @media (width < 64rem) {

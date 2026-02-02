@@ -26,7 +26,7 @@ const wrapperHover = inject<Ref<boolean>>('wrapperHover')
       <ElSegmented v-model="infoValue" :options="infoOptions" />
     </div>
 
-    <div class="info-content bg-medium-gray overflow-hidden rounded-[36px]">
+    <div class="info-content bg-medium-gray overflow-hidden rounded-[36px] p-5">
       <div class="h-[500px] w-full"></div>
     </div>
   </section>

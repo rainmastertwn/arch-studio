@@ -36,6 +36,21 @@
     }
   }
 
+  .el-segmented__group {
+    flex-wrap: wrap;
+  }
+
+  @media (width <= 64rem) {
+    position: relative;
+    top: 0;
+    width: 100%;
+
+    .el-segmented {
+      padding: 4px;
+      border-radius: 30px;
+    }
+  }
+
   &.hovered {
     .el-segmented .el-segmented__item {
       &.is-selected {

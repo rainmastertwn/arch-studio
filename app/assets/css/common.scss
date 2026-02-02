@@ -77,3 +77,11 @@
     overflow: hidden;
   }
 }
+
+.blue-border {
+  transition: border-color 0.4s ease;
+
+  &.hovered {
+    border-color: var(--color-light-blue);
+  }
+}

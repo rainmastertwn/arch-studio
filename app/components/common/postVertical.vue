@@ -15,22 +15,15 @@ const props = withDefaults(
     content: ''
   }
 )
-const wrapperHover = inject<Ref<boolean>>('wrapperHover')
 </script>
 
 <template>
   <NuxtLink class="flex flex-col" :href="props.href">
     <div class="mb-3 overflow-hidden rounded-2xl">
-      <img
-        alt="Post Image"
-        :class="{
-          grayscale: !wrapperHover
-        }"
-        :src="props.imgSrc"
-      />
+      <img alt="Post Image" :src="props.imgSrc" />
     </div>
     <h4
-      class="max-text-two-lines text-[22px]"
+      class="max-text-two-lines"
       :class="{
         'mb-3': props.content !== ''
       }"

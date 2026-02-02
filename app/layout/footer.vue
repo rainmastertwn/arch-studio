@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import DonateIcon from '@/assets/images/icons/donate.svg'
+import DonateIcon from '~/assets/images/icons/donate.svg'
 const wrapperHover = inject<Ref<boolean>>('wrapperHover')
 const currentYear = ref(new Date().getFullYear())
 </script>
