@@ -182,15 +182,13 @@ const segmentChange = (value: string): void => {
 </template>
 
 <style lang="scss" scoped>
-.content ::v-deep {
-  article {
-    &:not(:last-child) {
-      margin-bottom: 20px;
-    }
+.content ::v-deep(article) {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 
-    h5 {
-      margin-bottom: 8px;
-    }
+  h5 {
+    margin-bottom: 8px;
   }
 }
 </style>
