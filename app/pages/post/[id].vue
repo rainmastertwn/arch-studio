@@ -62,10 +62,7 @@ const segmentChange = (value: string): void => {
             v-for="(item, index) in postData?.readMore || []"
             :key="index"
           >
-            <NuxtLink
-              class="font-light transition-all duration-400 hover:font-normal"
-              :to="item.link"
-            >
+            <NuxtLink class="font-light hover:font-normal" :to="item.link">
               {{ item.title }}
             </NuxtLink>
           </li>
@@ -81,7 +78,7 @@ const segmentChange = (value: string): void => {
     >
       <ElSegmented @change="segmentChange" v-model="segmentValue" :options="segmentOptions" />
     </div>
-    <div class="info-content bg-medium-gray mb-8 overflow-hidden rounded-[36px] px-5 py-5 lg:px-8">
+    <div class="bg-medium-gray mb-8 overflow-hidden rounded-[36px] px-5 py-5 lg:px-8">
       <div
         class="blue-border border-white-fixed mb-5 flex flex-col items-center justify-center rounded-2xl border-8 p-2"
         :class="{

@@ -119,7 +119,7 @@ body {
   font-size: 16px;
   font-family: 'Noto Sans TC', sans-serif;
   color: var(--color-blue-set);
-  background-color: var(--color-white-set);
+  background-color: #fff;
   letter-spacing: 0.1rem;
 }
 
