@@ -78,9 +78,9 @@ const segmentChange = (value: string): void => {
     >
       <ElSegmented @change="segmentChange" v-model="segmentValue" :options="segmentOptions" />
     </div>
-    <div class="bg-medium-gray mb-8 overflow-hidden rounded-[36px] px-5 py-5 lg:px-8">
+    <div class="bg-medium-gray mb-8 overflow-hidden rounded-[36px] p-5">
       <div
-        class="blue-border border-white-fixed mb-5 flex flex-col items-center justify-center rounded-2xl border-8 p-2"
+        class="blue-border mb-5 flex flex-col items-center justify-center rounded-2xl border-8 border-transparent p-2"
         :class="{
           hovered: wrapperHover
         }"
@@ -100,7 +100,7 @@ const segmentChange = (value: string): void => {
         <div class="content col-span-1 lg:col-span-3" v-html="segmentContent?.content"></div>
         <div class="col-span-1 grid grid-cols-1 gap-5 md:grid-cols-2 lg:col-span-5">
           <div
-            class="blue-border border-white-fixed self-start rounded-2xl border-2 p-4"
+            class="blue-border self-start rounded-2xl border-2 border-transparent p-4"
             :class="{
               hovered: wrapperHover
             }"
@@ -134,7 +134,7 @@ const segmentChange = (value: string): void => {
             </ul>
           </div>
           <div
-            class="blue-border border-white-fixed self-start rounded-2xl border-2 p-4"
+            class="blue-border self-start rounded-2xl border-2 border-transparent p-4"
             :class="{
               hovered: wrapperHover
             }"

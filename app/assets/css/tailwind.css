@@ -33,6 +33,7 @@
   --color-light-gray: #c8c8c8;
   --color-green: #0fde8c;
   --color-light-blue: #1ab0fc;
+  --color-gray-dedede: #dedede;
 }
 @layer base {
   :root {

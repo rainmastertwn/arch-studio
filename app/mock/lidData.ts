@@ -10,6 +10,7 @@ import lid5_1 from '~/assets/images/lid/LID_5-1.webp'
 import lid5_2 from '~/assets/images/lid/LID_5-2.webp'
 import lid6_1 from '~/assets/images/lid/LID_6-1.webp'
 import lid6_2 from '~/assets/images/lid/LID_6-2.webp'
+import lid6_3 from '~/assets/images/lid/LID_6-3.webp'
 import lid7_1 from '~/assets/images/lid/LID_7-1.webp'
 import lid7_2 from '~/assets/images/lid/LID_7-2.webp'
 export type LIDData = {
@@ -418,7 +419,8 @@ export const lidDataList: LIDData[] = [
         imgSrc: lid6_1,
         label: '儲水雨撲滿 示意圖'
       },
-      { imgSrc: lid6_2, label: '儲水雨撲滿 示意圖' }
+      { imgSrc: lid6_2, label: '儲水雨撲滿 示意圖' },
+      { imgSrc: lid6_3, label: '儲水雨撲滿 示意圖' }
     ],
     info: [
       {

@@ -15,6 +15,12 @@ import AdBlock from '~/components/common/adBlock.vue'
 import { useDarkMode } from '~/composables/useDarkMode'
 const { setDarkMode } = useDarkMode()
 
+const router = useRouter()
+
+const isPageWaterManagement = computed(() => {
+  return router.currentRoute.value.path === '/watermanagement'
+})
+
 const wrapperHover = inject<Ref<boolean>>('wrapperHover')
 
 const setDarkModeHandler = (isDark: boolean): void => {
@@ -145,9 +151,8 @@ const logoHover = (isHovering: boolean): void => {
           <Moon class="hidden dark:block" @click="setDarkModeHandler(false)" />
         </el-icon>
       </div>
-      <h6 class="font-medium">大家都在看</h6>
     </div>
-
+    <h6 class="font-medium">大家都在看</h6>
     <NuxtLink class="link-hover" href="#"> 犬走的排水 </NuxtLink>
     <NuxtLink class="link-hover" href="#"> 公園草溝排水 </NuxtLink>
     <NuxtLink class="link-hover" href="#"> 棒壘球場排水 </NuxtLink>

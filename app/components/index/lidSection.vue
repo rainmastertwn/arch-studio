@@ -6,17 +6,17 @@ import { lidDataList } from '~/mock/lidData'
 
 const wrapperHover = inject<Ref<boolean>>('wrapperHover')
 
-const lidValue = ref<string>('')
-let lidOptions: object[] = []
-lidValue.value = lidDataList[0]?.value || ''
-lidOptions = lidDataList.map((item: LIDData) => {
+const segmentValue = ref<string>('')
+let segmentOptions: object[] = []
+segmentValue.value = lidDataList[0]?.value || ''
+segmentOptions = lidDataList.map((item: LIDData) => {
   return { label: item.label, value: item.value }
 })
 
 const postData = ref<LIDData | null>(lidDataList[0] || null)
 
 const segmentChange = (value: string): void => {
-  lidValue.value = value
+  segmentValue.value = value
   const selected = lidDataList.find((item) => item.value === value)
   postData.value = selected ? selected : null
 }
@@ -31,12 +31,12 @@ const segmentChange = (value: string): void => {
         hovered: wrapperHover
       }"
     >
-      <ElSegmented @change="segmentChange" v-model="lidValue" :options="lidOptions" />
+      <ElSegmented @change="segmentChange" v-model="segmentValue" :options="segmentOptions" />
     </div>
 
     <div class="bg-medium-gray overflow-hidden rounded-[36px] p-5">
       <div
-        class="blue-border border-white-fixed mb-5 flex flex-col items-center justify-center rounded-2xl border-8 p-2"
+        class="blue-border mb-5 flex flex-col items-center justify-center rounded-2xl border-8 border-transparent p-2"
         :class="{
           hovered: wrapperHover
         }"
@@ -48,17 +48,17 @@ const segmentChange = (value: string): void => {
       </div>
       <!-- info content -->
       <div class="mx-auto max-w-[920px]">
-        <div class="grid grid-cols-12 gap-5">
-          <div class="col-span-9">
-            <h4 class="border-light-gray mb-5 border-b pb-2 text-lg">
+        <div class="grid grid-cols-1 gap-5 lg:grid-cols-12">
+          <div class="col-span-1 lg:col-span-9">
+            <h4 class="border-light-gray mb-3 border-b pb-2">
               {{ postData?.infoTitle }}
             </h4>
-            <div class="grid grid-cols-2 gap-5">
-              <!-- info img -->
+            <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
+              <!-- info img only loop [0], [1] -->
               <div>
                 <div
                   class="mb-5 flex flex-col items-center justify-center"
-                  v-for="(item, index) in postData?.infoImg || []"
+                  v-for="(item, index) in postData?.infoImg?.slice(0, 2) || []"
                   :key="index"
                 >
                   <div class="mb-1 overflow-hidden rounded-2xl">
@@ -68,13 +68,15 @@ const segmentChange = (value: string): void => {
                 </div>
               </div>
               <!-- info text -->
-              <div>
+              <div class="flex flex-col">
                 <div
-                  class="mb-5"
+                  class="order-2 lg:order-1"
                   v-for="(infoItem, infoIndex) in postData?.info || []"
                   :key="infoIndex"
                 >
-                  <h4 class="border-light-gray mb-1 border-b pb-1 text-lg">{{ infoItem.title }}</h4>
+                  <h4 class="border-light-gray mb-1 border-b pb-1 text-lg" v-if="infoItem.title">
+                    {{ infoItem.title }}
+                  </h4>
                   <ul>
                     <li
                       class="mb-2 flex text-lg"
@@ -86,17 +88,26 @@ const segmentChange = (value: string): void => {
                     </li>
                   </ul>
                 </div>
+                <div
+                  class="order-1 mt-0 mb-5 flex flex-col items-center justify-center lg:order-2 lg:mt-20 lg:mb-0"
+                  v-if="postData?.infoImg && postData.infoImg.length > 2"
+                >
+                  <div class="overflow-hidden rounded-2xl">
+                    <img class="mx-auto mb-1 h-full w-full" :src="postData?.infoImg[2]?.imgSrc" />
+                  </div>
+                  <p class="text-lg">{{ postData?.infoImg[2]?.label }}</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-span-3">
-            <h4 class="border-light-gray mb-5 border-b pb-2 text-lg">
+          <div class="col-span-1 lg:col-span-3">
+            <h4 class="border-light-gray mb-3 border-b pb-2">
               {{ postData?.commonLabel }}
             </h4>
             <div class="mb-5">
               <ul>
                 <li
-                  class="mb-2 flex"
+                  class="mb-2 flex font-light"
                   v-for="(item, index) in postData?.commonContent || []"
                   :key="index"
                 >
@@ -106,7 +117,7 @@ const segmentChange = (value: string): void => {
             </div>
 
             <div
-              class="blue-border border-white-fixed flex flex-col items-start justify-center rounded-2xl border-2 p-4"
+              class="blue-border flex flex-col items-start justify-center rounded-2xl border-2 border-transparent p-4"
               :class="{
                 hovered: wrapperHover
               }"

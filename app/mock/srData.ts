@@ -1,3 +1,14 @@
+import Q1_1 from '~/assets/images/sr/Q1-1.webp'
+import Q2_1 from '~/assets/images/sr/Q2-1.webp'
+import Q3_1 from '~/assets/images/sr/Q3-1.webp'
+import Q4_1 from '~/assets/images/sr/Q4-1.webp'
+import Q4_2 from '~/assets/images/sr/Q4-2.webp'
+import Q5_1 from '~/assets/images/sr/Q5-1.webp'
+import Q5_2 from '~/assets/images/sr/Q5-2.webp'
+import Q6_1 from '~/assets/images/sr/Q6-1.webp'
+import Q7_1 from '~/assets/images/sr/Q7-1.webp'
+import Q7_2 from '~/assets/images/sr/Q7-2.webp'
+import Q8_1 from '~/assets/images/sr/Q8-1.webp'
 export type SRData = {
   label: string
   value: string
@@ -31,7 +42,7 @@ export const srDataList: SRData[] = [
     subTitle: '核心理念: 經開發後的土地仍擁有其原始的保水及滲透水等能力',
     infoImg: [
       {
-        imgSrc: '',
+        imgSrc: Q1_1,
         label: ''
       }
     ],
@@ -87,7 +98,7 @@ export const srDataList: SRData[] = [
         href: '#'
       },
       {
-        label: '> 我想更進一步了解關於 綠建築評估手冊',
+        label: '> 我想更進一步了解關於 綠建築 評估手冊',
         href: '#'
       }
     ]
@@ -99,7 +110,7 @@ export const srDataList: SRData[] = [
     subTitle: '核心理念: 經開發後的土地仍擁有其原始的保水及滲透水等能力',
     infoImg: [
       {
-        imgSrc: '',
+        imgSrc: Q2_1,
         label: ''
       }
     ],
@@ -160,7 +171,7 @@ export const srDataList: SRData[] = [
     subTitle: '核心理念: 經開發後的土地仍擁有其原始的保水及滲透水等能力',
     infoImg: [
       {
-        imgSrc: '',
+        imgSrc: Q3_1,
         label: ''
       }
     ],
@@ -229,11 +240,11 @@ export const srDataList: SRData[] = [
     subTitle: '核心理念: 經開發後的土地仍擁有其原始的保水及滲透水等能力',
     infoImg: [
       {
-        imgSrc: '',
+        imgSrc: Q4_1,
         label: ''
       },
       {
-        imgSrc: '',
+        imgSrc: Q4_2,
         label: ''
       }
     ],
@@ -325,11 +336,11 @@ export const srDataList: SRData[] = [
     subTitle: '核心理念: 經開發後的土地仍擁有其原始的保水及滲透水等能力',
     infoImg: [
       {
-        imgSrc: '',
+        imgSrc: Q5_1,
         label: ''
       },
       {
-        imgSrc: '',
+        imgSrc: Q5_2,
         label: ''
       }
     ],
@@ -395,7 +406,7 @@ export const srDataList: SRData[] = [
     subTitle: '核心理念: 經開發後的土地仍擁有其原始的保水及滲透水等能力',
     infoImg: [
       {
-        imgSrc: '',
+        imgSrc: Q6_1,
         label: ''
       }
     ],
@@ -470,11 +481,11 @@ export const srDataList: SRData[] = [
     subTitle: '核心理念: 經開發後的土地仍擁有其原始的保水及滲透水等能力',
     infoImg: [
       {
-        imgSrc: '',
+        imgSrc: Q7_1,
         label: ''
       },
       {
-        imgSrc: '',
+        imgSrc: Q7_2,
         label: ''
       }
     ],
@@ -547,7 +558,7 @@ export const srDataList: SRData[] = [
     subTitle: '核心理念: 經開發後的土地仍擁有其原始的保水及滲透水等能力',
     infoImg: [
       {
-        imgSrc: '',
+        imgSrc: Q8_1,
         label: ''
       }
     ],

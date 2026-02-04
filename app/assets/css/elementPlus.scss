@@ -26,7 +26,7 @@
 
       &.is-selected {
         font-weight: 400;
-        border-color: var(--color-white-set);
+        border-color: transparent;
       }
 
       &:not(.is-disabled, .is-selected):hover {
