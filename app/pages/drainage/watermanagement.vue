@@ -2,6 +2,26 @@
 import iconType7 from '~/assets/images/icons/icon-type-7.webp'
 import iconType8 from '~/assets/images/icons/icon-type-8.webp'
 import iconType9 from '~/assets/images/icons/icon-type-9.webp'
+import { watermanagementData } from '~/mock/watermanagementData'
+// category: 雨水排水 SD、儲存雨水 RS、滲透雨水 RI
+// const categorySDData = watermanagementData.filter((item) => item.category.includes('SD'))
+// filter category SD Data with name length 5, 6, 7
+const categories = ['SD', 'RS', 'RI'] as const
+
+const categorizedData = categories.reduce(
+  (acc, cat) => {
+    // 先過濾出該分類的資料
+    const filtered = watermanagementData.filter((item) => item.category.includes(cat))
+
+    acc[cat] = {
+      lengthLess5: filtered.filter((item) => item.value.length <= 5),
+      length6: filtered.filter((item) => item.value.length === 6),
+      lengthOver7: filtered.filter((item) => item.value.length >= 7)
+    }
+    return acc
+  },
+  {} as Record<string, any>
+)
 </script>
 
 <template>
@@ -21,18 +41,36 @@ import iconType9 from '~/assets/images/icons/icon-type-9.webp'
         </div>
       </div>
       <div
-        class="col-span-12 col-start-1 flex flex-wrap items-center lg:col-span-10 lg:col-start-2"
+        class="col-span-12 col-start-1 grid grid-flow-col grid-cols-5 grid-rows-5 gap-5 lg:col-span-10 lg:col-start-2"
       >
         <button
           class="application-wrap bg-gray-dedede dark:bg-blue-fixed dark:border-white-fixed flex cursor-pointer items-center justify-center border-4 border-transparent text-center text-lg"
+          v-for="item in categorizedData.SD.lengthLess5"
+          :key="item.value"
         >
-          test 123
+          {{ item.value }}
         </button>
+
+        <button></button>
 
         <button
           class="application-wrap bg-gray-dedede dark:bg-blue-fixed dark:border-white-fixed flex cursor-pointer items-center justify-center border-4 border-transparent text-center text-lg"
+          v-for="item in categorizedData.SD.length6"
+          :key="item.value"
         >
-          <span>test 123</span>
+          {{ item.value }}
+        </button>
+
+        <button></button>
+        <button></button>
+        <button></button>
+
+        <button
+          class="application-wrap bg-gray-dedede dark:bg-blue-fixed dark:border-white-fixed flex cursor-pointer items-center justify-center border-4 border-transparent text-center text-lg"
+          v-for="item in categorizedData.SD.lengthOver7"
+          :key="item.value"
+        >
+          {{ item.value }}
         </button>
       </div>
       <!-- border bottom -->
@@ -56,18 +94,32 @@ import iconType9 from '~/assets/images/icons/icon-type-9.webp'
         </div>
       </div>
       <div
-        class="col-span-12 col-start-1 flex flex-wrap items-center lg:col-span-10 lg:col-start-2"
+        class="col-span-12 col-start-1 grid grid-flow-col grid-cols-5 grid-rows-5 gap-5 lg:col-span-10 lg:col-start-2"
       >
         <button
           class="application-wrap bg-gray-dedede dark:bg-blue-fixed dark:border-white-fixed flex cursor-pointer items-center justify-center border-4 border-transparent text-center text-lg"
+          v-for="item in categorizedData.RS.lengthLess5"
+          :key="item.value"
         >
-          test 123
+          {{ item.value }}
         </button>
 
         <button
           class="application-wrap bg-gray-dedede dark:bg-blue-fixed dark:border-white-fixed flex cursor-pointer items-center justify-center border-4 border-transparent text-center text-lg"
+          v-for="item in categorizedData.RS.length6"
+          :key="item.value"
         >
-          <span>test 123</span>
+          {{ item.value }}
+        </button>
+
+        <button></button>
+
+        <button
+          class="application-wrap bg-gray-dedede dark:bg-blue-fixed dark:border-white-fixed flex cursor-pointer items-center justify-center border-4 border-transparent text-center text-lg"
+          v-for="item in categorizedData.RS.lengthOver7"
+          :key="item.value"
+        >
+          {{ item.value }}
         </button>
       </div>
       <!-- border bottom -->
@@ -91,18 +143,32 @@ import iconType9 from '~/assets/images/icons/icon-type-9.webp'
         </div>
       </div>
       <div
-        class="col-span-12 col-start-1 flex flex-wrap items-center lg:col-span-10 lg:col-start-2"
+        class="col-span-12 col-start-1 grid grid-flow-col grid-cols-5 grid-rows-5 gap-5 lg:col-span-10 lg:col-start-2"
       >
         <button
           class="application-wrap bg-gray-dedede dark:bg-blue-fixed dark:border-white-fixed flex cursor-pointer items-center justify-center border-4 border-transparent text-center text-lg"
+          v-for="item in categorizedData.RI.lengthLess5"
+          :key="item.value"
         >
-          test 123
+          {{ item.value }}
+        </button>
+
+        <button></button> <button></button>
+
+        <button
+          class="application-wrap bg-gray-dedede dark:bg-blue-fixed dark:border-white-fixed flex cursor-pointer items-center justify-center border-4 border-transparent text-center text-lg"
+          v-for="item in categorizedData.RI.length6"
+          :key="item.value"
+        >
+          {{ item.value }}
         </button>
 
         <button
           class="application-wrap bg-gray-dedede dark:bg-blue-fixed dark:border-white-fixed flex cursor-pointer items-center justify-center border-4 border-transparent text-center text-lg"
+          v-for="item in categorizedData.RI.lengthOver7"
+          :key="item.value"
         >
-          <span>test 123</span>
+          {{ item.value }}
         </button>
       </div>
       <!-- border bottom -->
@@ -116,8 +182,9 @@ import iconType9 from '~/assets/images/icons/icon-type-9.webp'
 <style lang="scss" scoped>
 .application-wrap {
   padding: 8px 12px;
-  margin-right: 12px;
-  margin-bottom: 12px;
+
+  // margin-right: 12px;
+  // margin-bottom: 12px;
   font-weight: 300;
   border-radius: 40px;
   transition:

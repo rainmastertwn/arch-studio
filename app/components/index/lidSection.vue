@@ -4,6 +4,8 @@ import ExternalWhiteIcon from '~/assets/images/icons/external-link-white.webp'
 import type { LIDData } from '~/mock/lidData'
 import { lidDataList } from '~/mock/lidData'
 
+import InfoNotice from '~/components/common/infoNotice.vue'
+
 const wrapperHover = inject<Ref<boolean>>('wrapperHover')
 
 const segmentValue = ref<string>('')
@@ -34,7 +36,7 @@ const segmentChange = (value: string): void => {
       <ElSegmented @change="segmentChange" v-model="segmentValue" :options="segmentOptions" />
     </div>
 
-    <div class="bg-medium-gray overflow-hidden rounded-[36px] p-5">
+    <div class="bg-medium-gray relative overflow-hidden rounded-[36px] p-5">
       <div
         class="blue-border mb-5 flex flex-col items-center justify-center rounded-2xl border-8 border-transparent p-2"
         :class="{
@@ -153,6 +155,9 @@ const segmentChange = (value: string): void => {
           </div>
         </div>
       </div>
+
+      <!-- info icon -->
+      <InfoNotice />
     </div>
   </section>
 </template>

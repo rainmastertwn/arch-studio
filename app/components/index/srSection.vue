@@ -4,6 +4,8 @@ import layoutThreeColumn from '~/components/index/srSection/layoutThreeColumn.vu
 import type { SRData } from '~/mock/srData'
 import { srDataList } from '~/mock/srData'
 
+import InfoNotice from '~/components/common/infoNotice.vue'
+
 const wrapperHover = inject<Ref<boolean>>('wrapperHover')
 
 const segmentValue = ref<string>('')
@@ -45,7 +47,7 @@ const currentLayout = computed(() => {
       <ElSegmented @change="segmentChange" v-model="segmentValue" :options="segmentOptions" />
     </div>
 
-    <div class="bg-medium-gray overflow-hidden rounded-[36px] p-5">
+    <div class="bg-medium-gray relative overflow-hidden rounded-[36px] p-5">
       <div
         class="blue-border mb-5 flex flex-col items-center justify-center rounded-2xl border-8 border-transparent p-2"
         :class="{
@@ -61,6 +63,9 @@ const currentLayout = computed(() => {
       <div class="mx-auto max-w-[920px]">
         <component :is="currentLayout" :post-data="postData" />
       </div>
+
+      <!-- info icon -->
+      <InfoNotice />
     </div>
   </section>
 </template>
