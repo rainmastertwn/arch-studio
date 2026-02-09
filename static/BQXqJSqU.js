@@ -1,1 +1,0 @@
-import"./C8ILPaSs.js";const o=""+new URL("cad-icon.FDlpH7E1.webp",import.meta.url).href,n=""+new URL("pdf-icon.CtDHv3kn.webp",import.meta.url).href,r=""+new URL("xls-icon.DkRe24rs.webp",import.meta.url).href;export{o as C,n as P,r as X};
