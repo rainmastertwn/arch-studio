@@ -13,6 +13,9 @@ import iconType5 from '~/assets/images/icons/icon-type-5.webp'
 import iconType6 from '~/assets/images/icons/icon-type-6.webp'
 import AdBlock from '~/components/common/adBlock.vue'
 import { useDarkMode } from '~/composables/useDarkMode'
+
+import { watermanagementData } from '~/mock/watermanagementData'
+
 const { setDarkMode } = useDarkMode()
 
 const router = useRouter()
@@ -31,6 +34,10 @@ const isLogoHovering = ref<boolean>(false)
 const logoHover = (isHovering: boolean): void => {
   isLogoHovering.value = isHovering
 }
+
+const headerPostData = useState('headerPostData', () =>
+  watermanagementData.sort(() => 0.5 - Math.random()).slice(0, 5)
+)
 </script>
 
 <template>
@@ -93,35 +100,35 @@ const logoHover = (isHovering: boolean): void => {
     <div class="grid w-full grid-cols-2 gap-2 lg:grid-cols-6 lg:gap-5">
       <NuxtLink
         class="icon-box dark:border-white-fixed bg-medium-gray flex flex-row items-center justify-center rounded-2xl border border-transparent px-0 pb-0 lg:flex-col lg:px-4 lg:pb-2"
-        href="#"
+        href="/drainage/watermanagement#rainwater-drainage"
       >
         <img class="w-[54px] lg:w-[108px]" alt="Icon Type 1" :src="iconType1" />
         <h6>雨水排水</h6>
       </NuxtLink>
       <NuxtLink
         class="icon-box dark:border-white-fixed bg-medium-gray flex flex-row items-center justify-center rounded-2xl border border-transparent px-0 pb-0 lg:flex-col lg:px-4 lg:pb-2"
-        href="#"
+        href="/drainage/watermanagement#rainwater-storage"
       >
         <img class="w-[54px] lg:w-[108px]" alt="Icon Type 2" :src="iconType2" />
         <h6>雨水儲存</h6>
       </NuxtLink>
       <NuxtLink
         class="icon-box dark:border-white-fixed bg-medium-gray flex flex-row items-center justify-center rounded-2xl border border-transparent px-0 pb-0 lg:flex-col lg:px-4 lg:pb-2"
-        href="#"
+        href="/drainage/watermanagement#rainwater-infiltration"
       >
         <img class="w-[54px] lg:w-[108px]" alt="Icon Type 3" :src="iconType3" />
         <h6>滲透雨水</h6>
       </NuxtLink>
       <NuxtLink
         class="icon-box dark:border-white-fixed bg-medium-gray flex flex-row items-center justify-center rounded-2xl border border-transparent px-0 pb-0 lg:flex-col lg:px-4 lg:pb-2"
-        href="#"
+        href="/drainage/post#waterIssue"
       >
         <img class="w-[54px] lg:w-[108px]" alt="Icon Type 4" :src="iconType4" />
         <h6>各種積水問題</h6>
       </NuxtLink>
       <NuxtLink
         class="icon-box dark:border-white-fixed bg-medium-gray flex flex-row items-center justify-center rounded-2xl border border-transparent px-0 pb-0 lg:flex-col lg:px-4 lg:pb-2"
-        href="#"
+        href="/drainage/post#howToChoose"
       >
         <img class="w-[54px] lg:w-[108px]" alt="Icon Type 5" :src="iconType5" />
         <h6>我該如何選擇</h6>
@@ -153,11 +160,14 @@ const logoHover = (isHovering: boolean): void => {
       </div>
     </div>
     <h6 class="font-medium">大家都在看</h6>
-    <NuxtLink class="link-hover" href="#"> 犬走的排水 </NuxtLink>
-    <NuxtLink class="link-hover" href="#"> 公園草溝排水 </NuxtLink>
-    <NuxtLink class="link-hover" href="#"> 棒壘球場排水 </NuxtLink>
-    <NuxtLink class="link-hover" href="#"> 屋頂綠化排水 </NuxtLink>
-    <NuxtLink class="link-hover" href="#"> 裸露地雜草防治 </NuxtLink>
+    <NuxtLink
+      class="link-hover"
+      :href="`/drainage/watermanagement/${item.value}`"
+      v-for="item in headerPostData"
+      :key="item.value"
+    >
+      {{ item.value }}
+    </NuxtLink>
   </div>
 </template>
 

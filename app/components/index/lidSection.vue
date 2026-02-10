@@ -52,7 +52,7 @@ const segmentChange = (value: string): void => {
       <div class="mx-auto max-w-[920px]">
         <div class="grid grid-cols-1 gap-5 lg:grid-cols-12">
           <div class="col-span-1 lg:col-span-9">
-            <h4 class="border-light-gray mb-3 border-b pb-2">
+            <h4 class="border-light-gray mb-2 border-b pb-2">
               {{ postData?.infoTitle }}
             </h4>
             <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
@@ -103,7 +103,7 @@ const segmentChange = (value: string): void => {
             </div>
           </div>
           <div class="col-span-1 lg:col-span-3">
-            <h4 class="border-light-gray mb-3 border-b pb-2">
+            <h4 class="border-light-gray mb-2 border-b pb-2">
               {{ postData?.commonLabel }}
             </h4>
             <div class="mb-5">
@@ -119,16 +119,16 @@ const segmentChange = (value: string): void => {
             </div>
 
             <div
-              class="blue-border flex flex-col items-start justify-center rounded-2xl border-2 border-transparent p-4"
+              class="blue-border flex flex-col rounded-2xl border-2 border-transparent p-4"
               :class="{
                 hovered: wrapperHover
               }"
             >
-              <h4 class="mb-2">建議使用材料</h4>
+              <h4 class="border-light-gray mb-2 border-b pb-2">建議使用材料</h4>
               <ul>
                 <li class="mb-1" v-for="item in postData?.suggestions" :key="item.label">
                   <NuxtLink
-                    class="flex items-center font-light hover:font-normal"
+                    class="text-hover flex items-center"
                     :href="item.link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -157,7 +157,21 @@ const segmentChange = (value: string): void => {
       </div>
 
       <!-- info icon -->
-      <InfoNotice />
+      <InfoNotice class="right-0 bottom-0 lg:absolute lg:right-5 lg:bottom-5">
+        <p class="mb-2">
+          以上資料整理自《內政部國土屬水環境低衝擊開發設施手冊》<br />
+          主要目的是讓更多人了解開發土地的必要之惡與環境保護的重要性，以此取得平衡我們才配得開發的權力進而取得永續的未來。
+        </p>
+        <a
+          class="mb-1 flex items-center self-start underline"
+          href="https://www.nlma.gov.tw/ch/publication/publications/55"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          *我想更進一步了解關於水環境低衝擊開發設施手冊
+          <img class="ml-2" alt="external link icon" :src="ExternalIcon" width="15" height="15" />
+        </a>
+      </InfoNotice>
     </div>
   </section>
 </template>

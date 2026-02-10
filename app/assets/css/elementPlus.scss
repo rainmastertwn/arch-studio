@@ -59,3 +59,17 @@
     }
   }
 }
+
+.info-dialog {
+  &.el-dialog {
+    padding: 24px;
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--color-white-set);
+    border-radius: 32px;
+
+    .el-dialog__header {
+      padding: 0;
+    }
+  }
+}

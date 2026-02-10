@@ -19,7 +19,7 @@ const isQ6Data = computed(() => {
     <div class="flex basis-1/1 flex-col justify-between lg:basis-1/3 min-h-[450px]">
       <!-- info 0 data -->
       <div>
-        <h4 class="border-light-gray mb-3 border-b pb-2">
+        <h4 class="border-light-gray mb-2 border-b pb-2">
           {{ postData?.info[0]?.title }}
         </h4>
         <ul class="mb-3">
@@ -48,7 +48,7 @@ const isQ6Data = computed(() => {
     <div class="flex basis-1/1 flex-col justify-between lg:basis-1/3 min-h-[450px]">
       <!-- info 0 data -->
       <div>
-        <h4 class="border-light-gray mb-3 border-b pb-2">
+        <h4 class="border-light-gray mb-2 border-b pb-2">
           {{ postData?.info[1]?.title }}
         </h4>
         <ul class="mb-3">
@@ -76,7 +76,7 @@ const isQ6Data = computed(() => {
 
     <div class="basis-1/1 lg:basis-1/3">
       <div class="mb-5" v-if="!isQ6Data">
-        <h4 class="border-light-gray mb-3 border-b pb-2">
+        <h4 class="border-light-gray mb-2 border-b pb-2">
           {{ postData?.info[2]?.title }}
         </h4>
         <ul class="mb-3">
@@ -98,7 +98,7 @@ const isQ6Data = computed(() => {
       </div>
 
       <div class="mb-5" v-if="!isQ6Data && postData?.info[3]">
-        <h4 class="border-light-gray mb-3 border-b pb-2">
+        <h4 class="border-light-gray mb-2 border-b pb-2">
           {{ postData?.info[3]?.title }}
         </h4>
         <ul class="mb-3">
@@ -120,7 +120,7 @@ const isQ6Data = computed(() => {
       </div>
 
       <div class="mb-5" v-if="isQ6Data">
-        <h4 class="border-light-gray mb-3 border-b pb-2">
+        <h4 class="border-light-gray mb-2 border-b pb-2">
           {{ postData?.info[2]?.title }}
         </h4>
         <ul class="mb-3">
@@ -142,17 +142,17 @@ const isQ6Data = computed(() => {
       </div>
       <!-- suggestions -->
       <div
-        class="blue-border border-white-fixed mb-5 flex flex-col  rounded-2xl border-2 p-4"
+        class="blue-border border-white-fixed mb-5 flex flex-col rounded-2xl border-2 p-4"
         v-if="postData?.suggestions && postData.suggestions.length > 0"
         :class="{
           hovered: wrapperHover
         }"
       >
-        <h4 class="mb-2">建議使用材料</h4>
+        <h4 class="border-light-gray mb-2 border-b pb-2">建議使用材料</h4>
         <ul>
           <li class="mb-1" v-for="item in postData?.suggestions" :key="item.label">
             <NuxtLink
-              class="flex items-center font-light hover:font-normal"
+              class="flex items-center text-hover"
               :href="item.link"
               target="_blank"
               rel="noopener noreferrer"
@@ -179,7 +179,7 @@ const isQ6Data = computed(() => {
       <!-- comment -->
       <div class="flex flex-col justify-center">
         <NuxtLink
-          class="mb-1 text-base font-light hover:font-normal"
+          class="mb-1 text-base text-hover"
           v-for="item in postData?.comment"
           :href="item.href"
           target="_blank"

@@ -20,6 +20,11 @@ export default defineNuxtConfig({
   experimental: {
     payloadExtraction: false
   },
+  router: {
+    options: {
+      scrollBehaviorType: 'smooth' // 開啟原生平滑滾動
+    }
+  },
   devtools: { enabled: true },
   // vite will generate entry point css and js files separately, will cause LCP delay
   features: {

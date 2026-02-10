@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import ExternalIcon from '~/assets/images/icons/external-link.webp'
 import layoutTwoColumn from '~/components/index/srSection/layoutTwoColumn.vue'
 import layoutThreeColumn from '~/components/index/srSection/layoutThreeColumn.vue'
 import type { SRData } from '~/mock/srData'
@@ -65,7 +66,21 @@ const currentLayout = computed(() => {
       </div>
 
       <!-- info icon -->
-      <InfoNotice />
+      <InfoNotice class="right-0 bottom-0 lg:absolute lg:right-5 lg:bottom-5">
+        <p class="mb-2">
+          以上資料整理自《內政部建研所綠建築評估手冊》<br />
+          主要目的是讓更多人得知我們的國家有一群人很努力地在研究、探索並用各種方式推動我們的永續未來。
+        </p>
+        <a
+          class="mb-1 flex items-center self-start underline"
+          href="https://www.abri.gov.tw/News.aspx?n=20916&sms=9512"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          *我想更進一步了解關於綠建築評估手冊
+          <img class="ml-2" alt="external link icon" :src="ExternalIcon" width="15" height="15" />
+        </a>
+      </InfoNotice>
     </div>
   </section>
 </template>

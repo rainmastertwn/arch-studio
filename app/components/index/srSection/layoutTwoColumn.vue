@@ -15,7 +15,7 @@ const wrapperHover = inject<Ref<boolean>>('wrapperHover')
   <div class="flex flex-col justify-center gap-5 lg:flex-row">
     <div class="basis-1/1 lg:basis-2/4">
       <!-- info 0 data -->
-      <h4 class="border-light-gray mb-3 border-b pb-2">
+      <h4 class="border-light-gray mb-2 border-b pb-2">
         {{ postData?.info[0]?.title }}
       </h4>
       <ul class="mb-3">
@@ -41,7 +41,7 @@ const wrapperHover = inject<Ref<boolean>>('wrapperHover')
 
     <div class="basis-1/1 lg:basis-2/4">
       <!-- info 1 data -->
-      <h4 class="border-light-gray mb-3 border-b pb-2">
+      <h4 class="border-light-gray mb-2 border-b pb-2">
         {{ postData?.info[1]?.title }}
       </h4>
       <ul class="mb-3">
@@ -61,7 +61,7 @@ const wrapperHover = inject<Ref<boolean>>('wrapperHover')
         </li>
       </ul>
       <!-- info 2 data -->
-      <h4 class="border-light-gray mb-3 border-b pb-2">
+      <h4 class="border-light-gray mb-2 border-b pb-2">
         {{ postData?.info[2]?.title }}
       </h4>
       <ul class="mb-5">
@@ -90,11 +90,11 @@ const wrapperHover = inject<Ref<boolean>>('wrapperHover')
           hovered: wrapperHover
         }"
       >
-        <h4 class="mb-2">建議使用材料</h4>
+        <h4 class="border-light-gray mb-2 border-b pb-2">建議使用材料</h4>
         <ul>
           <li class="mb-1" v-for="item in postData?.suggestions" :key="item.label">
             <NuxtLink
-              class="flex items-center font-light hover:font-normal"
+              class="text-hover flex items-center"
               :href="item.link"
               target="_blank"
               rel="noopener noreferrer"
@@ -122,7 +122,7 @@ const wrapperHover = inject<Ref<boolean>>('wrapperHover')
       <!-- comment -->
       <div class="flex flex-col justify-center">
         <NuxtLink
-          class="mb-1 text-base font-light hover:font-normal"
+          class="text-hover mb-1 text-base"
           v-for="item in postData?.comment"
           :href="item.href"
           target="_blank"

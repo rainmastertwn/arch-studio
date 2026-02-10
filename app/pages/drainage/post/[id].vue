@@ -62,7 +62,7 @@ const segmentChange = (value: string): void => {
             v-for="(item, index) in postData?.readMore || []"
             :key="index"
           >
-            <NuxtLink class="font-light hover:font-normal" :to="item.link">
+            <NuxtLink class="text-hover" :to="item.link">
               {{ item.title }}
             </NuxtLink>
           </li>
@@ -85,12 +85,12 @@ const segmentChange = (value: string): void => {
           hovered: wrapperHover
         }"
       >
-        <h3 class="mb-2">
+        <h2 class="mb-2">
           {{ segmentContent?.title }}
-        </h3>
+        </h2>
         <p>{{ segmentContent?.subTitle }}</p>
       </div>
-      <h4 class="border-light-gray mb-2 border-b p-1 text-[22px]">
+      <h4 class="border-light-gray mb-5 border-b pb-2 text-[22px]">
         {{ segmentContent?.imgTitle }}
       </h4>
       <div class="grid grid-cols-1 gap-5 lg:grid-cols-12">
@@ -105,11 +105,11 @@ const segmentChange = (value: string): void => {
               hovered: wrapperHover
             }"
           >
-            <h4 class="mb-2 text-[22px]">建議使用材料:</h4>
+            <h4 class="border-light-gray mb-2 border-b pb-2 text-[22px]">建議使用材料</h4>
             <ul>
               <li class="mb-1" v-for="item in segmentContent?.suggestions" :key="item.label">
                 <NuxtLink
-                  class="flex items-center font-light hover:font-normal"
+                  class="text-hover flex items-center"
                   :href="item.link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -139,7 +139,7 @@ const segmentChange = (value: string): void => {
               hovered: wrapperHover
             }"
           >
-            <h4 class="mb-2 text-[22px]">設計師 下載專區:</h4>
+            <h4 class="border-light-gray mb-2 border-b pb-2 text-[22px]">設計師 下載專區</h4>
             <ul>
               <li
                 class="mb-1 flex"
@@ -147,7 +147,7 @@ const segmentChange = (value: string): void => {
                 :key="item.title"
               >
                 <NuxtLink
-                  class="flex items-center font-light hover:font-normal"
+                  class="text-hover flex items-center"
                   :href="item.link"
                   target="_blank"
                   rel="noopener noreferrer"

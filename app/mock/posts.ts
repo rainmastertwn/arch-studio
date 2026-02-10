@@ -25,6 +25,7 @@ export type Cases = {
 
 export type Post = {
   id: number
+  category?: string[]
   title: string
   content: string
   imgSrc?: string
@@ -41,16 +42,20 @@ const AD: AD = {
   link: '#'
 }
 
-import PostImg1 from '~/assets/images/post/post-1.webp'
-import PostImg1_1 from '~/assets/images/post/post1-1.webp'
-import PostImg1_2 from '~/assets/images/post/post1-2.webp'
-import PostImg2 from '~/assets/images/post/post2.webp'
-import PostImg2_1 from '~/assets/images/post/post2-1.webp'
-import PostImg3 from '~/assets/images/post/post3.webp'
-import PostImg3_1 from '~/assets/images/post/post3-1.webp'
+import PostImg1 from '~/assets/images/post/post-1.png'
+import PostImg1_1 from '~/assets/images/post/post1-1.png'
+import PostImg1_2 from '~/assets/images/post/post1-2.png'
+import PostImg2 from '~/assets/images/post/post2.png'
+import PostImg2_1 from '~/assets/images/post/post2-1.png'
+import PostImg3 from '~/assets/images/post/post3.png'
+import PostImg3_1 from '~/assets/images/post/post3-1.png'
+
+// category: waterIssue 各種積水問題, howToChoose 我該如何選擇
+
 export const postList: Post[] = [
   {
     id: 1,
+    category: ['waterIssue'],
     title: '中庭排水不良，花台溢水，且經常發生積水問題的改善方法',
     content:
       '最近有位新店的吳大哥來電告訴我們，他們的社區每逢大雨必定淹水，花台溢水，中庭淹水，雨水甚至漫流至管理中心。漫流後的中庭清理困難，住戶有心想解決，可是卻苦無方法，我們深入了解歸納後將分成兩個方向來解決問題。1. 改善既有的花台排水，2. 硬鋪面積水的排水，以下詳細解析。',
@@ -166,6 +171,7 @@ export const postList: Post[] = [
   },
   {
     id: 2,
+    category: ['waterIssue'],
     title: '在一個裸露地面上經常積水，又無法接設排水管將水導出，這時我們如何處理。',
     content:
       '我們觀察到很多綠植栽帶因下雨出現積水情形，可能因前期建置過程的種種因素導致無法對外排水，我們將提出無法對外排水區域的積水改善方法。',
@@ -235,6 +241,7 @@ export const postList: Post[] = [
   },
   {
     id: 3,
+    category: ['howToChoose'],
     title: '針對人工地盤的排水設計，我們與您分享從防水、排水、防潮濕到防根酸蝕的設計準則。',
     content:
       '什麼是人工地盤排水，人工地盤可理解成為構造物上方的綠化排水，任何位置的構造物、結構物上方之排水都可以稱之為人工地盤排水，在這個位置的綠化我們必須考慮排水，防水，防潮濕及防止植物根部酸蝕構造物，地下停車場上方的綠化將簡易於此篇文章內呈現，如有特殊需求可與COINN意動創新人員討論設計細節。',

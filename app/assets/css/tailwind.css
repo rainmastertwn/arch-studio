@@ -33,7 +33,9 @@
   --color-light-gray: #c8c8c8;
   --color-green: #0fde8c;
   --color-light-blue: #1ab0fc;
+  --color-sky-blue: #15dee9;
   --color-gray-dedede: #dedede;
+  --color-table-hover: #cdcdcd;
 }
 @layer base {
   :root {
@@ -41,6 +43,7 @@
     --color-blue-set: #2c3847;
     --color-medium-gray: #dedede;
     --list-hover-set: rgb(0, 0, 0, 0.3);
+    --color-table-hover: #eee;
   }
 
   .dark {
@@ -48,6 +51,7 @@
     --color-blue-set: #f8f8f8;
     --color-medium-gray: #2c3847;
     --list-hover-set: rgb(255, 255, 255, 0.35);
+    --color-table-hover: #627d9d;
   }
   /* h1 {
     @apply text-4xl font-bold text-black;
@@ -56,6 +60,9 @@
     @apply text-3xl font-semibold text-black;
   }
   */
+  h2 {
+    @apply text-2xl lg:text-[28px];
+  }
   h3 {
     @apply text-2xl;
   }
