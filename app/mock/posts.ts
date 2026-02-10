@@ -27,14 +27,14 @@ export type Post = {
   id: number
   category?: string[]
   title: string
-  content: string
+  content?: string
   imgSrc?: string
-  ad: AD
-  readMore: {
+  ad?: AD
+  readMore?: {
     title: string
     link: string
   }[]
-  cases: Cases
+  cases?: Cases
 }
 
 const AD: AD = {
@@ -241,7 +241,7 @@ export const postList: Post[] = [
   },
   {
     id: 3,
-    category: ['howToChoose'],
+    category: ['waterIssue'],
     title: '針對人工地盤的排水設計，我們與您分享從防水、排水、防潮濕到防根酸蝕的設計準則。',
     content:
       '什麼是人工地盤排水，人工地盤可理解成為構造物上方的綠化排水，任何位置的構造物、結構物上方之排水都可以稱之為人工地盤排水，在這個位置的綠化我們必須考慮排水，防水，防潮濕及防止植物根部酸蝕構造物，地下停車場上方的綠化將簡易於此篇文章內呈現，如有特殊需求可與COINN意動創新人員討論設計細節。',
@@ -304,5 +304,135 @@ export const postList: Post[] = [
         ]
       }
     ]
+  },
+  {
+    id: 4,
+    category: ['waterIssue'],
+    title: '樹穴的組成有防水，排水，樹根酸蝕，周圍雜草叢生等問題，在此告訴您方法，讓您一次解決。'
+  },
+  {
+    id: 5,
+    category: ['waterIssue'],
+    title: '大雨時花台的水會滿上來並夾帶泥水外流，我該做些什麼改變來解決問題'
+  },
+  {
+    id: 6,
+    category: ['waterIssue'],
+    title: '住家社區中庭的花台都很潮濕，會長青苔，我應該怎麼改善才能讓我的花台潤而不濕。'
+  },
+  {
+    id: 7,
+    category: ['waterIssue'],
+    title: '由於外部道路高於住家地坪，在雨季時常發生雨水倒流至家門口及車庫，我應該如何改善。'
+  },
+  {
+    id: 8,
+    category: ['waterIssue'],
+    title: '大雨時花台的水會滿上來並夾帶泥水外流，我該做些什麼改變來解決問題。'
+  },
+  {
+    id: 9,
+    category: ['waterIssue'],
+    title: '排水截水面積，溝體大小與排水速度的相對應關係討論。'
+  },
+  {
+    id: 10,
+    category: ['waterIssue'],
+    title: '什麼是人工地盤，針對各種形式的人工地盤排水，由本篇資料與您詳細解說。'
+  },
+  {
+    id: 11,
+    category: ['howToChoose'],
+    title: '棒壘球場，大草坪的排水管徑與排水速度有正相關嗎?'
+  },
+  {
+    id: 12,
+    category: ['howToChoose'],
+    title: '滲透排水管有分成不透水型，2/3透水型，全周透水型，我該怎麼選擇哪種型式。'
+  },
+  {
+    id: 13,
+    category: ['howToChoose'],
+    title: '集水陰井，滲透陰井，微型陰井，該在什麼時候選擇適合使用的產品'
+  },
+  {
+    id: 14,
+    category: ['howToChoose'],
+    title: '屋頂如果不積水就不容易漏水，從傳統點排水到線排水進而成為面排水的萬無一失排水方式。'
+  },
+  {
+    id: 15,
+    category: ['howToChoose'],
+    title: '落葉或雜物堵塞落水頭產生排水不良，植物於落水頭周邊生長而導致房屋漏水，該如何解決?'
+  },
+  {
+    id: 16,
+    category: ['howToChoose'],
+    title: '在設計景觀水池，垃圾掩埋場或地表防滲工程時，我們應該如何選擇坦克士不透水布的厚度?'
+  },
+  {
+    id: 17,
+    category: ['howToChoose'],
+    title: '縫隙式的化妝排水溝應該在何處使用，以及如何做後續的清潔。'
+  },
+  {
+    id: 18,
+    category: ['howToChoose'],
+    title: '綠地造景時，如何將地表紋理分隔處理，使空間配置更清楚、視覺更整齊。'
+  },
+  {
+    id: 19,
+    category: ['howToChoose'],
+    title: '排水板的種類很多，對於高度，是否要有蓄水功能，該用雙面型還單面型，我們完整與您說明。'
+  },
+  {
+    id: 20,
+    category: ['howToChoose'],
+    title: '一個生態水池用皂土毯比較適合還是使用坦克士不透水布比較合適。'
+  },
+  {
+    id: 21,
+    category: ['howToChoose'],
+    title: '要如何在不進行綠化的前提下，讓屋頂降溫也增加活動空間並帶來遮蔽屋頂管線好處的新解方。'
+  },
+  {
+    id: 22,
+    category: ['howToChoose'],
+    title: '在裸露土地上尋找一種既能讓雨水滲入土壤，又能防止雜草生長的方式。'
+  },
+  {
+    id: 23,
+    category: ['howToChoose'],
+    title: '車輛進出停車場截水溝時會產生噪音，長期下來容易造成精神疲勞，我們即刻解決。'
+  },
+  {
+    id: 24,
+    category: ['howToChoose'],
+    title: '排水陰井埋設後發現高度不足，這時我應該怎麼辦?'
+  },
+  {
+    id: 25,
+    category: ['howToChoose'],
+    title: '草地下盲溝與硬木面的暗溝設計方式解析。'
+  },
+  {
+    id: 26,
+    category: ['howToChoose'],
+    title: '預鑄塑膠陰井與預鑄水泥製陰井有什麼差別'
+  },
+  {
+    id: 27,
+    category: ['howToChoose'],
+    title: '重力式排水應該使用HDPE管還是RCP管'
+  },
+  {
+    id: 28,
+    category: ['howToChoose'],
+    title: '塑膠截水溝與RC水泥溝的差異'
+  },
+  {
+    id: 29,
+    category: ['howToChoose'],
+    title: '我買了塑膠陰井，我在各種情況下該如何安裝?'
   }
 ]
