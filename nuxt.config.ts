@@ -4,8 +4,8 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineNuxtConfig({
   app: {
     // rain save deploy to github pages
-    baseURL: process.env.NODE_ENV === 'production' ? '/arch-studio/' : '/',
-    // baseURL: '/',
+    // baseURL: process.env.NODE_ENV === 'production' ? '/arch-studio/' : '/',
+    baseURL: '/',
     buildAssetsDir: '/static/'
   },
   runtimeConfig: {

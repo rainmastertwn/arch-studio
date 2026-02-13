@@ -50,7 +50,7 @@ subPosts.value = postList.slice(1, 3)
           'border-transparent': !wrapperHover
         }"
       >
-        <h4 class="mb-2">基地保水計算機</h4>
+        <h4 class="mb-2">基地保水</h4>
         <div class="overflow-hidden rounded-xl">
           <img alt="Q5-1 Image" :src="Q5_1" />
         </div>

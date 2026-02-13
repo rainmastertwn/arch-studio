@@ -13,22 +13,38 @@ const currentYear = ref(new Date().getFullYear())
         <h5 class="mb-3">相關查詢</h5>
         <ul class="">
           <li class="mb-1 font-light">
-            <NuxtLink class="link-hover-white" href="#">1968 路況網</NuxtLink>
+            <NuxtLink class="link-hover-white" href="https://1968.freeway.gov.tw/" target="_blank">
+              1968 路況網
+            </NuxtLink>
           </li>
           <li class="mb-1 font-light">
-            <NuxtLink class="link-hover-white" href="#">國土測繪服務雲</NuxtLink>
+            <NuxtLink class="link-hover-white" href="https://maps.nlsc.gov.tw/" target="_blank">
+              國土測繪服務雲
+            </NuxtLink>
           </li>
           <li class="mb-1 font-light">
-            <NuxtLink class="link-hover-white" href="#">交通部中央氣象局</NuxtLink>
+            <NuxtLink class="link-hover-white" href="https://www.cwa.gov.tw/" target="_blank">
+              交通部中央氣象局
+            </NuxtLink>
           </li>
           <li class="mb-1 font-light">
-            <NuxtLink class="link-hover-white" href="#">台灣水庫即時水情</NuxtLink>
+            <NuxtLink class="link-hover-white" href="https://water.taiwanstat.com/" target="_blank">
+              台灣水庫即時水情
+            </NuxtLink>
           </li>
           <li class="mb-1 font-light">
-            <NuxtLink class="link-hover-white" href="#">今日電力資訊</NuxtLink>
+            <NuxtLink
+              class="link-hover-white"
+              href="https://www.taipower.com.tw/2289/2363/2367/2368/10262/normalPost"
+              target="_blank"
+            >
+              今日電力資訊
+            </NuxtLink>
           </li>
           <li class="font-light">
-            <NuxtLink class="link-hover-white" href="#">公開資訊觀測站</NuxtLink>
+            <NuxtLink class="link-hover-white" href="https://mopsov.twse.com.tw/" target="_blank">
+              公開資訊觀測站
+            </NuxtLink>
           </li>
         </ul>
       </div>
@@ -36,22 +52,34 @@ const currentYear = ref(new Date().getFullYear())
         <h5 class="mb-3">出差專區</h5>
         <ul class="">
           <li class="mb-1 font-light">
-            <NuxtLink class="link-hover-white" href="#">agoda</NuxtLink>
+            <NuxtLink class="link-hover-white" href="https://www.agoda.com/zh-tw/" target="_blank">
+              agoda
+            </NuxtLink>
           </li>
           <li class="mb-1 font-light">
-            <NuxtLink class="link-hover-white" href="#">booking.com</NuxtLink>
+            <NuxtLink class="link-hover-white" href="https://www.booking.com/" target="_blank">
+              booking.com
+            </NuxtLink>
           </li>
           <li class="mb-1 font-light">
-            <NuxtLink class="link-hover-white" href="#">易遊網</NuxtLink>
+            <NuxtLink class="link-hover-white" href="https://www.eztravel.com.tw/" target="_blank">
+              易遊網
+            </NuxtLink>
           </li>
           <li class="mb-1 font-light">
-            <NuxtLink class="link-hover-white" href="#">立榮航空</NuxtLink>
+            <NuxtLink class="link-hover-white" href="https://www.uniair.com.tw/" target="_blank">
+              立榮航空
+            </NuxtLink>
           </li>
           <li class="mb-1 font-light">
-            <NuxtLink class="link-hover-white" href="#">台灣高鐵</NuxtLink>
+            <NuxtLink class="link-hover-white" href="https://www.thsrc.com.tw/" target="_blank">
+              台灣高鐵
+            </NuxtLink>
           </li>
           <li class="font-light">
-            <NuxtLink class="link-hover-white" href="#">台灣鐵路</NuxtLink>
+            <NuxtLink class="link-hover-white" href="https://www.railway.gov.tw/" target="_blank">
+              台灣鐵路
+            </NuxtLink>
           </li>
         </ul>
       </div>
@@ -62,25 +90,47 @@ const currentYear = ref(new Date().getFullYear())
         <h5 class="mb-3">友善環境(NGO)</h5>
         <ul class="">
           <li class="mb-1 font-light">
-            <NuxtLink class="link-hover-white" href="#">世界自然基金會</NuxtLink>
+            <NuxtLink
+              class="link-hover-white"
+              href="https://www.worldwildlife.org/"
+              target="_blank"
+            >
+              世界自然基金會
+            </NuxtLink>
           </li>
           <li class="mb-1 font-light">
-            <NuxtLink class="link-hover-white" href="#">國際自然保護聯盟</NuxtLink>
+            <NuxtLink class="link-hover-white" href="https://iucn.org/" target="_blank">
+              國際自然保護聯盟
+            </NuxtLink>
           </li>
           <li class="mb-1 font-light">
-            <NuxtLink class="link-hover-white" href="#">綠色十字會</NuxtLink>
+            <NuxtLink class="link-hover-white" href="https://www.gcint.org/" target="_blank">
+              綠色十字會
+            </NuxtLink>
           </li>
           <li class="mb-1 font-light">
-            <NuxtLink class="link-hover-white" href="#">ASOC南大洋聯盟</NuxtLink>
+            <NuxtLink class="link-hover-white" href="https://www.gcint.org/" target="_blank">
+              ASOC南大洋聯盟
+            </NuxtLink>
           </li>
           <li class="mb-1 font-light">
-            <NuxtLink class="link-hover-white" href="#">海洋保護基金會</NuxtLink>
+            <NuxtLink
+              class="link-hover-white"
+              href="https://www.bluemarinefoundation.com/"
+              target="_blank"
+            >
+              海洋保護基金會
+            </NuxtLink>
           </li>
           <li class="mb-1 font-light">
-            <NuxtLink class="link-hover-white" href="#">海洋基金會</NuxtLink>
+            <NuxtLink class="link-hover-white" href="https://oceanfdn.org/" target="_blank">
+              海洋基金會</NuxtLink
+            >
           </li>
           <li class="font-light">
-            <NuxtLink class="link-hover-white" href="#">海洋清潔行動組織</NuxtLink>
+            <NuxtLink class="link-hover-white" href="https://theoceancleanup.com/" target="_blank">
+              海洋清潔行動組織
+            </NuxtLink>
           </li>
 
           <p class="mt-8 flex items-center justify-end text-sm lg:mt-12">贊助</p>
@@ -93,32 +143,26 @@ const currentYear = ref(new Date().getFullYear())
         <h5 class="mb-3">優質廠商</h5>
         <ul class="">
           <li class="mb-1 font-light">
-            <NuxtLink class="link-hover-white" href="#">
+            <NuxtLink class="link-hover-white" href="https://www.coinn.com.tw/" target="_blank">
               <span class="inline-block min-w-[55px] text-center">COINN</span>
               意動創新
             </NuxtLink>
           </li>
           <li class="mb-1 font-light">
-            <NuxtLink class="link-hover-white" href="#">
+            <NuxtLink class="link-hover-white" href="https://www.coinn.tw/" target="_blank">
               <span class="inline-block min-w-[55px] text-center">COINN</span>
               雨水管理大師
             </NuxtLink>
           </li>
           <li class="mb-1 font-light">
-            <NuxtLink>
-              <span class="mr-0.5 inline-block min-w-[55px] text-center">VG</span>
-              正在旺企業
-            </NuxtLink>
-          </li>
-          <li class="mb-1 font-light">
-            <NuxtLink class="link-hover-white" href="#">
+            <NuxtLink class="link-hover-white" href="https://www.rainline.com.tw/" target="_blank">
               <span class="mr-0.5 inline-block min-w-[55px] text-center">RL</span>
               預鑄截水溝
             </NuxtLink>
           </li>
           <li class="mb-1 font-light">
-            <NuxtLink class="link-hover-white" href="#">
-              <span class="mr-0.5 inline-block min-w-[55px] text-center">RL</span>
+            <NuxtLink class="link-hover-white" href="https://rainsave.com.tw/" target="_blank">
+              <span class="mr-0.5 inline-block min-w-[55px] text-center">RS</span>
               雨水積磚
             </NuxtLink>
           </li>
@@ -150,7 +194,7 @@ const currentYear = ref(new Date().getFullYear())
           財團法人台灣建築中心
         </NuxtLink>
       </div>
-      <p class="text-sm">Copyright © {{ currentYear }} Vigor Bonanza Inc. 保留一切權利。</p>
+      <p class="text-sm">Copyright © {{ currentYear }} 正在旺企業 保留一切權利。</p>
     </div>
   </footer>
 </template>

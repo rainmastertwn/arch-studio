@@ -109,7 +109,7 @@ export const postList: Post[] = [
         download: [
           {
             type: 'PDF',
-            title: '2026 型錄 PDF',
+            title: '2027 圖說 PDF',
             link: '#'
           },
           {
@@ -152,7 +152,7 @@ export const postList: Post[] = [
         download: [
           {
             type: 'PDF',
-            title: '2026 型錄 PDF',
+            title: '2027 型錄 PDF',
             link: '#'
           },
           {
@@ -222,7 +222,7 @@ export const postList: Post[] = [
         download: [
           {
             type: 'PDF',
-            title: '2026 型錄 PDF',
+            title: '2027 圖說 PDF',
             link: '#'
           },
           {
@@ -288,7 +288,7 @@ export const postList: Post[] = [
         download: [
           {
             type: 'PDF',
-            title: '2026 型錄 PDF',
+            title: '2027 圖說 PDF',
             link: '#'
           },
           {

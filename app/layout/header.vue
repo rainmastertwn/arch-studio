@@ -14,6 +14,8 @@ import iconType6 from '~/assets/images/icons/icon-type-6.webp'
 import AdBlock from '~/components/common/adBlock.vue'
 import { useDarkMode } from '~/composables/useDarkMode'
 
+import footballAD from '~/assets/images/ad/足球廣告.png'
+
 import { watermanagementData } from '~/mock/watermanagementData'
 
 const { setDarkMode } = useDarkMode()
@@ -143,7 +145,12 @@ const headerPostData = useState('headerPostData', () =>
     </div>
   </header>
 
-  <AdBlock class="mb-5" size="1200x200" text="AD" />
+  <AdBlock
+    class="mb-5"
+    href="https://www.facebook.com/share/14NoPaYcqY9/?mibextid=wwXIfr"
+    :imgSrc="footballAD"
+    adText="藝術家足球俱樂部 熱烈招生中"
+  />
 
   <div class="my-5 flex flex-wrap items-center justify-center gap-5">
     <div class="flex w-full items-center justify-center lg:w-auto">

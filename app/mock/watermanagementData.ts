@@ -41,7 +41,7 @@ export const PTD = {
   download: [
     {
       type: 'PDF',
-      title: '2026 型錄 PDF',
+      title: '2027 型錄 PDF',
       link: '#'
     },
     {
@@ -79,7 +79,7 @@ export const ROD = {
   download: [
     {
       type: 'PDF',
-      title: '2026 型錄 PDF',
+      title: '2027 型錄 PDF',
       link: '#'
     },
     {
@@ -139,7 +139,7 @@ export const GRD = {
   download: [
     {
       type: 'PDF',
-      title: '2026 型錄 PDF',
+      title: '2027 型錄 PDF',
       link: '#'
     },
     {
@@ -191,7 +191,7 @@ export const EGRD = {
   download: [
     {
       type: 'PDF',
-      title: '2026 型錄 PDF',
+      title: '2027 型錄 PDF',
       link: '#'
     },
     {
@@ -247,7 +247,7 @@ export const PGRD = {
   download: [
     {
       type: 'PDF',
-      title: '2026 型錄 PDF',
+      title: '2027 型錄 PDF',
       link: '#'
     },
     {
@@ -311,7 +311,7 @@ export const SPD = {
   download: [
     {
       type: 'PDF',
-      title: '2026 型錄 PDF',
+      title: '2027 型錄 PDF',
       link: '#'
     },
     {
@@ -375,7 +375,7 @@ export const DPD = {
   download: [
     {
       type: 'PDF',
-      title: '2026 型錄 PDF',
+      title: '2027 型錄 PDF',
       link: '#'
     },
     {
@@ -419,7 +419,7 @@ export const CWSD = {
   download: [
     {
       type: 'PDF',
-      title: '2026 型錄 PDF',
+      title: '2027 型錄 PDF',
       link: '#'
     },
     {
@@ -475,7 +475,7 @@ export const SGRD = {
   download: [
     {
       type: 'PDF',
-      title: '2026 型錄 PDF',
+      title: '2027 型錄 PDF',
       link: '#'
     },
     {
@@ -519,7 +519,7 @@ export const DID = {
   download: [
     {
       type: 'PDF',
-      title: '2026 型錄 PDF',
+      title: '2027 型錄 PDF',
       link: '#'
     },
     {
@@ -567,7 +567,7 @@ export const RLD = {
   download: [
     {
       type: 'PDF',
-      title: '2026 型錄 PDF',
+      title: '2027 型錄 PDF',
       link: '#'
     },
     {
@@ -615,7 +615,7 @@ export const HPD = {
   download: [
     {
       type: 'PDF',
-      title: '2026 型錄 PDF',
+      title: '2027 型錄 PDF',
       link: '#'
     },
     {
@@ -667,7 +667,7 @@ export const GSW = {
   download: [
     {
       type: 'PDF',
-      title: '2026 型錄 PDF',
+      title: '2027 型錄 PDF',
       link: '#'
     },
     {
@@ -715,7 +715,7 @@ export const CCD = {
   download: [
     {
       type: 'PDF',
-      title: '2026 型錄 PDF',
+      title: '2027 型錄 PDF',
       link: '#'
     },
     {
@@ -767,7 +767,7 @@ export const CWD = {
   download: [
     {
       type: 'PDF',
-      title: '2026 型錄 PDF',
+      title: '2027 型錄 PDF',
       link: '#'
     },
     {
@@ -815,7 +815,7 @@ export const LEP = {
   download: [
     {
       type: 'PDF',
-      title: '2026 型錄 PDF',
+      title: '2027 型錄 PDF',
       link: '#'
     },
     {
@@ -867,7 +867,7 @@ export const CWS = {
   download: [
     {
       type: 'PDF',
-      title: '2026 型錄 PDF',
+      title: '2027 型錄 PDF',
       link: '#'
     },
     {
@@ -919,7 +919,7 @@ export const NRN = {
   download: [
     {
       type: 'PDF',
-      title: '2026 型錄 PDF',
+      title: '2027 型錄 PDF',
       link: '#'
     },
     {
@@ -967,7 +967,7 @@ export const URS = {
   download: [
     {
       type: 'PDF',
-      title: '2026 型錄 PDF',
+      title: '2027 型錄 PDF',
       link: '#'
     },
     {
@@ -1015,7 +1015,7 @@ export const RN = {
   download: [
     {
       type: 'PDF',
-      title: '2026 型錄 PDF',
+      title: '2027 型錄 PDF',
       link: '#'
     },
     {
@@ -1063,7 +1063,7 @@ export const GSD = {
   download: [
     {
       type: 'PDF',
-      title: '2026 型錄 PDF',
+      title: '2027 型錄 PDF',
       link: '#'
     },
     {

@@ -5,10 +5,12 @@ import ExternalIcon from '~/assets/images/icons/external-link.webp'
 import img2_3_2 from '~/assets/images/calc/2-3-2.png'
 import img2_3_4 from '~/assets/images/calc/2-3-4.png'
 import img2_3_5 from '~/assets/images/calc/2-3-5.png'
+import img2_3_6 from '~/assets/images/calc/2-3-6.png'
 import img2_3_7 from '~/assets/images/calc/2-3-7.png'
 import img2_3_8 from '~/assets/images/calc/2-3-8.png'
 import img2_3_9 from '~/assets/images/calc/2-3-9.png'
 import img2_3_10 from '~/assets/images/calc/2-3-10.png'
+import img2_3_11 from '~/assets/images/calc/2-3-11.png'
 import img2_3_12 from '~/assets/images/calc/2-3-12.png'
 
 import InfoNotice from '~/components/common/infoNotice.vue'
@@ -30,7 +32,6 @@ const tableData = [
     formula: 'Q₂=0.5*A₂*f*t+0.05*h*A₂(連鎖磚型) \n Q₂=0.5*A₂*f*t+0.3*h*A₂  (通氣管型)',
     variableDesc:
       'A₂: 透水鋪面面積(m²) \n h: 透水鋪面級配層厚度(m)≤0.25。 \n (若基層為混凝土等不透水鋪面，則Q₂=0)',
-    // referenceFig: '圖 2-3.2 \n 圖 2-3.3',
     referenceFig: [
       {
         text: '圖 2-3.2',
@@ -88,7 +89,7 @@ const tableData = [
     referenceFig: [
       {
         text: '圖 2-3.11',
-        href: ''
+        href: '2_3_11'
       }
     ],
     totalScore: 'Q5 ='
@@ -120,7 +121,7 @@ const tableData = [
     referenceFig: [
       {
         text: '圖 2-3.6',
-        href: ''
+        href: '2_3_6'
       }
     ],
     totalScore: 'Q7 ='
@@ -175,6 +176,8 @@ const handleDialogOpen = (imgNum: string) => {
         return img2_3_4
       case '2_3_5':
         return img2_3_5
+      case '2_3_6':
+        return img2_3_6
       case '2_3_7':
         return img2_3_7
       case '2_3_8':
@@ -183,6 +186,8 @@ const handleDialogOpen = (imgNum: string) => {
         return img2_3_9
       case '2_3_10':
         return img2_3_10
+      case '2_3_11':
+        return img2_3_11
       case '2_3_12':
         return img2_3_12
       default:
