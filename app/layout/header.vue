@@ -38,7 +38,11 @@ const logoHover = (isHovering: boolean): void => {
 }
 
 const headerPostData = useState('headerPostData', () =>
-  watermanagementData.sort(() => 0.5 - Math.random()).slice(0, 5)
+  // watermanagementData.sort(() => 0.5 - Math.random()).slice(0, 5)
+  Object.keys(watermanagementData)
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 5)
+    .map((key) => watermanagementData[key as keyof typeof watermanagementData])
 )
 </script>
 

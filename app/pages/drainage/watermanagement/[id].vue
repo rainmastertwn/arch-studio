@@ -9,7 +9,7 @@ import { watermanagementData } from '~/mock/watermanagementData'
 
 const router = useRouter()
 const pageId = useRoute().params.id
-const postData = watermanagementData.find((item) => item.value === pageId)
+const postData = Object.values(watermanagementData).find((item) => item.value === pageId)
 
 if (!postData) {
   navigateTo('/404')

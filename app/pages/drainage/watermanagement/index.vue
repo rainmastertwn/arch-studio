@@ -5,27 +5,36 @@ import iconType9 from '~/assets/images/icons/icon-type-9.webp'
 
 const wrapperHover = inject<Ref<boolean>>('wrapperHover')
 
-import { watermanagementData } from '~/mock/watermanagementData'
+import { watermanagementData as data } from '~/mock/watermanagementData'
 // category: 雨水排水 SD、儲存雨水 RS、滲透雨水 RI
 // filter category SD Data with name length 5, 6, 7
 const categories = ['SD', 'RS', 'RI'] as const
+// const categorizedData = useState('categorizedData', () => {
+//   return categories.reduce(
+//     (acc, cat) => {
+//       // 先過濾出該分類的資料
+//       const filtered = watermanagementData.filter((item) => item.category.includes(cat))
 
-const categorizedData = useState('categorizedData', () => {
-  return categories.reduce(
-    (acc, cat) => {
-      // 先過濾出該分類的資料
-      const filtered = watermanagementData.filter((item) => item.category.includes(cat))
-
-      acc[cat] = {
-        lengthLess5: filtered.filter((item) => item.value.length <= 5),
-        length6: filtered.filter((item) => item.value.length === 6),
-        lengthOver7: filtered.filter((item) => item.value.length >= 7)
-      }
-      return acc
-    },
-    {} as Record<string, any>
-  )
-})
+//       acc[cat] = {
+//         lengthLess5: filtered.filter((item) => item.value.length <= 5),
+//         length6: filtered.filter((item) => item.value.length === 6),
+//         lengthOver7: filtered.filter((item) => item.value.length >= 7)
+//       }
+//       return acc
+//     },
+//     {} as Record<string, any>
+//   )
+// })
+const categoriesData = {
+  SD: [
+    [data.PTD, data.ROD, data.GRD, data.EGRD],
+    [data.SPD, data.DPD, data.DID, data.RLD, data.HPD],
+    [data.GSW, data.CCD],
+    [data.PGRD, data.CWSD, data.SGRD, data.GSD]
+  ],
+  RS: [[data.NRN], [data.SSI, data.LEP, data.URS], [data.EW], [data.CWD, data.CWS]],
+  RI: [[data.RN], [data.ZYW], [data.PGS, data.LD], [data.SRQ5], [data.SRQ6Q7, data.GCD]]
+}
 </script>
 
 <template>
@@ -48,57 +57,34 @@ const categorizedData = useState('categorizedData', () => {
         </div>
       </div>
       <div
-        class="col-span-12 col-start-1 grid grid-flow-row grid-cols-2 grid-rows-none gap-5 lg:col-span-10 lg:col-start-2 lg:grid-flow-col lg:grid-cols-5 lg:grid-rows-5"
+        class="col-span-12 col-start-1 flex flex-col gap-0 lg:col-span-10 lg:col-start-2 lg:flex-row lg:gap-5"
       >
-        <NuxtLink
-          class="application-wrap bg-gray-dedede dark:bg-blue-fixed dark:border-white-fixed flex cursor-pointer items-center justify-center border-4 border-transparent text-center text-lg"
-          v-for="item in categorizedData.SD.lengthLess5"
-          :key="item.value"
-          :href="`/drainage/watermanagement/${item.value}`"
+        <div
+          class="flex flex-col items-center"
+          v-for="(items, idx) in categoriesData.SD"
+          :key="idx"
         >
-          {{ item.value }}
-        </NuxtLink>
-
-        <!-- 位置遞補，幽靈元素 -->
-        <div class="hidden opacity-0 lg:block"></div>
-
-        <NuxtLink
-          class="application-wrap bg-gray-dedede dark:bg-blue-fixed dark:border-white-fixed flex cursor-pointer items-center justify-center border-4 border-transparent text-center text-lg"
-          v-for="item in categorizedData.SD.length6"
-          :key="item.value"
-          :href="`/drainage/watermanagement/${item.value}`"
-        >
-          {{ item.value }}
-        </NuxtLink>
-
-        <!-- 位置遞補，幽靈元素 -->
-        <div class="hidden opacity-0 lg:block"></div>
-        <!-- 位置遞補，幽靈元素 -->
-        <div class="hidden opacity-0 lg:block"></div>
-        <!-- 位置遞補，幽靈元素 -->
-        <div class="hidden opacity-0 lg:block"></div>
-
-        <NuxtLink
-          class="application-wrap bg-gray-dedede dark:bg-blue-fixed dark:border-white-fixed flex cursor-pointer items-center justify-center border-4 border-transparent text-center text-lg"
-          v-for="item in categorizedData.SD.lengthOver7"
-          :key="item.value"
-          :href="`/drainage/watermanagement/${item.value}`"
-        >
-          {{ item.value }}
-        </NuxtLink>
+          <NuxtLink
+            class="application-wrap bg-gray-dedede dark:bg-blue-fixed dark:border-white-fixed mb-5 flex cursor-pointer items-center justify-center border-4 border-transparent text-center text-lg"
+            v-for="item in items"
+            :key="item.value"
+            :href="`/drainage/watermanagement/${item.value}`"
+          >
+            {{ item.value }}
+          </NuxtLink>
+        </div>
       </div>
       <!-- border bottom -->
       <div
         class="border-light-gray dark:border-white-fixed col-span-12 col-start-1 mt-5 mb-5 flex flex-wrap items-center border-b lg:col-span-10 lg:col-start-2"
       ></div>
     </div>
-
     <!-- 儲存雨水 -->
     <div class="grid grid-cols-12">
       <div
         class="col-span-12 col-start-1 mb-3 flex flex-wrap items-center lg:col-span-10 lg:col-start-2"
       >
-        <div class="flex scroll-mt-6 items-center" id="rainwater-storage">
+        <div class="flex scroll-mt-6 items-center" id="rainwater-drainage">
           <div
             class="icon-border mr-5 flex h-[106px] w-[106px] items-center justify-center rounded-full border-6 border-transparent p-3"
             :class="{
@@ -111,50 +97,34 @@ const categorizedData = useState('categorizedData', () => {
         </div>
       </div>
       <div
-        class="col-span-12 col-start-1 grid grid-flow-row grid-cols-2 grid-rows-none gap-5 lg:col-span-10 lg:col-start-2 lg:grid-flow-col lg:grid-cols-5 lg:grid-rows-5"
+        class="col-span-12 col-start-1 flex flex-col gap-0 lg:col-span-10 lg:col-start-2 lg:flex-row lg:gap-5"
       >
-        <NuxtLink
-          class="application-wrap bg-gray-dedede dark:bg-blue-fixed dark:border-white-fixed flex cursor-pointer items-center justify-center border-4 border-transparent text-center text-lg"
-          v-for="item in categorizedData.RS.lengthLess5"
-          :key="item.value"
-          :href="`/drainage/watermanagement/${item.value}`"
+        <div
+          class="flex flex-col items-center"
+          v-for="(items, idx) in categoriesData.RS"
+          :key="idx"
         >
-          {{ item.value }}
-        </NuxtLink>
-
-        <NuxtLink
-          class="application-wrap bg-gray-dedede dark:bg-blue-fixed dark:border-white-fixed flex cursor-pointer items-center justify-center border-4 border-transparent text-center text-lg"
-          v-for="item in categorizedData.RS.length6"
-          :key="item.value"
-          :href="`/drainage/watermanagement/${item.value}`"
-        >
-          {{ item.value }}
-        </NuxtLink>
-
-        <!-- 位置遞補，幽靈元素 -->
-        <div class="hidden opacity-0 lg:block"></div>
-
-        <NuxtLink
-          class="application-wrap bg-gray-dedede dark:bg-blue-fixed dark:border-white-fixed flex cursor-pointer items-center justify-center border-4 border-transparent text-center text-lg"
-          v-for="item in categorizedData.RS.lengthOver7"
-          :key="item.value"
-          :href="`/drainage/watermanagement/${item.value}`"
-        >
-          {{ item.value }}
-        </NuxtLink>
+          <NuxtLink
+            class="application-wrap bg-gray-dedede dark:bg-blue-fixed dark:border-white-fixed mb-5 flex cursor-pointer items-center justify-center border-4 border-transparent text-center text-lg"
+            v-for="item in items"
+            :key="item.value"
+            :href="`/drainage/watermanagement/${item.value}`"
+          >
+            {{ item.value }}
+          </NuxtLink>
+        </div>
       </div>
       <!-- border bottom -->
       <div
         class="border-light-gray dark:border-white-fixed col-span-12 col-start-1 mt-5 mb-5 flex flex-wrap items-center border-b lg:col-span-10 lg:col-start-2"
       ></div>
     </div>
-
     <!-- 滲透雨水 -->
     <div class="grid grid-cols-12">
       <div
         class="col-span-12 col-start-1 mb-3 flex flex-wrap items-center lg:col-span-10 lg:col-start-2"
       >
-        <div class="flex scroll-mt-6 items-center" id="rainwater-infiltration">
+        <div class="flex scroll-mt-6 items-center" id="rainwater-drainage">
           <div
             class="icon-border mr-5 flex h-[106px] w-[106px] items-center justify-center rounded-full border-6 border-transparent p-3"
             :class="{
@@ -167,39 +137,22 @@ const categorizedData = useState('categorizedData', () => {
         </div>
       </div>
       <div
-        class="col-span-12 col-start-1 grid grid-flow-row grid-cols-2 grid-rows-none gap-5 lg:col-span-10 lg:col-start-2 lg:grid-flow-col lg:grid-cols-5 lg:grid-rows-5"
+        class="col-span-12 col-start-1 flex flex-col gap-0 lg:col-span-10 lg:col-start-2 lg:flex-row lg:gap-5"
       >
-        <NuxtLink
-          class="application-wrap bg-gray-dedede dark:bg-blue-fixed dark:border-white-fixed flex cursor-pointer items-center justify-center border-4 border-transparent text-center text-lg"
-          v-for="item in categorizedData.RI.lengthLess5"
-          :key="item.value"
-          :href="`/drainage/watermanagement/${item.value}`"
+        <div
+          class="flex flex-col items-center"
+          v-for="(items, idx) in categoriesData.RI"
+          :key="idx"
         >
-          {{ item.value }}
-        </NuxtLink>
-
-        <!-- 位置遞補，幽靈元素 -->
-        <div class="hidden opacity-0 lg:block"></div>
-        <!-- 位置遞補，幽靈元素 -->
-        <div class="hidden opacity-0 lg:block"></div>
-
-        <NuxtLink
-          class="application-wrap bg-gray-dedede dark:bg-blue-fixed dark:border-white-fixed flex cursor-pointer items-center justify-center border-4 border-transparent text-center text-lg"
-          v-for="item in categorizedData.RI.length6"
-          :key="item.value"
-          :href="`/drainage/watermanagement/${item.value}`"
-        >
-          {{ item.value }}
-        </NuxtLink>
-
-        <NuxtLink
-          class="application-wrap bg-gray-dedede dark:bg-blue-fixed dark:border-white-fixed flex cursor-pointer items-center justify-center border-4 border-transparent text-center text-lg"
-          v-for="item in categorizedData.RI.lengthOver7"
-          :key="item.value"
-          :href="`/drainage/watermanagement/${item.value}`"
-        >
-          {{ item.value }}
-        </NuxtLink>
+          <NuxtLink
+            class="application-wrap bg-gray-dedede dark:bg-blue-fixed dark:border-white-fixed mb-5 flex cursor-pointer items-center justify-center border-4 border-transparent text-center text-lg"
+            v-for="item in items"
+            :key="item.value"
+            :href="`/drainage/watermanagement/${item.value}`"
+          >
+            {{ item.value }}
+          </NuxtLink>
+        </div>
       </div>
       <!-- border bottom -->
       <div
@@ -219,7 +172,8 @@ const categorizedData = useState('categorizedData', () => {
     text-shadow 0.3s ease;
 
   &:hover {
-    border-color: var(--color-green);
+    // border-color: var(--color-green-set);
+    border-color: #8ad8ff;
     text-shadow:
       0.3px 0 0 currentcolor,
       -0.3px 0 0 currentcolor;

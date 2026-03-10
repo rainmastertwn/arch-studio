@@ -19,9 +19,15 @@ import NRNImg from '~/assets/images/waterManagement/NRN.png'
 import URSImg from '~/assets/images/waterManagement/URS.png'
 import RNImg from '~/assets/images/waterManagement/RN.png'
 import GSDImg from '~/assets/images/waterManagement/GSD.png'
+import EWImg from '~/assets/images/waterManagement/EW.png'
+import LDImg from '~/assets/images/waterManagement/LD.png'
+import SRQ5Img from '~/assets/images/waterManagement/SRQ5.png'
+import SRQ6Q7Img from '~/assets/images/waterManagement/SRQ6Q7.png'
+import GCDImg from '~/assets/images/waterManagement/GCD.png'
+import SSIImg from '~/assets/images/waterManagement/SSI.png'
 
 // category: 雨水排水 SD、儲存雨水 RS、滲透雨水 RI
-
+// == 雨水排水 SD ==
 // 犬走的排水
 export const PTD = {
   category: ['SD'],
@@ -58,7 +64,7 @@ export const PTD = {
 }
 // 屋頂點排水
 export const ROD = {
-  category: ['SD', 'RI'],
+  category: ['SD'],
   value: '屋頂點排水',
   title: '屋頂點排水',
   subTitle: '建築 屋頂點排水設計',
@@ -110,7 +116,7 @@ export const ROD = {
 }
 // 綠屋頂排水
 export const GRD = {
-  category: ['SD', 'RI'],
+  category: ['SD'],
   value: '綠屋頂排水',
   title: '人工地盤排水 × 綠屋頂排水',
   subTitle: '建築 綠屋頂排水設計',
@@ -170,7 +176,7 @@ export const GRD = {
 }
 // 薄層綠屋頂
 export const EGRD = {
-  category: ['SD', 'RI'],
+  category: ['SD'],
   value: '薄層綠屋頂',
   title: '人工地盤排水 × 薄層綠屋頂排水',
   subTitle: '建築薄層 綠屋頂排水設計',
@@ -222,7 +228,7 @@ export const EGRD = {
 }
 // 停車場上方綠屋頂排水
 export const PGRD = {
-  category: ['SD', 'RI'],
+  category: ['SD'],
   value: '停車場屋頂排水',
   title: '人工地盤排水 × 停車場上方綠屋頂排水',
   subTitle: '停車場上方 綠地排水設計',
@@ -274,7 +280,7 @@ export const PGRD = {
 }
 // 淺型花台排水
 export const SPD = {
-  category: ['SD', 'RI'],
+  category: ['SD'],
   value: '淺型花台排水',
   title: '人工地盤排水 × ≤60cm 淺型花台，社區中庭排水',
   subTitle: '草本植物與小灌木的淺型花台 排水設計',
@@ -338,7 +344,7 @@ export const SPD = {
 }
 // 深型花台排水
 export const DPD = {
-  category: ['SD', 'RI'],
+  category: ['SD'],
   value: '深型花台排水',
   title: '人工地盤排水 × 深型花台排水≥60cm',
   subTitle: '灌木，喬木等木本植物的植栽槽排水設計',
@@ -446,7 +452,7 @@ export const CWSD = {
 }
 // 斜屋頂綠化排水
 export const SGRD = {
-  category: ['SD', 'RI'],
+  category: ['SD'],
   value: '斜屋頂綠化排水',
   title: '斜屋頂的綠化排水',
   subTitle: '斜屋頂綠化排水 設計',
@@ -550,7 +556,7 @@ export const DID = {
 }
 // 屋頂線形排水
 export const RLD = {
-  category: ['SD', 'RI'],
+  category: ['SD'],
   value: '屋頂線形排水',
   title: '屋頂線形排水',
   subTitle: '屋頂線形排水設計',
@@ -744,302 +750,6 @@ export const CCD = {
     }
   ]
 }
-// 人工溼地滯水
-export const CWD = {
-  category: ['SD', 'RS'],
-  value: '人工溼地滯水',
-  title: '人工溼地滯水',
-  subTitle: '全滯水型 設計',
-  infoImg: {
-    imgSrc: CWDImg,
-    label: ''
-  },
-  suggestions: [
-    {
-      label: 'GCL 複層式皂土毯',
-      link: 'https://www.coinn.tw/product/GCL'
-    },
-    {
-      label: 'SBR 地工織布',
-      link: 'https://www.coinn.tw/product/SBR'
-    }
-  ],
-  download: [
-    {
-      type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
-    },
-    {
-      type: 'CAD',
-      title: '2027 圖說 CAD',
-      link: '#'
-    },
-    {
-      type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
-    }
-  ],
-  comment: [
-    {
-      label: '> 停車場頂板上方綠化排水',
-      href: '#'
-    },
-    {
-      label: '> ≥60cm花台排水',
-      href: '#'
-    }
-  ]
-}
-// 景觀生態水池
-export const LEP = {
-  category: ['SD', 'RS'],
-  value: '景觀生態水池',
-  title: '景觀生態水池',
-  subTitle: '全蓄水型設計 設計',
-  infoImg: {
-    imgSrc: LEPImg,
-    label: ''
-  },
-  suggestions: [
-    {
-      label: 'TKS 坦克士不透水膜',
-      link: 'https://www.coinn.tw/product/TKS'
-    },
-    {
-      label: 'SBR 地工織布',
-      link: 'https://www.coinn.tw/product/SBR'
-    }
-  ],
-  download: [
-    {
-      type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
-    },
-    {
-      type: 'CAD',
-      title: '2027 圖說 CAD',
-      link: '#'
-    },
-    {
-      type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
-    }
-  ],
-  comment: [
-    {
-      label: '> 停車場頂板上方綠化排水',
-      href: '#'
-    },
-    {
-      label: '> ≥60cm花台排水',
-      href: '#'
-    }
-  ]
-}
-// 人工溼地儲水
-export const CWS = {
-  category: ['SD', 'RS'],
-  value: '人工溼地儲水',
-  title: '人工溼地儲滯水及水道設計',
-  subTitle: '滯水兼儲水型設計 設計',
-  infoImg: {
-    imgSrc: CWSImg,
-    label: ''
-  },
-  suggestions: [
-    {
-      label: 'TKS 坦克士不透水膜',
-      link: 'https://www.coinn.tw/product/TKS'
-    },
-    {
-      label: 'GCL 複層式皂土毯',
-      link: 'https://www.coinn.tw/product/GCL'
-    },
-    {
-      label: 'SBR 地工織布',
-      link: 'https://www.coinn.tw/product/SBR'
-    }
-  ],
-  download: [
-    {
-      type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
-    },
-    {
-      type: 'CAD',
-      title: '2027 圖說 CAD',
-      link: '#'
-    },
-    {
-      type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
-    }
-  ],
-  comment: [
-    {
-      label: '> 停車場頂板上方綠化排水',
-      href: '#'
-    },
-    {
-      label: '> ≥60cm花台排水',
-      href: '#'
-    }
-  ]
-}
-// 流出抑制不滲透
-export const NRN = {
-  category: ['SD', 'RS'],
-  value: '流出抑制不滲透',
-  title: '流出抑制 × 不滲透型',
-  subTitle: '流出抑制 × 不滲透型 設計',
-  infoImg: {
-    imgSrc: NRNImg,
-    label: ''
-  },
-  suggestions: [
-    {
-      label: 'RS 雨水積磚',
-      link: 'https://www.coinn.tw/product/RS'
-    },
-    {
-      label: 'CNS 地工不織布',
-      link: 'https://www.coinn.tw/product/CNS'
-    },
-    {
-      label: 'TKS 坦克士不透水膜',
-      link: 'https://www.coinn.tw/product/TKS'
-    }
-  ],
-  download: [
-    {
-      type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
-    },
-    {
-      type: 'CAD',
-      title: '2027 圖說 CAD',
-      link: '#'
-    },
-    {
-      type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
-    }
-  ],
-  comment: [
-    {
-      label: '> 停車場頂板上方綠化排水',
-      href: '#'
-    },
-    {
-      label: '> ≥60cm花台排水',
-      href: '#'
-    }
-  ]
-}
-// 地下儲存雨水
-export const URS = {
-  category: ['SD', 'RS'],
-  value: '地下儲存雨水',
-  title: '地下儲存雨水 × 防災再利用',
-  subTitle: '地下儲存雨水防災 設計',
-  infoImg: {
-    imgSrc: URSImg,
-    label: ''
-  },
-  suggestions: [
-    {
-      label: 'RS 雨水積磚',
-      link: 'https://www.coinn.tw/product/RS'
-    },
-    {
-      label: 'CNS 地工不織布',
-      link: 'https://www.coinn.tw/product/CNS'
-    }
-  ],
-  download: [
-    {
-      type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
-    },
-    {
-      type: 'CAD',
-      title: '2027 圖說 CAD',
-      link: '#'
-    },
-    {
-      type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
-    }
-  ],
-  comment: [
-    {
-      label: '> 停車場頂板上方綠化排水',
-      href: '#'
-    },
-    {
-      label: '> ≥60cm花台排水',
-      href: '#'
-    }
-  ]
-}
-// 流出抑制滲透
-export const RN = {
-  category: ['SD', 'RI'],
-  value: '流出抑制滲透',
-  title: '流出抑制 × 滲透保水型',
-  subTitle: '滲透保水型流出抑制 設計',
-  infoImg: {
-    imgSrc: RNImg,
-    label: ''
-  },
-  suggestions: [
-    {
-      label: 'RS 雨水積磚',
-      link: 'https://www.coinn.tw/product/RS'
-    },
-    {
-      label: 'CNS 地工不織布',
-      link: 'https://www.coinn.tw/product/CNS'
-    }
-  ],
-  download: [
-    {
-      type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
-    },
-    {
-      type: 'CAD',
-      title: '2027 圖說 CAD',
-      link: '#'
-    },
-    {
-      type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
-    }
-  ],
-  comment: [
-    {
-      label: '> 停車場頂板上方綠化排水',
-      href: '#'
-    },
-    {
-      label: '> ≥60cm花台排水',
-      href: '#'
-    }
-  ]
-}
 // 植生綠地點排水
 export const GSD = {
   category: ['SD'],
@@ -1089,7 +799,676 @@ export const GSD = {
   ]
 }
 
-export const watermanagementData = [
+// == 儲存雨水分類 RS ==
+// 不滲透型流出抑制
+export const NRN = {
+  category: ['RS'],
+  value: '不滲透型流出抑制',
+  title: '流出抑制 × 不滲透型',
+  subTitle: '流出抑制 × 不滲透型 設計',
+  infoImg: {
+    imgSrc: NRNImg,
+    label: ''
+  },
+  suggestions: [
+    {
+      label: 'RS 雨水積磚',
+      link: 'https://www.coinn.tw/product/RS'
+    },
+    {
+      label: 'CNS 地工不織布',
+      link: 'https://www.coinn.tw/product/CNS'
+    },
+    {
+      label: 'TKS 坦克士不透水膜',
+      link: 'https://www.coinn.tw/product/TKS'
+    }
+  ],
+  download: [
+    {
+      type: 'PDF',
+      title: '2027 型錄 PDF',
+      link: '#'
+    },
+    {
+      type: 'CAD',
+      title: '2027 圖說 CAD',
+      link: '#'
+    },
+    {
+      type: 'XLS',
+      title: '2027 圖說 XLS',
+      link: '#'
+    }
+  ],
+  comment: [
+    {
+      label: '> 停車場頂板上方綠化排水',
+      href: '#'
+    },
+    {
+      label: '> ≥60cm花台排水',
+      href: '#'
+    }
+  ]
+}
+// 景觀生態水池
+export const LEP = {
+  category: ['RS'],
+  value: '景觀生態水池',
+  title: '景觀生態水池',
+  subTitle: '全蓄水型設計 設計',
+  infoImg: {
+    imgSrc: LEPImg,
+    label: ''
+  },
+  suggestions: [
+    {
+      label: 'TKS 坦克士不透水膜',
+      link: 'https://www.coinn.tw/product/TKS'
+    },
+    {
+      label: 'SBR 地工織布',
+      link: 'https://www.coinn.tw/product/SBR'
+    }
+  ],
+  download: [
+    {
+      type: 'PDF',
+      title: '2027 型錄 PDF',
+      link: '#'
+    },
+    {
+      type: 'CAD',
+      title: '2027 圖說 CAD',
+      link: '#'
+    },
+    {
+      type: 'XLS',
+      title: '2027 圖說 XLS',
+      link: '#'
+    }
+  ],
+  comment: [
+    {
+      label: '> 停車場頂板上方綠化排水',
+      href: '#'
+    },
+    {
+      label: '> ≥60cm花台排水',
+      href: '#'
+    }
+  ]
+}
+// 人工溼地滯水
+export const CWD = {
+  category: ['RS'],
+  value: '人工溼地滯水',
+  title: '人工溼地滯水',
+  subTitle: '全滯水型 設計',
+  infoImg: {
+    imgSrc: CWDImg,
+    label: ''
+  },
+  suggestions: [
+    {
+      label: 'GCL 複層式皂土毯',
+      link: 'https://www.coinn.tw/product/GCL'
+    },
+    {
+      label: 'SBR 地工織布',
+      link: 'https://www.coinn.tw/product/SBR'
+    }
+  ],
+  download: [
+    {
+      type: 'PDF',
+      title: '2027 型錄 PDF',
+      link: '#'
+    },
+    {
+      type: 'CAD',
+      title: '2027 圖說 CAD',
+      link: '#'
+    },
+    {
+      type: 'XLS',
+      title: '2027 圖說 XLS',
+      link: '#'
+    }
+  ],
+  comment: [
+    {
+      label: '> 停車場頂板上方綠化排水',
+      href: '#'
+    },
+    {
+      label: '> ≥60cm花台排水',
+      href: '#'
+    }
+  ]
+}
+// 地上儲水澆灌
+export const SSI = {
+  category: ['RS'],
+  value: '地上儲水澆灌',
+  title: '地上型水撲滿',
+  subTitle: '地上型水撲滿 設計',
+  infoImg: {
+    imgSrc: SSIImg,
+    label: ''
+  }
+}
+// 地下儲存雨水
+export const URS = {
+  category: ['RS'],
+  value: '地下儲存雨水',
+  title: '地下儲存雨水 × 防災再利用',
+  subTitle: '地下儲存雨水防災 設計',
+  infoImg: {
+    imgSrc: URSImg,
+    label: ''
+  },
+  suggestions: [
+    {
+      label: 'RS 雨水積磚',
+      link: 'https://www.coinn.tw/product/RS'
+    },
+    {
+      label: 'CNS 地工不織布',
+      link: 'https://www.coinn.tw/product/CNS'
+    }
+  ],
+  download: [
+    {
+      type: 'PDF',
+      title: '2027 型錄 PDF',
+      link: '#'
+    },
+    {
+      type: 'CAD',
+      title: '2027 圖說 CAD',
+      link: '#'
+    },
+    {
+      type: 'XLS',
+      title: '2027 圖說 XLS',
+      link: '#'
+    }
+  ],
+  comment: [
+    {
+      label: '> 停車場頂板上方綠化排水',
+      href: '#'
+    },
+    {
+      label: '> ≥60cm花台排水',
+      href: '#'
+    }
+  ]
+}
+
+// 景觀生態水道（待新增
+export const EW = {
+  category: ['RS'],
+  value: '景觀生態水道',
+  title: '景觀生態水道',
+  subTitle: '滯水兼儲水型設計 設計',
+  infoImg: {
+    imgSrc: EWImg,
+    label: ''
+  },
+  suggestions: [
+    {
+      label: 'TKS 坦克士不透水膜',
+      link: 'https://www.coinn.tw/product/TKS'
+    },
+    {
+      label: 'SBR 地工織布',
+      link: 'https://www.coinn.tw/product/SBR'
+    }
+  ],
+  download: [
+    {
+      type: 'PDF',
+      title: '2027 型錄 PDF',
+      link: '#'
+    },
+    {
+      type: 'CAD',
+      title: '2027 圖說 CAD',
+      link: '#'
+    },
+    {
+      type: 'XLS',
+      title: '2027 圖說 XLS',
+      link: '#'
+    }
+  ],
+  comment: [
+    {
+      label: '> 停車場頂板上方綠化排水',
+      href: '#'
+    },
+    {
+      label: '> ≥60cm花台排水',
+      href: '#'
+    }
+  ]
+}
+
+// 地下儲水再利用(人工溼地滯水)
+export const CWS = {
+  category: ['RS'],
+  value: '地下儲水再利用',
+  title: '人工溼地儲滯水及水道設計',
+  subTitle: '滯水兼儲水型設計 設計',
+  infoImg: {
+    imgSrc: CWSImg,
+    label: ''
+  },
+  suggestions: [
+    {
+      label: 'TKS 坦克士不透水膜',
+      link: 'https://www.coinn.tw/product/TKS'
+    },
+    {
+      label: 'GCL 複層式皂土毯',
+      link: 'https://www.coinn.tw/product/GCL'
+    },
+    {
+      label: 'SBR 地工織布',
+      link: 'https://www.coinn.tw/product/SBR'
+    }
+  ],
+  download: [
+    {
+      type: 'PDF',
+      title: '2027 型錄 PDF',
+      link: '#'
+    },
+    {
+      type: 'CAD',
+      title: '2027 圖說 CAD',
+      link: '#'
+    },
+    {
+      type: 'XLS',
+      title: '2027 圖說 XLS',
+      link: '#'
+    }
+  ],
+  comment: [
+    {
+      label: '> 停車場頂板上方綠化排水',
+      href: '#'
+    },
+    {
+      label: '> ≥60cm花台排水',
+      href: '#'
+    }
+  ]
+}
+
+// == 滲透雨水分類 RI ==
+// 滲透型流出抑制
+export const RN = {
+  category: ['SD', 'RI'],
+  value: '流出抑制滲透',
+  title: '流出抑制 × 滲透保水型',
+  subTitle: '滲透保水型流出抑制 設計',
+  infoImg: {
+    imgSrc: RNImg,
+    label: ''
+  },
+  suggestions: [
+    {
+      label: 'RS 雨水積磚',
+      link: 'https://www.coinn.tw/product/RS'
+    },
+    {
+      label: 'CNS 地工不織布',
+      link: 'https://www.coinn.tw/product/CNS'
+    }
+  ],
+  download: [
+    {
+      type: 'PDF',
+      title: '2027 型錄 PDF',
+      link: '#'
+    },
+    {
+      type: 'CAD',
+      title: '2027 圖說 CAD',
+      link: '#'
+    },
+    {
+      type: 'XLS',
+      title: '2027 圖說 XLS',
+      link: '#'
+    }
+  ],
+  comment: [
+    {
+      label: '> 停車場頂板上方綠化排水',
+      href: '#'
+    },
+    {
+      label: '> ≥60cm花台排水',
+      href: '#'
+    }
+  ]
+}
+// 中時短濕地（人工溼地滯水）
+export const ZYW = {
+  category: ['RI'],
+  value: '中時短濕地',
+  title: '中時短濕地',
+  subTitle: '全滯水型 設計',
+  infoImg: {
+    imgSrc: CWDImg,
+    label: ''
+  },
+  suggestions: [
+    {
+      label: 'GCL 複層式皂土毯',
+      link: 'https://www.coinn.tw/product/GCL'
+    },
+    {
+      label: 'SBR 地工織布',
+      link: 'https://www.coinn.tw/product/SBR'
+    }
+  ],
+  download: [
+    {
+      type: 'PDF',
+      title: '2027 型錄 PDF',
+      link: '#'
+    },
+    {
+      type: 'CAD',
+      title: '2027 圖說 CAD',
+      link: '#'
+    },
+    {
+      type: 'XLS',
+      title: '2027 圖說 XLS',
+      link: '#'
+    }
+  ],
+  comment: [
+    {
+      label: '> 停車場頂板上方綠化排水',
+      href: '#'
+    },
+    {
+      label: '> ≥60cm花台排水',
+      href: '#'
+    }
+  ]
+}
+
+// 公園草溝排水（草溝滯留排水）
+export const PGS = {
+  category: ['RI'],
+  value: '公園草溝排水',
+  title: '草溝滯留排水',
+  subTitle: '透過地形收集雨水的草溝排水 設計',
+  infoImg: {
+    imgSrc: GSWImg,
+    label: ''
+  },
+  suggestions: [
+    {
+      label: 'CNS 地工不織布',
+      link: 'https://www.coinn.tw/product/CNS'
+    },
+    {
+      label: 'FP 滲透排水管',
+      link: 'https://www.coinn.tw/product/FP'
+    }
+  ],
+  download: [
+    {
+      type: 'PDF',
+      title: '2027 型錄 PDF',
+      link: '#'
+    },
+    {
+      type: 'CAD',
+      title: '2027 圖說 CAD',
+      link: '#'
+    },
+    {
+      type: 'XLS',
+      title: '2027 圖說 XLS',
+      link: '#'
+    }
+  ],
+  comment: [
+    {
+      label: '> 推薦深入閱讀 平屋頂排水',
+      href: '#'
+    },
+    {
+      label: '> 推薦深入閱讀 綠屋頂排水',
+      href: '#'
+    },
+    {
+      label: '> 推薦深入閱讀 屋頂線形排水',
+      href: '#'
+    }
+  ]
+}
+
+// 綠地草坪排水（待新增
+export const LD = {
+  category: ['RI'],
+  value: '綠地草坪排水',
+  title: '綠地，平草地，球場排水',
+  subTitle: '平草地排水 設計',
+  infoImg: {
+    imgSrc: LDImg,
+    label: ''
+  },
+  suggestions: [
+    {
+      label: 'CNS 地工不織布',
+      link: 'https://www.coinn.tw/product/CNS'
+    },
+    {
+      label: 'FP 滲透排水管',
+      link: 'https://www.coinn.tw/product/FP'
+    }
+  ],
+  download: [
+    {
+      type: 'PDF',
+      title: '2027 型錄 PDF',
+      link: '#'
+    },
+    {
+      type: 'CAD',
+      title: '2027 圖說 CAD',
+      link: '#'
+    },
+    {
+      type: 'XLS',
+      title: '2027 圖說 XLS',
+      link: '#'
+    }
+  ],
+  comment: [
+    {
+      label: '> 推薦深入閱讀 平屋頂排水',
+      href: '#'
+    },
+    {
+      label: '> 推薦深入閱讀 綠屋頂排水',
+      href: '#'
+    },
+    {
+      label: '> 推薦深入閱讀 屋頂線形排水',
+      href: '#'
+    }
+  ]
+}
+
+// 基地保水Q5（待新增
+export const SRQ5 = {
+  category: ['RI'],
+  value: '基地保水Q5',
+  title: '建築基地保水 Q₅',
+  subTitle: 'Q₅貯集滲透框架 設計',
+  infoImg: {
+    imgSrc: SRQ5Img,
+    label: ''
+  },
+  suggestions: [
+    {
+      label: 'SW 滲透排水網管',
+      link: 'https://www.coinn.tw/product/SW'
+    },
+    {
+      label: 'TK 滲透排水陰井',
+      link: 'https://www.coinn.tw/product/TK'
+    }
+  ],
+  download: [
+    {
+      type: 'PDF',
+      title: '2027 型錄 PDF',
+      link: '#'
+    },
+    {
+      type: 'CAD',
+      title: '2027 圖說 CAD',
+      link: '#'
+    },
+    {
+      type: 'XLS',
+      title: '2027 圖說 XLS',
+      link: '#'
+    }
+  ],
+  comment: [
+    {
+      label: '> 推薦深入閱讀 平屋頂排水',
+      href: '#'
+    },
+    {
+      label: '> 推薦深入閱讀 綠屋頂排水',
+      href: '#'
+    },
+    {
+      label: '> 推薦深入閱讀 屋頂線形排水',
+      href: '#'
+    }
+  ]
+}
+// 基地保水Q6+Q7（待新增
+export const SRQ6Q7 = {
+  category: ['RI'],
+  value: '基地保水Q6+Q7',
+  title: '建築基地保水 Q₆ + Q₇',
+  subTitle: 'Q₆ 滲透排水管+ Q₇滲透陰井',
+  infoImg: {
+    imgSrc: SRQ6Q7Img,
+    label: ''
+  },
+  suggestions: [
+    {
+      label: 'SW 滲透排水網管',
+      link: 'https://www.coinn.tw/product/SW'
+    },
+    {
+      label: 'TK 滲透排水陰井',
+      link: 'https://www.coinn.tw/product/TK'
+    }
+  ],
+  download: [
+    {
+      type: 'PDF',
+      title: '2027 型錄 PDF',
+      link: '#'
+    },
+    {
+      type: 'CAD',
+      title: '2027 圖說 CAD',
+      link: '#'
+    },
+    {
+      type: 'XLS',
+      title: '2027 圖說 XLS',
+      link: '#'
+    }
+  ],
+  comment: [
+    {
+      label: '> 推薦深入閱讀 平屋頂排水',
+      href: '#'
+    },
+    {
+      label: '> 推薦深入閱讀 綠屋頂排水',
+      href: '#'
+    },
+    {
+      label: '> 推薦深入閱讀 屋頂線形排水',
+      href: '#'
+    }
+  ]
+}
+
+// 高爾夫球場排水（待新增
+export const GCD = {
+  category: ['RI'],
+  value: '高爾夫球場排水',
+  title: '高爾夫球場綠地排水',
+  subTitle: '軟式透水管綠地排水 設計',
+  infoImg: {
+    imgSrc: GCDImg,
+    label: ''
+  },
+  suggestions: [
+    {
+      label: 'FD 軟式透水管',
+      link: 'https://www.coinn.tw/product/FD'
+    }
+  ],
+  download: [
+    {
+      type: 'PDF',
+      title: '2027 型錄 PDF',
+      link: '#'
+    },
+    {
+      type: 'CAD',
+      title: '2027 圖說 CAD',
+      link: '#'
+    },
+    {
+      type: 'XLS',
+      title: '2027 圖說 XLS',
+      link: '#'
+    }
+  ],
+  comment: [
+    {
+      label: '> 推薦深入閱讀 平屋頂排水',
+      href: '#'
+    },
+    {
+      label: '> 推薦深入閱讀 綠屋頂排水',
+      href: '#'
+    },
+    {
+      label: '> 推薦深入閱讀 屋頂線形排水',
+      href: '#'
+    }
+  ]
+}
+
+export const watermanagementData = {
   PTD,
   ROD,
   GRD,
@@ -1104,11 +1483,19 @@ export const watermanagementData = [
   HPD,
   GSW,
   CCD,
-  CWD,
-  LEP,
-  CWS,
+  GSD,
   NRN,
+  LEP,
+  CWD,
+  SSI,
   URS,
+  EW,
+  CWS,
   RN,
-  GSD
-]
+  ZYW,
+  PGS,
+  LD,
+  SRQ5,
+  SRQ6Q7,
+  GCD
+}
