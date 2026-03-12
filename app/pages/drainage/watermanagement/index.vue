@@ -30,7 +30,7 @@ const categoriesData = {
     [data.PTD, data.ROD, data.GRD, data.EGRD],
     [data.SPD, data.DPD, data.DID, data.RLD, data.HPD],
     [data.GSW, data.CCD],
-    [data.PGRD, data.CWSD, data.SGRD, data.GSD]
+    [data.PGRD, data.CWSD, data.SGRD, data.GSD, data.SGD]
   ],
   RS: [[data.NRN], [data.SSI, data.LEP, data.URS], [data.EW], [data.CWD, data.CWS]],
   RI: [[data.RN], [data.ZYW], [data.PGS, data.LD], [data.SRQ5], [data.SRQ6Q7, data.GCD]]

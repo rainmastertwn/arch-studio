@@ -47,18 +47,18 @@ export const PTD = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/SD/PTD/2027_drainage_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/SD/PTD/2027_drainage.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/SD/PTD/2027_drainage_Budget.xls'
     }
   ]
 }
@@ -85,18 +85,18 @@ export const ROD = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/SD/ROD/2027_drainage_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/SD/ROD/2027_drainage.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/SD/ROD/2027_drainage_Budget.xls'
     }
   ],
   comment: [
@@ -145,18 +145,18 @@ export const GRD = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/SD/GRD/2027_drainage_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/SD/GRD/2027_drainage.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/SD/GRD/2027_drainage_Budget.xls'
     }
   ],
   comment: [
@@ -197,18 +197,18 @@ export const EGRD = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/SD/EGRD/2027_drainage_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/SD/EGRD/2027_drainage.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/SD/EGRD/2027_drainage_Budget.xls'
     }
   ],
   comment: [
@@ -253,18 +253,18 @@ export const PGRD = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/SD/PGRD/2027_drainage_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/SD/PGRD/2027_drainage.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/SD/PGRD/2027_drainage_Budget.xls'
     }
   ],
   comment: [
@@ -317,18 +317,18 @@ export const SPD = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/SD/SPD/2027_drainage_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/SD/SPD/2027_drainage.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/SD/SPD/2027_drainage_Budget.xls'
     }
   ],
   comment: [
@@ -381,18 +381,18 @@ export const DPD = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/SD/DPD/2027_drainage_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/SD/DPD/2027_drainage.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/SD/DPD/2027_drainage_Budget.xls'
     }
   ],
   comment: [
@@ -425,18 +425,18 @@ export const CWSD = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/SD/CWSD/2027_drainage_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/SD/CWSD/2027_drainage.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/SD/CWSD/2027_drainage_Budget.xls'
     }
   ],
   comment: [
@@ -481,18 +481,18 @@ export const SGRD = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/SD/SGRD/2027_drainage_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/SD/SGRD/2027_drainage.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/SD/SGRD/2027_drainage_Budget.xls'
     }
   ],
   comment: [
@@ -525,18 +525,18 @@ export const DID = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/SD/DID/2027_drainage_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/SD/DID/2027_drainage.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/SD/DID/2027_drainage_Budget.xls'
     }
   ],
   comment: [
@@ -573,18 +573,18 @@ export const RLD = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/SD/RLD/2027_drainage_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/SD/RLD/2027_drainage.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/SD/RLD/2027_drainage_Budget.xls'
     }
   ],
   comment: [
@@ -621,18 +621,18 @@ export const HPD = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/SD/HPD/2027_drainage_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/SD/HPD/2027_drainage.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/SD/HPD/2027_drainage_Budget.xls'
     }
   ],
   comment: [
@@ -673,18 +673,18 @@ export const GSW = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/SD/GSW/2027_drainage_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/SD/GSW/2027_drainage.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/SD/GSW/2027_drainage_Budget.xls'
     }
   ],
   comment: [
@@ -721,18 +721,18 @@ export const CCD = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/SD/CCD/2027_drainage_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/SD/CCD/2027_drainage.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/SD/CCD/2027_drainage_Budget.xls'
     }
   ],
   comment: [
@@ -773,18 +773,18 @@ export const GSD = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/SD/GSD/2027_drainage_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/SD/GSD/2027_drainage.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/SD/GSD/2027_drainage_Budget.xls'
     }
   ],
   comment: [
@@ -794,6 +794,58 @@ export const GSD = {
     },
     {
       label: '> ≥60cm花台排水',
+      href: '#'
+    }
+  ]
+}
+// 下凹式綠地排水
+export const SGD = {
+  category: ['SD'],
+  value: '下凹式綠地排水',
+  title: '草溝滯留排水',
+  subTitle: '透過地形收集雨水的草溝排水 設計',
+  infoImg: {
+    imgSrc: GSWImg,
+    label: ''
+  },
+  suggestions: [
+    {
+      label: 'CNS 地工不織布',
+      link: 'https://www.coinn.tw/product/CNS'
+    },
+    {
+      label: 'FP 滲透排水管',
+      link: 'https://www.coinn.tw/product/FP'
+    }
+  ],
+  download: [
+    {
+      type: 'PDF',
+      title: '2027 圖說 PDF',
+      link: '/file/SD/SGD/2027_drainage_Model.pdf'
+    },
+    {
+      type: 'CAD',
+      title: '2027 圖說 CAD',
+      link: '/file/SD/SGD/2027_drainage.dwg'
+    },
+    {
+      type: 'XLS',
+      title: '2027 預算 XLS',
+      link: '/file/SD/SGD/2027_drainage_Budget.xls'
+    }
+  ],
+  comment: [
+    {
+      label: '> 推薦深入閱讀 平屋頂排水',
+      href: '#'
+    },
+    {
+      label: '> 推薦深入閱讀 綠屋頂排水',
+      href: '#'
+    },
+    {
+      label: '> 推薦深入閱讀 屋頂線形排水',
       href: '#'
     }
   ]
@@ -827,18 +879,18 @@ export const NRN = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/RS/NRN/2027_storage_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/RS/NRN/2027_storage.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/RS/NRN/2027_storage_Budget.xlsx'
     }
   ],
   comment: [
@@ -875,18 +927,18 @@ export const LEP = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/RS/LEP/2027_storage_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/RS/LEP/2027_storage.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/RS/LEP/2027_storage_Budget.xls'
     }
   ],
   comment: [
@@ -923,18 +975,18 @@ export const CWD = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/RS/CWD/2027_storage_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/RS/CWD/2027_storage.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/RS/CWD/2027_storage_Budget.xls'
     }
   ],
   comment: [
@@ -957,7 +1009,34 @@ export const SSI = {
   infoImg: {
     imgSrc: SSIImg,
     label: ''
-  }
+  },
+  suggestions: [
+    {
+      label: 'GCL 複層式皂土毯',
+      link: 'https://www.coinn.tw/product/GCL'
+    },
+    {
+      label: 'SBR 地工織布',
+      link: 'https://www.coinn.tw/product/SBR'
+    }
+  ],
+  download: [
+    {
+      type: 'PDF',
+      title: '2027 圖說 PDF',
+      link: '/file/RS/SSI/2027_storage_Model.pdf'
+    },
+    {
+      type: 'CAD',
+      title: '2027 圖說 CAD',
+      link: '/file/RS/SSI/2027_storage.dwg'
+    }
+    // {
+    //   type: 'XLS',
+    //   title: '2027 預算 XLS',
+    //   link: '#'
+    // }
+  ]
 }
 // 地下儲存雨水
 export const URS = {
@@ -982,18 +1061,18 @@ export const URS = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/RS/URS/2027_storage_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/RS/URS/2027_storage.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/RS/URS/2027_storage_Budget.xlsx'
     }
   ],
   comment: [
@@ -1031,18 +1110,18 @@ export const EW = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/RS/EW/2027_storage_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/RS/EW/2027_storage.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/RS/EW/2027_storage_Budget.xls'
     }
   ],
   comment: [
@@ -1084,19 +1163,19 @@ export const CWS = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/RS/CWS/2027_storage_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
-    },
-    {
-      type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      link: '/file/RS/CWS/2027_storage.dwg'
     }
+    // {
+    //   type: 'XLS',
+    //   title: '2027 預算 XLS',
+    //   link: '#'
+    // }
   ],
   comment: [
     {
@@ -1113,7 +1192,7 @@ export const CWS = {
 // == 滲透雨水分類 RI ==
 // 滲透型流出抑制
 export const RN = {
-  category: ['SD', 'RI'],
+  category: ['RI'],
   value: '流出抑制滲透',
   title: '流出抑制 × 滲透保水型',
   subTitle: '滲透保水型流出抑制 設計',
@@ -1134,18 +1213,18 @@ export const RN = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/RI/RN/2027_infiltration_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/RI/RN/2027_infiltration.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/RI/RN/2027_infiltration_Budget.xlsx'
     }
   ],
   comment: [
@@ -1182,18 +1261,18 @@ export const ZYW = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/RI/ZYW/2027_infiltration_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/RI/ZYW/2027_infiltration.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/RI/ZYW/2027_infiltration_Budget.xls'
     }
   ],
   comment: [
@@ -1231,18 +1310,18 @@ export const PGS = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/RI/PGS/2027_infiltration_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/RI/PGS/2027_infiltration.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/RI/PGS/2027_infiltration_Budget.xls'
     }
   ],
   comment: [
@@ -1284,18 +1363,18 @@ export const LD = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/RI/LD/2027_infiltration_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/RI/LD/2027_infiltration.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/RI/LD/2027_infiltration_Budget.xls'
     }
   ],
   comment: [
@@ -1337,18 +1416,18 @@ export const SRQ5 = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/RI/SRQ5/2027_infiltration_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/RI/SRQ5/2027_infiltration.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/RI/SRQ5/2027_infiltration_Budget.xlsx'
     }
   ],
   comment: [
@@ -1389,18 +1468,18 @@ export const SRQ6Q7 = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/RI/SRQ6Q7/2027_infiltration_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/RI/SRQ6Q7/2027_infiltration.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/RI/SRQ6Q7/2027_infiltration_Budget.xls'
     }
   ],
   comment: [
@@ -1438,18 +1517,18 @@ export const GCD = {
   download: [
     {
       type: 'PDF',
-      title: '2027 型錄 PDF',
-      link: '#'
+      title: '2027 圖說 PDF',
+      link: '/file/RI/GCD/2027_infiltration_Model.pdf'
     },
     {
       type: 'CAD',
       title: '2027 圖說 CAD',
-      link: '#'
+      link: '/file/RI/GCD/2027_infiltration.dwg'
     },
     {
       type: 'XLS',
-      title: '2027 圖說 XLS',
-      link: '#'
+      title: '2027 預算 XLS',
+      link: '/file/RI/GCD/2027_infiltration_Budget.xls'
     }
   ],
   comment: [
@@ -1479,6 +1558,7 @@ export const watermanagementData = {
   CWSD,
   SGRD,
   DID,
+  SGD,
   RLD,
   HPD,
   GSW,

@@ -7,17 +7,17 @@ import SRSection from '~/components/index/srSection.vue'
 
 <template>
   <section>
-    <ArticleSection class="mb-5" />
+    <ArticleSection class="mb-8" />
 
-    <AdBlock class="mb-5" size="1200x200" text="AD" />
+    <AdBlock class="mb-8" size="1200x200" text="AD" />
 
-    <LIDSection class="mb-5" />
+    <LIDSection class="mb-8" />
 
-    <AdBlock class="mb-5" size="1200x200" text="AD" />
+    <AdBlock class="mb-8" size="1200x200" text="AD" />
 
-    <SRSection class="mb-5" />
+    <SRSection class="mb-8" />
 
-    <div class="my-5 grid grid-cols-1 gap-5 lg:grid-cols-3">
+    <div class="my-8 grid grid-cols-1 gap-5 lg:grid-cols-3">
       <AdBlock size="400x160" text="AD" rounded="36px" />
       <AdBlock size="400x160" text="AD" rounded="36px" />
       <AdBlock size="400x160" text="Sponsor" rounded="36px" />

@@ -26,9 +26,9 @@ const segmentChange = (value: string): void => {
 
 <template>
   <section>
-    <h3 class="mb-5 text-center leading-8">在地滯留 在地滲透 在地淨化<br />從此 我們雨水共生</h3>
+    <h3 class="mb-8 text-center leading-8">在地滯留 在地滲透 在地淨化<br />從此 我們雨水共生</h3>
     <div
-      class="custom-segmented-wrapper mb-5 w-fit"
+      class="custom-segmented-wrapper mb-2 w-fit"
       :class="{
         hovered: wrapperHover
       }"

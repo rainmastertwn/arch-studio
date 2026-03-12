@@ -38,9 +38,9 @@ const currentLayout = computed(() => {
 
 <template>
   <section>
-    <h3 class="mb-5 text-center leading-8">延續土地的滲透保水能力<br />即刻 我們開始行動</h3>
+    <h3 class="mb-8 text-center leading-8">延續土地的滲透保水能力<br />即刻 我們開始行動</h3>
     <div
-      class="custom-segmented-wrapper mb-5 w-fit"
+      class="custom-segmented-wrapper mb-2 w-fit"
       :class="{
         hovered: wrapperHover
       }"

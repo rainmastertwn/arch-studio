@@ -3,15 +3,39 @@ export type AD = {
   link: string
 }
 
-export type Cases = {
+// export type Cases = {
+//   label?: string // segment label
+//   value?: string // segment value
+//   title: string
+//   subTitle: string
+
+//   caseType?: 'multiple' | 'single'
+
+//   imgSrc?: string
+//   imgTitle?: string
+//   imgDescription?: string
+//   content?: string
+
+//   suggestions: {
+//     label: string
+//     link: string
+//   }[]
+//   download: {
+//     type: string
+//     title: string
+//     link: string
+//   }[]
+// }[]
+
+export type SingleCase = {
   label?: string // segment label
   value?: string // segment value
   title: string
   subTitle: string
   imgSrc?: string
-  imgTitle: string
-  imgDescription: string
-  content: string
+  imgTitle?: string
+  imgDescription?: string
+  content?: string
   suggestions: {
     label: string
     link: string
@@ -21,7 +45,31 @@ export type Cases = {
     title: string
     link: string
   }[]
-}[]
+}
+
+export type MultipleCase = {
+  title: string
+  subTitle: string
+
+  caseContent?: {
+    imgSrc?: string
+    imgDescription?: string
+    content?: {
+      title: string
+      content: string
+    }[]
+  }[]
+
+  suggestions: {
+    label: string
+    link: string
+  }[]
+  download: {
+    type: string
+    title: string
+    link: string
+  }[]
+}
 
 export type Post = {
   id: number
@@ -34,7 +82,7 @@ export type Post = {
     title: string
     link: string
   }[]
-  cases?: Cases
+  cases?: SingleCase | MultipleCase
 }
 
 const AD: AD = {
@@ -49,7 +97,9 @@ import PostImg2 from '~/assets/images/post/post2.png'
 import PostImg2_1 from '~/assets/images/post/post2-1.png'
 import PostImg3 from '~/assets/images/post/post3.png'
 import PostImg3_1 from '~/assets/images/post/post3-1.png'
-
+import PostImg4 from '~/assets/images/post/post4.jpg'
+import PostImg4_1 from '~/assets/images/post/post4_1.png'
+import PostImg4_2 from '~/assets/images/post/post4_2.png'
 // category: waterIssue 各種積水問題, howToChoose 我該如何選擇
 
 export const postList: Post[] = [
@@ -308,7 +358,102 @@ export const postList: Post[] = [
   {
     id: 4,
     category: ['waterIssue'],
-    title: '樹穴的組成有防水，排水，樹根酸蝕，周圍雜草叢生等問題，在此告訴您方法，讓您一次解決。'
+    title: '滲透設施雜草叢生並於隔柵蓋內堆積垃圾，這時我們應該這樣做',
+    content:
+      '漫步在人行徒步區時，看到水溝蓋上面長滿著雜草，仔細湊近看完了解設計用意時發現這樣做有很多的好處，不過在維護上會有相當的難度，現在我們思考一下如何在維持原設計理念並稍微改良一下工法，達到降低並減少未來維護上的頻率以及方便度。',
+    ad: AD,
+    imgSrc: PostImg4,
+    readMore: [
+      {
+        title: '在裸露土地上尋找一種既能讓雨水滲入土壤，又能防止雜草生長的方式。',
+        link: '#'
+      },
+      {
+        title: '綠地造景時，如何將地表紋理分隔處理，使空間配置更清楚、視覺更整齊。',
+        link: '#'
+      },
+      {
+        title:
+          '要如何在不進行綠化的前提下，讓屋頂降溫也增加活動空間並帶來遮蔽屋頂管線好處的新解方。',
+        link: '#'
+      }
+    ],
+    cases: [
+      {
+        title: '經典案例解析 × 雜草漫生 × 小垃圾堆積',
+        subTitle:
+          '本案例中，設計師創造一個在貯集滲透區域上方的人行空間，但因雜草漫生，小垃圾堆積後成為一個<br/>行人不會去且看起來無序的一個區域，我們即將深入分析此案例。',
+        caseContent: [
+          {
+            imgSrc: PostImg4_1,
+            imgDescription: '改善雜草叢生的 設計方式:',
+            content: [
+              {
+                title: '原始的設計方式',
+                content:
+                  '看了現場的配置後感受到設計師希望讓人與水岸更加親近的理念，所以在植栽槽內喬木間的灌木區設計了隔柵蓋，用以保留雨水貯集與滲透區的完整功能，也讓經過的人們得以用更近的距離欣賞美麗河道的用心之處。'
+              },
+              {
+                title: '目前的實際使用情形',
+                content:
+                  '我們看到了保留雨水的貯集滲透區域長出了雜草，並且在隔柵蓋的縫隙中發現了許多的菸蒂以及小垃圾，導致設計師用心的美意變成一個需要頻繁維護，否則使用者會不想靠近的地方。這個優良的設計很棒，但有一些小細節需要調整，我們即將做出一些改變，讓我們的未來變得更好'
+              }
+            ]
+          },
+          {
+            imgSrc: PostImg4_2,
+            imgDescription: '改善雜草叢生的 設計方式:',
+            content: [
+              {
+                title: '我們看見的現況整理',
+                content:
+                  '1. 格柵下方碎石沉陷。<br />2. 雜草透由貯集滲透通道漫生。<br />3. 菸蒂及小垃圾掉入格柵間隙。'
+              },
+              {
+                title: '建議做出的細節調整',
+                content:
+                  '在土體與碎石的中間必須先舖上一層地工織布防止碎石沉陷，碎石上方鋪上抗紫外線型抑草蓆。鋪設完成後選擇以粗砂將貯集滲透通道填滿，以減少事後的清潔維護'
+              }
+            ]
+          }
+        ],
+        suggestions: [
+          {
+            label: 'TKS 不透水布',
+            link: 'https://www.coinn.tw/product/TKS'
+          },
+          {
+            label: 'SW 透水網管',
+            link: 'https://www.coinn.tw/product/SW'
+          },
+          {
+            label: 'LDT 透水不織布',
+            link: 'https://www.coinn.tw/product/LDT'
+          },
+          {
+            label: 'RL 預鑄截水溝',
+            link: 'https://www.coinn.tw/product/RL'
+          }
+        ],
+        download: [
+          {
+            type: 'PDF',
+            title: '2027 圖說 PDF',
+            link: '#'
+          },
+          {
+            type: 'CAD',
+            title: '2027 圖說 CAD',
+            link: '#'
+          },
+          {
+            type: 'XLS',
+            title: '2027 圖說 XLS',
+            link: '#'
+          }
+        ]
+      }
+    ]
   },
   {
     id: 5,

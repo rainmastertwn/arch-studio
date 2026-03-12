@@ -8,9 +8,11 @@ import type { Post } from '~/mock/posts'
 import { postList } from '~/mock/posts'
 
 const mainPost = ref<Post[]>([])
-const subPosts = ref<Post[]>([])
+const secondPosts = ref<Post[]>([])
+const thirdPosts = ref<Post[]>([])
 mainPost.value = postList.slice(0, 1)
-subPosts.value = postList.slice(1, 3)
+secondPosts.value = postList.slice(1, 3)
+thirdPosts.value = postList.slice(3, 4)
 </script>
 
 <template>
@@ -24,16 +26,22 @@ subPosts.value = postList.slice(1, 3)
         :content="mainPost[0]?.content || ''"
         :href="`drainage/post/${mainPost[0]?.id}`"
       />
-      <!-- <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
-        <PostVertical :title="subPosts[0]?.title" :imgSrc="PostImg2" />
-        <PostVertical :title="subPosts[1]?.title" :imgSrc="PostImg2" />
-      </div> -->
+      <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
+        <PostVertical
+          :title="thirdPosts[0]?.title || ''"
+          :maxLines="2"
+          :imgSrc="thirdPosts[0]?.imgSrc || ''"
+          :content="thirdPosts[0]?.content || ''"
+          :href="`drainage/post/${thirdPosts[0]?.id}`"
+        />
+        <!-- <PostVertical :title="thirdPosts[1]?.title" :imgSrc="PostImg4" /> -->
+      </div>
     </div>
     <div class="col-span-1 lg:col-span-3">
       <PostVertical
         class="mb-5"
         :title="post?.title || ''"
-        v-for="(post, index) in subPosts"
+        v-for="(post, index) in secondPosts"
         :key="post.id"
         :imgSrc="post.imgSrc || ''"
         :content="post.content || ''"
