@@ -141,7 +141,7 @@ const headerPostData = useState('headerPostData', () =>
       </NuxtLink>
       <NuxtLink
         class="icon-box dark:border-white-fixed bg-medium-gray flex flex-row items-center justify-center rounded-2xl border border-transparent px-0 pb-0 lg:flex-col lg:px-4 lg:pb-2"
-        href="#"
+        href="/drainage/sponsor"
       >
         <img class="w-[54px] lg:w-[108px]" alt="Icon Type 6" :src="iconType6" />
         <h6>來信贊助合作</h6>

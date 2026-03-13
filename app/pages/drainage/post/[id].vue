@@ -93,7 +93,7 @@ const segmentChange = (value: string): void => {
         {{ segmentContent?.imgTitle }}
       </h4>
       <SingleCaseLayout v-if="!segmentContent?.caseContent" :segmentContent="segmentContent" />
-      <MultipleCaseLayout v-else />
+      <MultipleCaseLayout v-else :segmentContent="segmentContent" />
     </div>
   </section>
 </template>

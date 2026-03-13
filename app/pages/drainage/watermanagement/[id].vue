@@ -6,6 +6,7 @@ import ExternalIcon from '~/assets/images/icons/external-link.webp'
 import ExternalWhiteIcon from '~/assets/images/icons/external-link-white.webp'
 
 import { watermanagementData } from '~/mock/watermanagementData'
+import { postList } from '~/mock/posts'
 
 const router = useRouter()
 const pageId = useRoute().params.id
@@ -16,6 +17,15 @@ if (!postData) {
 }
 
 const wrapperHover = inject<Ref<boolean>>('wrapperHover')
+
+const suggestionData = useState('suggestionsData', () => {
+  const data = postList
+    .sort((a, b) => a.id - b.id)
+    .slice(0, 4)
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 3)
+  return data
+})
 </script>
 
 <template>
@@ -44,6 +54,7 @@ const wrapperHover = inject<Ref<boolean>>('wrapperHover')
             </div>
           </div>
           <div class="col-span-12 lg:col-span-4">
+            <!-- 建議使用材料 -->
             <div
               class="sky-blue-border mb-5 flex flex-col rounded-2xl border-2 border-transparent p-4"
               :class="{
@@ -78,9 +89,9 @@ const wrapperHover = inject<Ref<boolean>>('wrapperHover')
                 </li>
               </ul>
             </div>
-
+            <!-- 下崽專區 -->
             <div
-              class="sky-blue-border self-start rounded-2xl border-2 border-transparent p-4"
+              class="sky-blue-border mb-4 self-start rounded-2xl border-2 border-transparent p-4"
               :class="{
                 hovered: wrapperHover
               }"
@@ -110,6 +121,26 @@ const wrapperHover = inject<Ref<boolean>>('wrapperHover')
                       height="30"
                     />
                     {{ item.title }}
+                  </NuxtLink>
+                </li>
+              </ul>
+            </div>
+            <!-- 推薦深入閱讀 -->
+            <div
+              class="sky-blue-border self-start rounded-2xl border-2 border-transparent p-4"
+              :class="{
+                hovered: wrapperHover
+              }"
+            >
+              <h4 class="border-light-gray mb-2 border-b pb-2">推薦深入閱讀</h4>
+              <ul>
+                <li class="mb-2" v-for="item in suggestionData" :key="item.title">
+                  <NuxtLink
+                    class="text-hover max-text-one-lines flex items-center"
+                    :href="`/drainage/post/${item.id}`"
+                    rel="noopener noreferrer"
+                  >
+                    > {{ item.title }}
                   </NuxtLink>
                 </li>
               </ul>

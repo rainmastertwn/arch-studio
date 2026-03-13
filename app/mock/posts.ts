@@ -50,20 +50,21 @@ export type SingleCase = {
 export type MultipleCase = {
   title: string
   subTitle: string
-
+  imgSrc?: string
+  imgTitle?: string
   caseContent?: {
     imgSrc?: string
-    imgDescription?: string
     content?: {
       title: string
       content: string
     }[]
   }[]
-
+  note?: string
   suggestions: {
     label: string
     link: string
   }[]
+
   download: {
     type: string
     title: string
@@ -82,7 +83,7 @@ export type Post = {
     title: string
     link: string
   }[]
-  cases?: SingleCase | MultipleCase
+  cases?: SingleCase[] | MultipleCase[]
 }
 
 const AD: AD = {
@@ -383,10 +384,10 @@ export const postList: Post[] = [
         title: '經典案例解析 × 雜草漫生 × 小垃圾堆積',
         subTitle:
           '本案例中，設計師創造一個在貯集滲透區域上方的人行空間，但因雜草漫生，小垃圾堆積後成為一個<br/>行人不會去且看起來無序的一個區域，我們即將深入分析此案例。',
+        imgTitle: '改善雜草叢生的 設計方式:',
         caseContent: [
           {
             imgSrc: PostImg4_1,
-            imgDescription: '改善雜草叢生的 設計方式:',
             content: [
               {
                 title: '原始的設計方式',
@@ -402,7 +403,6 @@ export const postList: Post[] = [
           },
           {
             imgSrc: PostImg4_2,
-            imgDescription: '改善雜草叢生的 設計方式:',
             content: [
               {
                 title: '我們看見的現況整理',
@@ -417,22 +417,19 @@ export const postList: Post[] = [
             ]
           }
         ],
+        note: '本篇文章由 蔡政家/編輯整理',
         suggestions: [
           {
-            label: 'TKS 不透水布',
-            link: 'https://www.coinn.tw/product/TKS'
+            label: 'SBR 地工織布',
+            link: 'https://www.coinn.tw/product/SBR'
           },
           {
-            label: 'SW 透水網管',
-            link: 'https://www.coinn.tw/product/SW'
+            label: 'CNS 地工不織布',
+            link: 'https://www.coinn.tw/product/CNS'
           },
           {
-            label: 'LDT 透水不織布',
-            link: 'https://www.coinn.tw/product/LDT'
-          },
-          {
-            label: 'RL 預鑄截水溝',
-            link: 'https://www.coinn.tw/product/RL'
+            label: 'SE 雜草抑制蓆',
+            link: 'https://www.coinn.tw/product/SE'
           }
         ],
         download: [
