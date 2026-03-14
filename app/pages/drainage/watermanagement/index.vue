@@ -84,7 +84,7 @@ const categoriesData = {
       <div
         class="col-span-12 col-start-1 mb-3 flex flex-wrap items-center lg:col-span-10 lg:col-start-2"
       >
-        <div class="flex scroll-mt-6 items-center" id="rainwater-drainage">
+        <div class="flex scroll-mt-6 items-center" id="rainwater-storage">
           <div
             class="icon-border mr-5 flex h-[106px] w-[106px] items-center justify-center rounded-full border-6 border-transparent p-3"
             :class="{
@@ -124,7 +124,7 @@ const categoriesData = {
       <div
         class="col-span-12 col-start-1 mb-3 flex flex-wrap items-center lg:col-span-10 lg:col-start-2"
       >
-        <div class="flex scroll-mt-6 items-center" id="rainwater-drainage">
+        <div class="flex scroll-mt-6 items-center" id="rainwater-infiltration">
           <div
             class="icon-border mr-5 flex h-[106px] w-[106px] items-center justify-center rounded-full border-6 border-transparent p-3"
             :class="{

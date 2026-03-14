@@ -44,110 +44,143 @@ const headerPostData = useState('headerPostData', () =>
     .slice(0, 5)
     .map((key) => watermanagementData[key as keyof typeof watermanagementData])
 )
+
+// Intersection Observer for header
+const sentinel = ref<HTMLDivElement | null>(null)
+const isSticky = ref<boolean>(false)
+const isStickyBlock = ref<boolean>(false)
+
+onMounted(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      isSticky.value = !entry.isIntersecting
+
+      setTimeout(() => {
+        isStickyBlock.value = !entry.isIntersecting
+      }, 1)
+    },
+    { threshold: 0 }
+  )
+
+  if (sentinel.value) {
+    observer.observe(sentinel.value)
+  }
+
+  onUnmounted(() => observer.disconnect())
+})
 </script>
 
 <template>
-  <header class="mb-5 flex flex-col items-center justify-center gap-5 px-0 lg:flex-row lg:px-8">
-    <NuxtLink
-      class="relative block"
-      href="/"
-      @mouseenter="logoHover(true)"
-      @mouseleave="logoHover(false)"
+  <div class="sentinel" ref="sentinel" />
+  <div class="mb-5 h-auto lg:h-[142px]">
+    <header
+      class="flex flex-col items-center justify-center gap-5 border-2 border-transparent px-0 lg:flex-row lg:px-8"
+      :class="{
+        'is-sticky': isSticky
+      }"
+      ref="headerRef"
     >
-      <img
-        class="block dark:hidden"
-        alt="ARCH STUDIO"
-        v-if="wrapperHover && !isLogoHovering"
-        :src="LogoColor"
-        width="166"
-        height="38"
-      />
-      <img
-        class="block dark:hidden"
-        alt="ARCH STUDIO"
-        v-else-if="isLogoHovering"
-        :src="LogoGradient"
-        width="166"
-        height="38"
-      />
-      <img
-        class="block dark:hidden"
-        alt="ARCH STUDIO"
-        v-else
-        :src="LogoWhite"
-        width="166"
-        height="38"
-      />
-      <img
-        class="hidden dark:block"
-        alt="ARCH STUDIO"
-        :src="LogoColorWithWhiteFont"
-        width="166"
-        height="38"
-        v-if="wrapperHover && !isLogoHovering"
-      />
-      <img
-        class="hidden dark:block"
-        alt="ARCH STUDIO"
-        v-else-if="isLogoHovering"
-        :src="LogoGradient"
-        width="166"
-        height="38"
-      />
-      <img
-        class="hidden dark:block"
-        alt="ARCH STUDIO"
-        :src="LogoWhiteWithWhiteFont"
-        width="166"
-        height="38"
-        v-else
-      />
-    </NuxtLink>
-    <div class="grid w-full grid-cols-2 gap-2 lg:grid-cols-6 lg:gap-5">
       <NuxtLink
-        class="icon-box dark:border-white-fixed bg-medium-gray flex flex-row items-center justify-center rounded-2xl border border-transparent px-0 pb-0 lg:flex-col lg:px-4 lg:pb-2"
-        href="/drainage/watermanagement#rainwater-drainage"
+        class="relative block"
+        href="/"
+        @mouseenter="logoHover(true)"
+        @mouseleave="logoHover(false)"
       >
-        <img class="w-[54px] lg:w-[108px]" alt="Icon Type 1" :src="iconType1" />
-        <h6>雨水排水</h6>
+        <img
+          class="block dark:hidden"
+          alt="ARCH STUDIO"
+          v-if="wrapperHover && !isLogoHovering"
+          :src="LogoColor"
+          width="166"
+          height="38"
+        />
+        <img
+          class="block dark:hidden"
+          alt="ARCH STUDIO"
+          v-else-if="isLogoHovering"
+          :src="LogoGradient"
+          width="166"
+          height="38"
+        />
+        <img
+          class="block dark:hidden"
+          alt="ARCH STUDIO"
+          v-else
+          :src="LogoWhite"
+          width="166"
+          height="38"
+        />
+        <img
+          class="hidden dark:block"
+          alt="ARCH STUDIO"
+          :src="LogoColorWithWhiteFont"
+          width="166"
+          height="38"
+          v-if="wrapperHover && !isLogoHovering"
+        />
+        <img
+          class="hidden dark:block"
+          alt="ARCH STUDIO"
+          v-else-if="isLogoHovering"
+          :src="LogoGradient"
+          width="166"
+          height="38"
+        />
+        <img
+          class="hidden dark:block"
+          alt="ARCH STUDIO"
+          :src="LogoWhiteWithWhiteFont"
+          width="166"
+          height="38"
+          v-else
+        />
       </NuxtLink>
-      <NuxtLink
-        class="icon-box dark:border-white-fixed bg-medium-gray flex flex-row items-center justify-center rounded-2xl border border-transparent px-0 pb-0 lg:flex-col lg:px-4 lg:pb-2"
-        href="/drainage/watermanagement#rainwater-storage"
-      >
-        <img class="w-[54px] lg:w-[108px]" alt="Icon Type 2" :src="iconType2" />
-        <h6>雨水儲存</h6>
-      </NuxtLink>
-      <NuxtLink
-        class="icon-box dark:border-white-fixed bg-medium-gray flex flex-row items-center justify-center rounded-2xl border border-transparent px-0 pb-0 lg:flex-col lg:px-4 lg:pb-2"
-        href="/drainage/watermanagement#rainwater-infiltration"
-      >
-        <img class="w-[54px] lg:w-[108px]" alt="Icon Type 3" :src="iconType3" />
-        <h6>滲透雨水</h6>
-      </NuxtLink>
-      <NuxtLink
-        class="icon-box dark:border-white-fixed bg-medium-gray flex flex-row items-center justify-center rounded-2xl border border-transparent px-0 pb-0 lg:flex-col lg:px-4 lg:pb-2"
-        href="/drainage/post#waterIssue"
-      >
-        <img class="w-[54px] lg:w-[108px]" alt="Icon Type 4" :src="iconType4" />
-        <h6>各種積水問題</h6>
-      </NuxtLink>
-      <NuxtLink
-        class="icon-box dark:border-white-fixed bg-medium-gray flex flex-row items-center justify-center rounded-2xl border border-transparent px-0 pb-0 lg:flex-col lg:px-4 lg:pb-2"
-        href="/drainage/post#howToChoose"
-      >
-        <img class="w-[54px] lg:w-[108px]" alt="Icon Type 5" :src="iconType5" />
-        <h6>我該如何選擇</h6>
-      </NuxtLink>
-      <NuxtLink
-        class="icon-box dark:border-white-fixed bg-medium-gray flex flex-row items-center justify-center rounded-2xl border border-transparent px-0 pb-0 lg:flex-col lg:px-4 lg:pb-2"
-        href="/drainage/sponsor"
-      >
-        <img class="w-[54px] lg:w-[108px]" alt="Icon Type 6" :src="iconType6" />
-        <h6>來信贊助合作</h6>
-      </NuxtLink>
-    </div>
-  </header>
+      <div class="menu-block grid w-full grid-cols-2 gap-2 lg:grid-cols-6 lg:gap-5">
+        <NuxtLink
+          class="icon-box dark:border-white-fixed bg-medium-gray flex flex-row items-center justify-center rounded-2xl border border-transparent px-0 pb-0 lg:flex-col lg:px-4 lg:pb-2"
+          href="/drainage/watermanagement#rainwater-drainage"
+        >
+          <img class="w-[54px] lg:w-[108px]" alt="Icon Type 1" :src="iconType1" />
+          <h6>雨水排水</h6>
+        </NuxtLink>
+        <NuxtLink
+          class="icon-box dark:border-white-fixed bg-medium-gray flex flex-row items-center justify-center rounded-2xl border border-transparent px-0 pb-0 lg:flex-col lg:px-4 lg:pb-2"
+          href="/drainage/watermanagement#rainwater-storage"
+        >
+          <img class="w-[54px] lg:w-[108px]" alt="Icon Type 2" :src="iconType2" />
+          <h6>雨水儲存</h6>
+        </NuxtLink>
+        <NuxtLink
+          class="icon-box dark:border-white-fixed bg-medium-gray flex flex-row items-center justify-center rounded-2xl border border-transparent px-0 pb-0 lg:flex-col lg:px-4 lg:pb-2"
+          href="/drainage/watermanagement#rainwater-infiltration"
+        >
+          <img class="w-[54px] lg:w-[108px]" alt="Icon Type 3" :src="iconType3" />
+          <h6>滲透雨水</h6>
+        </NuxtLink>
+        <NuxtLink
+          class="icon-box dark:border-white-fixed bg-medium-gray flex flex-row items-center justify-center rounded-2xl border border-transparent px-0 pb-0 lg:flex-col lg:px-4 lg:pb-2"
+          href="/drainage/post#waterIssue"
+        >
+          <img class="w-[54px] lg:w-[108px]" alt="Icon Type 4" :src="iconType4" />
+          <h6>各種積水問題</h6>
+        </NuxtLink>
+        <NuxtLink
+          class="icon-box dark:border-white-fixed bg-medium-gray flex flex-row items-center justify-center rounded-2xl border border-transparent px-0 pb-0 lg:flex-col lg:px-4 lg:pb-2"
+          href="/drainage/post#howToChoose"
+        >
+          <img class="w-[54px] lg:w-[108px]" alt="Icon Type 5" :src="iconType5" />
+          <h6>我該如何選擇</h6>
+        </NuxtLink>
+        <NuxtLink
+          class="icon-box dark:border-white-fixed bg-medium-gray flex flex-row items-center justify-center rounded-2xl border border-transparent px-0 pb-0 lg:flex-col lg:px-4 lg:pb-2"
+          href="/drainage/sponsor"
+        >
+          <img class="w-[54px] lg:w-[108px]" alt="Icon Type 6" :src="iconType6" />
+          <h6>來信贊助合作</h6>
+        </NuxtLink>
+      </div>
+    </header>
+  </div>
 
   <AdBlock
     class="mb-5"
@@ -183,7 +216,14 @@ const headerPostData = useState('headerPostData', () =>
 </template>
 
 <style lang="scss" scoped>
+.sentinel {
+  height: 1px;
+  pointer-events: none;
+}
+
 header {
+  // transition: all 0.3s ease;
+
   .icon-box {
     img {
       transition: transform 0.4s ease;
@@ -207,6 +247,52 @@ header {
 
         @media (width < 64rem) {
           opacity: 1;
+        }
+      }
+    }
+  }
+
+  &.is-sticky {
+    @media (width > 64rem) {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      z-index: 100;
+      padding: 8px 16px 12px;
+      width: 1234px;
+      background-color: var(--color-white-set);
+      border: 2px solid var(--color-blue-set);
+      transform: translateX(-50%);
+      border-bottom-left-radius: 16px;
+      border-bottom-right-radius: 16px;
+      border-top: 0;
+      gap: 12px;
+
+      .menu-block {
+        gap: 12px;
+
+        .icon-box {
+          display: flex;
+          padding: 0;
+          flex-direction: row;
+          border: 2px solid transparent;
+          transition: border 0.3s ease;
+
+          img {
+            width: 50px;
+          }
+
+          &:hover {
+            border: 2px solid var(--color-light-blue);
+
+            img {
+              transform: none;
+            }
+
+            h6 {
+              opacity: 1;
+            }
+          }
         }
       }
     }

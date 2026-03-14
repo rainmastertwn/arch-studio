@@ -34,6 +34,7 @@ export const PTD = {
   value: '犬走的排水',
   title: '犬走，建築邊溝的排水',
   subTitle: '建築 犬走，建築邊溝排水設計',
+  modelLink: 'https://sketchfab.com/3d-models/184d64a99c6341adb4f94a9e231e3feb',
   infoImg: {
     imgSrc: PTDImg,
     label: ''
@@ -68,6 +69,7 @@ export const ROD = {
   value: '屋頂點排水',
   title: '屋頂點排水',
   subTitle: '建築 屋頂點排水設計',
+  modelLink: 'https://sketchfab.com/3d-models/fba447ed38a443c89d517252eef95083',
   infoImg: {
     imgSrc: RODImg,
     label: ''
@@ -120,6 +122,7 @@ export const GRD = {
   value: '綠屋頂排水',
   title: '人工地盤排水 × 綠屋頂排水',
   subTitle: '建築 綠屋頂排水設計',
+  modelLink: 'https://sketchfab.com/3d-models/9733a46bf55e44daa9ee19472bda8c3c',
   infoImg: {
     imgSrc: GRDImg,
     label: ''
@@ -180,6 +183,7 @@ export const EGRD = {
   value: '薄層綠屋頂',
   title: '人工地盤排水 × 薄層綠屋頂排水',
   subTitle: '建築薄層 綠屋頂排水設計',
+  modelLink: 'https://sketchfab.com/3d-models/3e19b46c7d144146881b35f63621adaa',
   infoImg: {
     imgSrc: EGRDImg,
     label: ''
@@ -284,6 +288,7 @@ export const SPD = {
   value: '淺型花台排水',
   title: '人工地盤排水 × ≤60cm 淺型花台，社區中庭排水',
   subTitle: '草本植物與小灌木的淺型花台 排水設計',
+  modelLink: 'https://sketchfab.com/3d-models/4c8d006ddb404d30b4c9475421a6e3bb',
   infoImg: {
     imgSrc: SPDImg,
     label: ''
@@ -348,6 +353,7 @@ export const DPD = {
   value: '深型花台排水',
   title: '人工地盤排水 × 深型花台排水≥60cm',
   subTitle: '灌木，喬木等木本植物的植栽槽排水設計',
+  modelLink: 'https://sketchfab.com/3d-models/d2799d2f8eb147539f79905a5a7cdf29',
   infoImg: {
     imgSrc: DPDImg,
     label: ''
@@ -456,6 +462,7 @@ export const SGRD = {
   value: '斜屋頂綠化排水',
   title: '斜屋頂的綠化排水',
   subTitle: '斜屋頂綠化排水 設計',
+  modelLink: 'https://sketchfab.com/3d-models/30536d08e7c14550b06f261c0890ca58',
   infoImg: {
     imgSrc: SGRDImg,
     label: ''
@@ -512,6 +519,7 @@ export const DID = {
   value: '車道路口排水',
   title: '車道路口排水',
   subTitle: '車道路口排水 設計',
+  modelLink: 'https://sketchfab.com/3d-models/c44d43dbe1474249afe62f8fdf5280e0',
   infoImg: {
     imgSrc: DIDImg,
     label: ''
@@ -560,6 +568,7 @@ export const RLD = {
   value: '屋頂線形排水',
   title: '屋頂線形排水',
   subTitle: '屋頂線形排水設計',
+  modelLink: 'https://sketchfab.com/3d-models/d6c6c9be7899463f85c5ea62bc364325',
   infoImg: {
     imgSrc: RLDImg,
     label: ''
@@ -604,6 +613,7 @@ export const HPD = {
   value: '硬鋪面點排水',
   title: '一個積水的點 × 硬鋪面',
   subTitle: '硬鋪面點排水 設計',
+  modelLink: 'https://sketchfab.com/3d-models/09a0bf1694b248f69b8f4fd8998756e3',
   infoImg: {
     imgSrc: HPDImg,
     label: ''
@@ -708,6 +718,7 @@ export const CCD = {
   value: '風雨球場排水',
   title: '風雨球場排水',
   subTitle: '風雨球場排水 設計',
+  modelLink: 'https://sketchfab.com/3d-models/2a9dcfc07e88434da760fd5d121ccefd',
   infoImg: {
     imgSrc: CCDImg,
     label: ''
@@ -756,6 +767,7 @@ export const GSD = {
   value: '植生綠地點排水',
   title: '綠地排水 × 植生綠地點排水',
   subTitle: '收集地表逕流水並轉為滲透水的 設計方式',
+  modelLink: 'https://sketchfab.com/3d-models/678c8f86ea02496587bea4acc364fe67',
   infoImg: {
     imgSrc: GSDImg,
     label: ''
@@ -804,6 +816,7 @@ export const SGD = {
   value: '下凹式綠地排水',
   title: '草溝滯留排水',
   subTitle: '透過地形收集雨水的草溝排水 設計',
+  modelLink: 'https://sketchfab.com/3d-models/12e3adc6035f4855914a53a173cada39',
   infoImg: {
     imgSrc: GSWImg,
     label: ''
@@ -1346,6 +1359,7 @@ export const LD = {
   value: '綠地草坪排水',
   title: '綠地，平草地，球場排水',
   subTitle: '平草地排水 設計',
+  modelLink: 'https://sketchfab.com/3d-models/ce33bf9efc3f49758c370927c7c39036',
   infoImg: {
     imgSrc: LDImg,
     label: ''
@@ -1451,6 +1465,7 @@ export const SRQ6Q7 = {
   value: '基地保水Q6+Q7',
   title: '建築基地保水 Q₆ + Q₇',
   subTitle: 'Q₆ 滲透排水管+ Q₇滲透陰井',
+  modelLink: 'https://sketchfab.com/3d-models/q6q7-2b821723b19a455d8a6f3bfb8a676436',
   infoImg: {
     imgSrc: SRQ6Q7Img,
     label: ''

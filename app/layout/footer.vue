@@ -1,7 +1,32 @@
 <script lang="ts" setup>
-import DonateIcon from '~/assets/images/icons/donate.svg'
+import DonateIcon from '~/json/donate.json'
+// import DonateIcon from '~/assets/images/icons/donate.svg'
 const wrapperHover = inject<Ref<boolean>>('wrapperHover')
 const currentYear = ref(new Date().getFullYear())
+
+const donateAnimation = ref<any>(null)
+const donateIcon = ref<HTMLDivElement | null>(null)
+onMounted(() => {
+  nextTick(() => {
+    if (!donateIcon.value) return
+    donateAnimation.value = (window as any).bodymovin.loadAnimation({
+      container: donateIcon.value as HTMLElement,
+      animationData: DonateIcon,
+      renderer: 'svg',
+      loop: true,
+      autoplay: false,
+      name: 'donate icon'
+    })
+  })
+})
+
+const donateHover = () => {
+  donateAnimation.value?.play()
+}
+
+const donateLeave = () => {
+  donateAnimation.value?.stop()
+}
 </script>
 
 <template>
@@ -170,13 +195,17 @@ const currentYear = ref(new Date().getFullYear())
           <p class="mt-8 flex items-center justify-end text-sm lg:mt-12">贊助</p>
         </ul>
       </div>
-      <div
+      <NuxtLink
         class="sp border-white-fixed flex flex-col items-center justify-center rounded-[14px] border-8 p-4"
+        @mouseenter="donateHover"
+        @mouseleave="donateLeave"
+        to="/drainage/sponsor"
       >
         <span class="mb-1 text-sm">Arch studio ads</span>
-        <img class="mb-1" alt="donate icon" :src="DonateIcon" />
+        <div class="mx-auto h-[100px] w-[100px] cursor-pointer" ref="donateIcon" />
+        <!-- <img class="mb-1" alt="donate icon" :src="DonateIcon" /> -->
         <p>我想了解廣告贊助</p>
-      </div>
+      </NuxtLink>
     </div>
 
     <div class="flex flex-col items-center justify-center">

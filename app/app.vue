@@ -58,6 +58,15 @@ useHead({
     }
   ],
   script: [
+    // lottie js
+    {
+      src: 'https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js',
+      integrity:
+        'sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==',
+      crossorigin: 'anonymous',
+      referrerpolicy: 'no-referrer',
+      defer: true
+    },
     {
       src: 'https://www.googletagmanager.com/gtag/js?id=AW-11422925387',
       async: true
@@ -93,7 +102,7 @@ useHead({
   <!-- wrapper circle hover function-->
   <main class="p-2 lg:p-5">
     <div
-      class="wrapper-circle container overflow-hidden rounded-[72px] p-0 lg:rounded-[92px] lg:p-5"
+      class="wrapper-circle container rounded-[72px] p-0 lg:rounded-[92px] lg:p-5"
       :class="{ hovered: isWrapperHovering }"
     >
       <div

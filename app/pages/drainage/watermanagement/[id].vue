@@ -49,8 +49,21 @@ const suggestionData = useState('suggestionsData', () => {
 
         <div class="grid grid-cols-12 gap-5">
           <div class="col-span-12 lg:col-span-8">
-            <div class="overflow-hidden rounded-2xl">
+            <div class="mb-5 overflow-hidden rounded-2xl">
               <img class="w-full" alt="info image" :src="postData?.infoImg.imgSrc" />
+            </div>
+
+            <div class="flex items-center justify-center">
+              <!-- text-[#3d8cf4] -->
+              <NuxtLink
+                class="text-light-blue"
+                v-if="postData?.modelLink"
+                :href="postData.modelLink"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                3D模型預覽 &gt;
+              </NuxtLink>
             </div>
           </div>
           <div class="col-span-12 lg:col-span-4">
